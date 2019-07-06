@@ -1,0 +1,137 @@
+/* Text indent method */
+/* Active, Hover, Focus */
+/* Truncate characters mixin */
+@-webkit-keyframes slide-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    display: none;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes slide-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    display: none;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes slide-2 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-3 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

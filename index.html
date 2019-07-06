@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Didact+Gothic" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120398811-1"></script>
     <script>
@@ -32,7 +32,7 @@
     <nav class="top-nav">
       <div class="content">
         <a href="index.html" class="logo">NUTREE</a>
-        <a href="index.html#" class="top-nav-icon icon-hamburger"></a>
+        <a href="#" class="top-nav-icon icon-hamburger"></a>
         <ul class="top-nav-menu">
           <li><a href="products.html">ΠΡΟΪΟΝΤΑ</a></li>
           <li><a href="about.html">ΟΜΑΔΑ</a></li>
@@ -209,21 +209,24 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script>
+      // Slider with nav
       var counter = 0,
       $items = $('.slider li'),
       numItems = $items.length;
 
       var showCurrent = function(){
         var itemToShow = Math.abs(counter%numItems);
-
-      $items.removeClass('show');
-      $items.eq(itemToShow).addClass('show');
+        $items.removeClass('show');
+        $items.eq(itemToShow).addClass('show');
       };
 
+      // Slider next button
       $('.next').on('click', function(){
         counter++;
         showCurrent();
       });
+
+      // Slider prev button
       $('.prev').on('click', function(){
         counter--;
         showCurrent();

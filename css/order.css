@@ -1,0 +1,225 @@
+/* Text indent method */
+/* Active, Hover, Focus */
+/* Truncate characters mixin */
+@-webkit-keyframes slide-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    display: none;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes slide-1 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+    display: none;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes slide-2 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    display: block;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-3 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  25% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    display: block;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.resellers-section {
+  padding-bottom: 0 !important;
+}
+
+.contact-form {
+  padding-bottom: 120px;
+  text-align: center;
+}
+
+.contact-form p {
+  display: none;
+  margin-bottom: 30px;
+  color: #999;
+}
+
+.contact-form p.active {
+  display: block;
+}
+
+.contact-form [type="text"],
+.contact-form [type="email"],
+.contact-form textarea {
+  padding: 15px 30px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #d4d4d4;
+  color: #999;
+}
+
+.contact-form [type="text"],
+.contact-form [type="email"] {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 15px;
+}
+
+.contact-form .order-phone,
+.contact-form .order-name {
+  margin-right: 0;
+}
+
+.contact-form .order-name,
+.contact-form textarea {
+  width: 100%;
+}
+
+.contact-form .order-submit {
+  margin-top: 30px;
+}
+
+.shops-list {
+  margin-bottom: 50px;
+}
+
+.shops-list h2 {
+  margin: 30px 0;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.shops-list h3 {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background: #eaeaea;
+  cursor: pointer;
+}
+
+.shops-list h3:hover, .shops-list h3.active {
+  background: #dddddd;
+}
+
+.shops-list li {
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+
+.shops-list .shops {
+  display: none;
+}
+
+.shops-list .shops.active {
+  display: block;
+}

@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  // Loader animation
-
-  $('.loader').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-  function(e) {
-    $('.loader').addClass('remove');
-  });
-
   // Show/Hide mobile menu
 
   $('.top-nav-icon').click(function(e) {

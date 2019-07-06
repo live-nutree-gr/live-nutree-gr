@@ -1,0 +1,26 @@
+// Initial imports (reset, helpers, variables)
+@import "reset",
+        "helpers",
+        "variables",
+        "icons";
+
+// Gerenal styles and comps (nav, header, footer)
+@import "general";
+
+// Index page styles (styles ONLY for index)
+@import "index";
+
+// Products page styles (styles ONLY for products)
+@import  "products";
+
+// Order page styles (styles ONLY for order)
+@import "order";
+
+// About page styles (styles ONLY for about)
+@import "about";
+
+// Tablet page styles (styles ONLY for tablet)
+@import "tablet";
+
+// Mobile page styles (styles ONLY for mobile)
+@import "mobile";

@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Didact+Gothic" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120398811-1"></script>
     <script>
@@ -33,7 +33,7 @@
     <nav class="top-nav">
       <div class="content">
         <a href="index.html" class="logo">NUTREE</a>
-        <a href="order.html#" class="top-nav-icon icon-hamburger"></a>
+        <a href="#" class="top-nav-icon icon-hamburger"></a>
         <ul class="top-nav-menu">
           <li><a href="products.html">ΠΡΟΪΟΝΤΑ</a></li>
           <li><a href="about.html">ΟΜΑΔΑ</a></li>
@@ -60,24 +60,10 @@
       <section class="home-section resellers-section">
         <div class="content">
           <h2 class="section-title with-watermark">Οι συνεργάτες μας<span>.</span></h2>
-          <!-- <p class="text content-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <ul class="resellers-list">
-            <li><a href="#">reseller 1</a></li>
-            <li><a href="#">reseller 2</a></li>
-            <li><a href="#">reseller 3</a></li>
-            <li><a href="#">reseller 4</a></li>
-            <li><a href="#">reseller 5</a></li>
-            <li><a href="#">reseller 6</a></li>
-            <li><a href="#">reseller 7</a></li>
-            <li><a href="#">reseller 8</a></li>
-            <li><a href="#">reseller 9</a></li>
-            <li><a href="#">reseller 10</a></li>
-          </ul> -->
         </div>
       </section>
 
       <section class="shops-list content-medium">
-        <!-- <div id="map" class="map"></div> -->
         <h2>ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ</h2>
         <ul>
           <li>www.agrolicious.gr</li>
@@ -281,6 +267,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script>
+      // Toggle class to expand/collapse shop list
       $(document).ready(function() {
         $('.shop-trigger').click(function(e) {
           e.preventDefault();
