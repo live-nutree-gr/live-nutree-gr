@@ -11,23 +11,23 @@ var cssnano = require('gulp-cssnano');
 //var imagemin = require('gulp-imagemin');
 
 // compile all your Sass
-gulp.task('sass', function (){
-  gulp.src(['scss/*.scss'])
-    .pipe(sass({
-      includePaths: ['scss'],
-      outputStyle: 'expanded'
-    }))
-    .pipe(prefix(
-      "last 10 version"
-      ))
-    .pipe(gulp.dest('css'))
-    .pipe(cssnano());
+gulp.task('sass', function () {
+    gulp.src(['scss/*.scss'])
+        .pipe(sass({
+            includePaths: ['scss'],
+            outputStyle: 'expanded'
+        }))
+        .pipe(prefix(
+            "last 10 version"
+        ))
+        .pipe(gulp.dest('css'))
+        .pipe(cssnano());
 });
 
-gulp.task('minify', function() {
+gulp.task('minify', function () {
     return gulp.src(['css/main.css'])
         .pipe(cssnano())
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('css'));
 });
 
@@ -46,18 +46,18 @@ gulp.task('minify', function() {
 //     .pipe(gulp.dest('./prod/img'));
 //   });
 
-gulp.task('default', function(){
+gulp.task('default', function () {
 
-  // watch scss changes
-  gulp.watch("scss/**/*.scss", function(event){
-    gulp.run('sass');
-  });
+    // watch scss changes
+    gulp.watch("scss/**/*.scss", function (event) {
+        gulp.run('sass');
+    });
 
-  gulp.run('minify');
+    gulp.run('minify');
 
-  // // images
-  // gulp.watch("./dev/img/**/*", function(event){
-  //   gulp.run('imagemin');
-  //   gulp.run('svgmin');
-  // });
+    // // images
+    // gulp.watch("./dev/img/**/*", function(event){
+    //   gulp.run('imagemin');
+    //   gulp.run('svgmin');
+    // });
 });
