@@ -6,13 +6,8 @@ var prefix = require('gulp-autoprefixer');
 var rename = require("gulp-rename");
 var cssnano = require('gulp-cssnano');
 
-// Images
-//var svgmin = require('gulp-svgmin');
-//var imagemin = require('gulp-imagemin');
-
-// compile all your Sass
 gulp.task('sass', function () {
-    gulp.src(['scss/*.scss'])
+    return gulp.src(['scss/*.scss'])
         .pipe(sass({
             includePaths: ['scss'],
             outputStyle: 'expanded'
@@ -31,7 +26,32 @@ gulp.task('minify', function () {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('default', gulp.series('sass', 'minify'));
+
+
+// ##########################################
+// ############### deprecated ###############
+// ##########################################
+
+// gulp.task('default', function () {
+//
+//     watch scss changes
+// gulp.watch("scss/**/*.scss", function (event) {
+//     gulp.run('sass');
+// });
+//
+// gulp.run('minify');
+//
+// images
+// gulp.watch("./dev/img/**/*", function(event){
+//   gulp.run('imagemin');
+//   gulp.run('svgmin');
+// });
+// });
+
 // // Images
+//var svgmin = require('gulp-svgmin');
+//var imagemin = require('gulp-imagemin');
 //   gulp.task('svgmin', function() {
 //     gulp.src('./dev/img/svg/*.svg')
 //     .pipe(svgmin())
@@ -45,19 +65,3 @@ gulp.task('minify', function () {
 //     .pipe(gulp.dest('./dev/img'))
 //     .pipe(gulp.dest('./prod/img'));
 //   });
-
-gulp.task('default', function () {
-
-    // watch scss changes
-    gulp.watch("scss/**/*.scss", function (event) {
-        gulp.run('sass');
-    });
-
-    gulp.run('minify');
-
-    // // images
-    // gulp.watch("./dev/img/**/*", function(event){
-    //   gulp.run('imagemin');
-    //   gulp.run('svgmin');
-    // });
-});
