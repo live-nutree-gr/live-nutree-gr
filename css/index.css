@@ -207,8 +207,7 @@
 
 .section-testimonials {
   background: url(../images/testimonials-bg.png) center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   text-align: center;
   color: #fff;
   padding: 165px 0;
@@ -309,18 +308,15 @@
 
 .products-categories-sections-images .products-categories-sections-peanut {
   background: url(../images/index-peanut.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-orange {
   background: url(../images/index-orange.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-apple {
   background: url(../images/index-apple.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }

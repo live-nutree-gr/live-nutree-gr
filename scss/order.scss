@@ -1,9 +1,8 @@
 // ---------------------------------------
 // Initial imports (helpers, variables)
 // ---------------------------------------
-
 @import "helpers",
-        "variables";
+"variables";
 
 // ---------------------------------------
 //
@@ -85,6 +84,15 @@
   li {
     margin-bottom: 10px;
     line-height: 23px;
+
+    p {
+      margin-left: 20px;
+
+      &:before {
+        content: '•';
+        margin-right: 10px;
+      }
+    }
   }
 
   .shops {

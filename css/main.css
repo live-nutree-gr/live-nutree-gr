@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
   License: none (public domain)
@@ -585,8 +586,7 @@ body {
   -webkit-transition: background .2s linear;
   -o-transition: background .2s linear;
   transition: background .2s linear;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
 }
 
 .btn-big {
@@ -813,8 +813,7 @@ main {
 .section-title.with-watermark:before {
   content: '';
   background: url(../images/vision-title-bg.png) no-repeat center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   width: 200px;
   height: 200px;
   position: absolute;
@@ -930,8 +929,7 @@ main {
   height: 50px;
   margin: 10px 0;
   background: url(../images/logo.svg) no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   opacity: 0;
 }
 
@@ -1094,26 +1092,22 @@ main {
 
 .header .slider .slide-1 {
   background: url(../images/newbars.png) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-2 {
   background: url(../images/nutree-main-low.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-3 {
   background: url(../images/header-bg-1.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-4 {
   background: url(../images/header-bg-2.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider-controls {
@@ -1125,8 +1119,7 @@ main {
   font-size: 50px;
   line-height: 40px;
   text-align: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   z-index: 8;
   -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
           box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
@@ -1179,26 +1172,22 @@ main {
 .products-page .header,
 .bars-page .header {
   background: url(../images/header-products-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .about-page .header {
   background: url(../images/header-about-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .order-page .header {
   background: url(../images/header-order-bg-2.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .contact-page .header {
   background: url(../images/header-contact-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header h1 {
@@ -1246,8 +1235,7 @@ main {
 
 .section-newsletter h2 {
   background: url(../images/newsletter-bg.png) right no-repeat #f6f6f6;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   height: 150px;
   float: left;
   width: 35%;
@@ -1327,8 +1315,7 @@ main {
   vertical-align: top;
   width: 30px;
   height: 30px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background: #999;
   margin-left: 5px;
   font-size: 0;
@@ -1476,8 +1463,7 @@ main {
 
 .section-testimonials {
   background: url(../images/testimonials-bg.png) center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   text-align: center;
   color: #fff;
   padding: 165px 0;
@@ -1578,20 +1564,17 @@ main {
 
 .products-categories-sections-images .products-categories-sections-peanut {
   background: url(../images/index-peanut.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-orange {
   background: url(../images/index-orange.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-apple {
   background: url(../images/index-apple.jpg) center no-repeat #f6f6f6;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 /* Text indent method */
@@ -1785,8 +1768,7 @@ main {
 
 .section-product-expanded .section-expanded-image:before {
   content: '';
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1804,8 +1786,7 @@ main {
   background: rgba(255, 255, 255, 0.9);
   padding: 40px 40px 30px;
   border: 1px solid #fafafa;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   z-index: 1;
   -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5);
@@ -1923,8 +1904,7 @@ main {
 .products-preview-list li a,
 .products-preview-list li p {
   background: #eaeaea;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   width: 100%;
   padding-bottom: 100%;
   display: inline-block;
@@ -2074,8 +2054,7 @@ main {
 .contact-form [type="email"],
 .contact-form textarea {
   padding: 15px 30px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
   display: inline-block;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2129,6 +2108,15 @@ main {
 .shops-list li {
   margin-bottom: 10px;
   line-height: 23px;
+}
+
+.shops-list li p {
+  margin-left: 20px;
+}
+
+.shops-list li p:before {
+  content: '•';
+  margin-right: 10px;
 }
 
 .shops-list .shops {

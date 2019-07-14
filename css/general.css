@@ -276,8 +276,7 @@ body {
   -webkit-transition: background .2s linear;
   -o-transition: background .2s linear;
   transition: background .2s linear;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
 }
 
 .btn-big {
@@ -504,8 +503,7 @@ main {
 .section-title.with-watermark:before {
   content: '';
   background: url(../images/vision-title-bg.png) no-repeat center;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   width: 200px;
   height: 200px;
   position: absolute;
@@ -621,8 +619,7 @@ main {
   height: 50px;
   margin: 10px 0;
   background: url(../images/logo.svg) no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   opacity: 0;
 }
 
@@ -785,26 +782,22 @@ main {
 
 .header .slider .slide-1 {
   background: url(../images/newbars.png) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-2 {
   background: url(../images/nutree-main-low.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-3 {
   background: url(../images/header-bg-1.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider .slide-4 {
   background: url(../images/header-bg-2.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header .slider-controls {
@@ -816,8 +809,7 @@ main {
   font-size: 50px;
   line-height: 40px;
   text-align: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   z-index: 8;
   -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
           box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
@@ -870,26 +862,22 @@ main {
 .products-page .header,
 .bars-page .header {
   background: url(../images/header-products-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .about-page .header {
   background: url(../images/header-about-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .order-page .header {
   background: url(../images/header-order-bg-2.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .contact-page .header {
   background: url(../images/header-contact-bg.jpg) no-repeat center;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
 }
 
 .header h1 {
@@ -937,8 +925,7 @@ main {
 
 .section-newsletter h2 {
   background: url(../images/newsletter-bg.png) right no-repeat #f6f6f6;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   height: 150px;
   float: left;
   width: 35%;
@@ -1018,8 +1005,7 @@ main {
   vertical-align: top;
   width: 30px;
   height: 30px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background: #999;
   margin-left: 5px;
   font-size: 0;
