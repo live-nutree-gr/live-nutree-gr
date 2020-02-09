@@ -534,22 +534,17 @@ main {
     }
 
     .slide-1 {
-      background: url(../images/newbars.png) no-repeat center;
+      background: url(../images/hero-bg-1.jpg) no-repeat center;
       background-size: cover;
     }
 
     .slide-2 {
-      background: url(../images/nutree-main-low.jpg) no-repeat center;
+      background: url(../images/hero-bg-2.jpg) no-repeat center;
       background-size: cover;
     }
 
     .slide-3 {
-      background: url(../images/header-bg-1.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    .slide-4 {
-      background: url(../images/header-bg-2.jpg) no-repeat center;
+      background: url(../images/hero-bg-3.jpg) no-repeat center;
       background-size: cover;
     }
   }
@@ -670,9 +665,18 @@ main {
   background: $lighter-grey;
   padding: 60px 0 30px;
 
+  .content {
+    display: flex;
+  }
+
   .section-newsletter-right {
     float: right;
     width: 60%;
+  }
+
+  .section-newsletter-link {
+    margin:auto auto auto 0;
+    font-size: 30px;
   }
 
   h2 {

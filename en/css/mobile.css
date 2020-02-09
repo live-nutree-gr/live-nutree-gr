@@ -105,6 +105,7 @@
   }
   .section-newsletter h2,
   .section-newsletter .section-newsletter-right {
+    margin-right: -300px;
     width: 100%;
   }
   .footer {

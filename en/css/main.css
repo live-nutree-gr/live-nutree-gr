@@ -1091,22 +1091,17 @@ main {
 }
 
 .header .slider .slide-1 {
-  background: url(../images/newbars.png) no-repeat center;
+  background: url(../images/hero-bg-1.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-2 {
-  background: url(../images/nutree-main-low.jpg) no-repeat center;
+  background: url(../images/hero-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-3 {
-  background: url(../images/header-bg-1.jpg) no-repeat center;
-  background-size: cover;
-}
-
-.header .slider .slide-4 {
-  background: url(../images/header-bg-2.jpg) no-repeat center;
+  background: url(../images/hero-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1228,9 +1223,21 @@ main {
   padding: 60px 0 30px;
 }
 
+.section-newsletter .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section-newsletter .section-newsletter-right {
   float: right;
   width: 60%;
+}
+
+.section-newsletter .section-newsletter-link {
+  margin: auto auto auto 0;
+  font-size: 30px;
 }
 
 .section-newsletter h2 {
@@ -1799,7 +1806,7 @@ main {
   width: 49%;
 }
 
-.section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
+.section-product-expanded .section-expanded-image .nutritious-list > li.asterisk, .section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
   width: 100%;
   margin-top: 10px;
   color: #999;
@@ -2447,6 +2454,7 @@ main {
   }
   .section-newsletter h2,
   .section-newsletter .section-newsletter-right {
+    margin-right: -300px;
     width: 100%;
   }
   .footer {
