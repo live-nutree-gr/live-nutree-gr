@@ -1,0 +1,54 @@
+// ---------------------------------------
+// Initial imports (helpers, variables)
+// ---------------------------------------
+@import "helpers",
+        "variables";
+
+.section-vision {
+
+  img {
+    margin-top: 80px;
+    max-width: 70%;
+  }
+
+  h3 {
+    margin-top: 50px;
+  }
+
+  ul {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  li {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 350px;
+    padding: 0 30px;
+  }
+
+  .checkmark {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px;
+  }
+
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 500ms ease-in-out forwards;
+  }
+
+  .check {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 500ms 200ms ease-in-out forwards;
+
+  }
+}
+
+.about-them {
+  position: relative;
+  margin-top: 40px;
+}
