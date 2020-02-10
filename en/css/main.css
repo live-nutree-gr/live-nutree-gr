@@ -1254,6 +1254,12 @@ main {
 .section-newsletter .section-newsletter-link {
   margin: auto auto auto 0;
   font-size: 30px;
+  font-family: "Alegreya", "Didact Gothic", "Open Sans", sans-serif;
+}
+
+.section-newsletter .section-newsletter-link span {
+  font-size: 50px;
+  color: #ca644e;
 }
 
 .section-newsletter h2 {

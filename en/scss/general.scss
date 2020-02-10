@@ -703,6 +703,12 @@ main {
   .section-newsletter-link {
     margin: auto auto auto 0;
     font-size: 30px;
+    font-family: $font-hand;
+
+    span {
+      font-size: 50px;
+      color: $coral;
+    }
   }
 
   h2 {
