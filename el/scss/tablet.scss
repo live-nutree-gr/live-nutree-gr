@@ -73,6 +73,10 @@
         opacity: 0;
       }
     }
+
+    .top-nav-language {
+      display: none;
+    }
   }
 
   .section-newsletter {
@@ -99,6 +103,14 @@
 
     h2 {
       font-size: 35px;
+    }
+  }
+
+  .footer {
+    .bottom-footer {
+      .footer-language {
+        display: initial;
+      }
     }
   }
 }
