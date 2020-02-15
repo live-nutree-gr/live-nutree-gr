@@ -230,7 +230,7 @@
         let $slides = jQuery('.slider li'),
             currentSlide = $slides.first(),
 
-            nextSlide = function() {
+            nextSlide = function () {
                 currentSlide.removeClass('show');
                 currentSlide = currentSlide.next();
                 if (currentSlide.length === 0) {
@@ -239,7 +239,7 @@
                 currentSlide.addClass('show');
             },
 
-            prevSlide = function() {
+            prevSlide = function () {
                 currentSlide.removeClass('show');
                 currentSlide = currentSlide.prev();
                 if (currentSlide.length === 0) {
@@ -273,12 +273,16 @@
             jQuery('.slider').swipe({
                 swipeLeft: function () {
                     nextSlide();
+                    startAutoplay();
                 },
                 swipeRight: function () {
                     prevSlide();
+                    startAutoplay();
                 }
             });
         }
+
+        startAutoplay();
     });
 </script>
 </body>
