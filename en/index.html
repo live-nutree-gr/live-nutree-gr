@@ -206,43 +206,64 @@
 </footer>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.waitforimages.min.js"></script>
 <script src="js/common.js"></script>
 <script>
-    // Slider with nav
-    var counter = 0,
-        $items = $('.slider li'),
-        numItems = $items.length;
+    // rotate hero image slideshow
+    jQuery('.slide-1').waitForImages(function () {
+        let $slides = jQuery('.slider li'),
+            currentSlide = $slides.first(),
 
-    var showCurrent = function () {
-        var itemToShow = Math.abs(counter % numItems);
-        $items.removeClass('show');
-        $items.eq(itemToShow).addClass('show');
-    };
-
-    // Slider next button
-    $('.next').on('click', function () {
-        counter++;
-        showCurrent();
-    });
-
-    // Slider prev button
-    $('.prev').on('click', function () {
-        counter--;
-        showCurrent();
-    });
-
-    if ('ontouchstart' in window) {
-        $('.slider').swipe({
-            swipeLeft: function () {
-                counter++;
-                showCurrent();
+            nextSlide = function() {
+                currentSlide.removeClass('show');
+                currentSlide = currentSlide.next();
+                if (currentSlide.length === 0) {
+                    currentSlide = $slides.first();
+                }
+                currentSlide.addClass('show');
             },
-            swipeRight: function () {
-                counter--;
-                showCurrent();
-            }
+
+            prevSlide = function() {
+                currentSlide.removeClass('show');
+                currentSlide = currentSlide.prev();
+                if (currentSlide.length === 0) {
+                    currentSlide = $slides.last();
+                }
+                currentSlide.addClass('show');
+            },
+
+            autoplayId,
+
+            startAutoplay = function () {
+                clearInterval(autoplayId);
+                autoplayId = setInterval(function () {
+                    nextSlide();
+                }, 10000)
+            };
+
+        // Slider next button
+        jQuery('.next').on('click', function () {
+            nextSlide();
+            startAutoplay();
         });
-    }
+
+        // Slider prev button
+        jQuery('.prev').on('click', function () {
+            prevSlide();
+            startAutoplay();
+        });
+
+        if ('ontouchstart' in window) {
+            jQuery('.slider').swipe({
+                swipeLeft: function () {
+                    nextSlide();
+                },
+                swipeRight: function () {
+                    prevSlide();
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>
