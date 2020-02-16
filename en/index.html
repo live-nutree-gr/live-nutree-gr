@@ -242,7 +242,9 @@
             prevSlide();
         });
 
-        if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
+        if (window.innerWidth > 640
+            && (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement)
+        ) {
             jQuery('.slider').swipe({
                 swipeLeft: function () {
                     nextSlide();

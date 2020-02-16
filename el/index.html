@@ -258,7 +258,9 @@
             prevSlide();
         });
 
-        if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
+        if (window.innerWidth > 640
+            && (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement)
+        ) {
             jQuery('.slider').swipe({
                 swipeLeft: function () {
                     nextSlide();
@@ -282,14 +284,17 @@
 
                 startAutoplay();
 
+                // add 2nd function on click
                 jQuery('.next').on('click', function () {
                     startAutoplay();
                 });
 
+                // add 2nd function on click
                 jQuery('.prev').on('click', function () {
                     startAutoplay();
                 });
 
+                // replaces swipe functions
                 if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
                     jQuery('.slider').swipe({
                         swipeLeft: function () {
