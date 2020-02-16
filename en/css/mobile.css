@@ -39,10 +39,6 @@
     font-size: 40px;
     line-height: 40px;
   }
-  .header .slider .slide-2,
-  .header .slider .slide-3 {
-    display: none;
-  }
   .header .slider-controls {
     display: none;
   }

@@ -206,6 +206,7 @@
 </footer>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
 <script src="js/jquery.waitforimages.min.js"></script>
 <script src="js/common.js"></script>
 <script>
@@ -241,40 +242,55 @@
             prevSlide();
         });
 
-        // rotate hero image slideshow for desktop
-        jQuery('.slide-1').waitForImages(function () {
-            let autoplayId,
-
-                startAutoplay = function () {
-                    clearInterval(autoplayId);
-                    autoplayId = setInterval(function () {
-                        nextSlide();
-                    }, 6000)
-                };
-
-            jQuery('.next').on('click', function () {
-                startAutoplay();
+        if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
+            jQuery('.slider').swipe({
+                swipeLeft: function () {
+                    nextSlide();
+                },
+                swipeRight: function () {
+                    prevSlide();
+                }
             });
+        }
 
-            jQuery('.prev').on('click', function () {
+        if (!window.isMobile() || window.innerWidth > 640) {
+            // rotate hero image slideshow for desktop
+            jQuery('.slide-1').waitForImages(function () {
+                let autoplayId,
+                    startAutoplay = function () {
+                        clearInterval(autoplayId);
+                        autoplayId = setInterval(function () {
+                            nextSlide();
+                        }, 6000)
+                    };
+
                 startAutoplay();
-            });
 
-            startAutoplay();
-
-            if ('ontouchstart' in document.documentElement) {
-                jQuery('.slider').swipe({
-                    swipeLeft: function () {
-                        nextSlide();
-                        startAutoplay();
-                    },
-                    swipeRight: function () {
-                        prevSlide();
-                        startAutoplay();
-                    }
+                // add 2nd function on click
+                jQuery('.next').on('click', function () {
+                    startAutoplay();
                 });
-            }
-        });
+
+                // add 2nd function on click
+                jQuery('.prev').on('click', function () {
+                    startAutoplay();
+                });
+
+                // replaces swipe functions
+                if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
+                    jQuery('.slider').swipe({
+                        swipeLeft: function () {
+                            nextSlide();
+                            startAutoplay();
+                        },
+                        swipeRight: function () {
+                            prevSlide();
+                            startAutoplay();
+                        }
+                    });
+                }
+            });
+        }
     }());
 </script>
 </body>
