@@ -28,6 +28,9 @@ gulp.task('minify', function () {
 
 gulp.task('default', gulp.series('sass', 'minify'));
 
+gulp.task('watch', function() {
+    gulp.watch('scss/*.scss', gulp.series('sass'));
+});
 
 // ##########################################
 // ############### deprecated ###############

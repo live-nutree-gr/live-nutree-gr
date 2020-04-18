@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Didact+Gothic" rel="stylesheet">
+    <script src="http://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120398811-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -41,7 +42,8 @@
         <ul class="top-nav-menu">
             <li><a href="products.html">ΠΡΟΪΟΝΤΑ</a></li>
             <li><a href="about.html">ΟΜΑΔΑ</a></li>
-            <li><a href="stores.html" class="active">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
+            <li><a href="stores.html">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
+            <li><a href="shop.html" class="active">SHOP</a></li>
             <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
         </ul>
         <ul class="social-icons">
@@ -56,7 +58,7 @@
 
 <header class="header">
     <div class="content-small">
-        <h1 class="title-with-dot">Βρείτε το πλησιέστερο<span>Κατάστημα</span></h1>
+        <h1 class="title-with-dot">Αγοράστε<span>Online</span></h1>
         <a href="contact.html" class="header-btn btn btn-coral btn-unfold">
             <span>Επικοινωνήστε μαζί μας</span>
         </a>
@@ -70,329 +72,45 @@
         </div>
     </section>
 
-    <section class="shops-list content-medium">
-        <h2>ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ</h2>
-        <ul>
-            <li><a target="_blank" href="https://www.agrolicious.gr/" rel="noopener noreferrer">https://www.agrolicious.gr/</a>
-            </li>
-            <li><a target="_blank" href="https://drplus.gr/" rel="noopener noreferrer">https://drplus.gr/</a></li>
-        </ul>
-
-        <h2>ΕΛΛΑΔΑ</h2>
-        <h3 class="shop-trigger">Aθήνα - Κέντρο:</h3>
-        <ul class="shops active">
-            <li>
-                Nora's Deli
-                <p>Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73</p>
-                <p>Αναπήρων Πολέμου 10, Κολωνάκι 106 76</p>
-            </li>
-            <li>Eλληνικά Καλούδια
-                <p>Χατζηχρήστου 8, Ακρόπολη 117 42</p>
-                <p>Καλλιδρομίου 51, Εξάρχεια 106 81</p>
-            </li>
-            <li>The Market, Αρχελάου 32, Παγκράτι 116 35</li>
-            <li>Flaneur Supplies & Souvenirs, Φλέσσα 1, Αθήνα Ακρόπολη</li>
-            <li>Pure Juice Bar, Σινά 21, Aθήνα Κολωνάκι</li>
-            <li>Bamboo Vegan, Σόλωνος 102, Αθήνα 106 80</li>
-            <li>Box Γευστικό Κουτί, Ευτυχίδου 18, Παγκράτι 116 35</li>
-            <li>Kokkos, Σπύρου Μερκούρη 25, Αθήνα 11634</li>
-            <li>ΓΕΥΣΕΙΣ ΕΛΛΑΔΟΣ, Μάχης Αναλάτου 51, Νέος Κόσμος, Αθήνα 117 44</li>
-            <li>To Mποστάνι, Ιφικράτους 2, Αθήνα 112 57</li>
-            <li>Froots Juice Bar, Αθανασίου Διάκου και Πορίνου, Αθήνα 117 42</li>
-            <li>H γωνιά των παραγωγών της Wise Greece, Φωκίονος Νέγρη 42, Δημοτική Αγορά Κυψέλης 113 61</li>
-            <li>A Future Perfect & Friends, Πραξιτέλους 23, Aθήνα 105 62</li>
-            <li>4 Seasons, Νίκης 30, Σύνταγμα Αθήνα 105 57</li>
-            <li>TOMS Flagship, Πλατεία Μητροπόλεως 8, Μοναστηράκι 105 56</li>
-            <li>Φαρμακείο Μενεξιάδη, Δοϊράνης 1, Κυψέλη 113 62</li>
-            <li>Abracar, Σταδίου 30 & Κοραή 4, Αθήνα 105 64</li>
-            <li>Local Green, Περικλέους 30-32, Αθήνα 105 62</li>
-            <li>Mr Bean Coffee, Εμμανουήλ Μπενάκη 20, Αθήνα 106 78</li>
-            <li>Martini Cosmobio, Σπηλιωτόπουλου Λοχαγού 12, Πλησίον Νοσοκομείου Παίδων, Ζωγράφος 15773</li>
-            <li>Συνοικία το Όνειρο, Δεινοχάρους 8, Άνω Πετράλωνα 118 52</li>
-            <li>Market Ηλιόπουλος, Κύπρου και Κοραή Αδαμαντίου 26, Βύρωνας 162 32</li>
-            <li>Dickie Dee, Βουλής 23, Αθήνα 105 63</li>
-        </ul>
-
-        <h3 class="shop-trigger">Αθήνα - Βόρεια Προάστια: </h3>
-        <ul class="shops">
-            <li>Σούπερ Μάρκετ Θανόπουλος
-                <p>Ελαιών 38, Ν.Κηφισιά 145 64</p>
-                <p>Αδριανού & Δραγούμη 6, Κηφισιά 145 61</p>
-                <p>Χαριλάου Τρικούπη 164, Ν.Ερυθραία 146 71</p>
-            </li>
-            <li>
-                CoffeeHouse
-                <p>Λεωφ. Κηφισίας 44, Μαρούσι 151 25</p>
-                <p>Λεωφ. Κηφισίας 41-47, Μαρούσι 151 25 (εντός Avenue Mall)</p>
-            </li>
-            <li>Brinner Athens, Λεωφόρος Κηφισιας 56 7 Δελφών 2, Mαρούσι 151 25</li>
-            <li>Παν Αγαθον, Γυφτοπουλου 14, Χαλάνδρι 152 33</li>
-            <li>Το μαγαζάκι της Ισιδώρας, Ύδρας 13, Χαλάνδρι</li>
-            <li>102 Cafe, Tατοϊου 102, Νέα Ερυθραία</li>
-            <li>Φαρμακείο Ανανιάδη Ευάγγελου, Ευσταθίου Λάμψα 19, Αθήνα 115 24</li>
-            <li>Βιολογικός Θησαυρός, Χρυσοστόμου Σμύρνης 21, Αγ. Παρασκευή 153 43</li>
-            <li>Στο Τσουβάλι, Θράκης 3, Φιλοθέη 152 37</li>
-            <li>Μανάβικο Κατσέλης, Λεωφ. Πεντέλης 106, Χαλάνδρι 152 34</li>
-            <li>Αρισμαρί & Μέλι, Ελευθερίου Βενιζέλου 20, Μελίσσια 151 27</li>
-            <li>Αθλητικός Όμιλος Κηφισιάς, ΤατοΪου 49 &amp;, Π. Μελά, Κηφισιά 145 61</li>
-            <li>Kαρυοθραύστης, Λεωφ. Μεσογείων 6, Αθήνα 115 27</li>
-            <li>Το Μικρό Πευκοδάσος, Αλέκου Παναγούλη 25, Ζωγράφου 15773</li>
-            <li>Πράσινο Biomarket, Λεωφ. Πεντέλης 97, Χαλάνδρι 152 34</li>
-            <li>ΑΛΟΗ, Παπαδιαμαντοπούλου 50, Ζωγράφου 173 41</li>
-            <li>Buddha's Hand (Γιάννης Λουκάκος), Ανδρέα Παπανδρέου 22, Χαλάνδρι 152 32</li>
-            <li>Ηippie Bowl, Αγίου Κωνσταντίνου 40, Μαρούσι 151 24</li>
-            <li>Τοσοδούλα Καφέ, Δήμητρας 19, Μαρούσι 151 24</li>
-            <li>Lucky 7, Ηπείρου 5-7, Αγία Παρασκευή 153 41</li>
-            <li>Υγεία & Μακροζωία, Λ. Δεκελείας 99, Νέα Φιλαδέλφεια 143 41</li>
-            <li>The Blue Elephant - Yoga Studio, Λεωφ. Δημοκρατίας 23, Ν. Ψυχικό 154 51</li>
-            <li>So Nuts, Κηφισίας 103, Πανόρμου Αθήνα 115 23</li>
-            <li>Bufala Gelato, Ιφικράτους 1, Χαλάνδρι 152 32</li>
-            <li>Δήμητρας Γαία, Λεωφ. Δεκελείας 56, Νέα Χαλκηδόνα 143 42</li>
-            <li>Φαρμακείο Βαϊοπούλου, Ομήρου 20, Χαλάνδρι 152 32</li>
-        </ul>
-
-        <h3 class="shop-trigger">Αθήνα - Νότια Προάστια:</h3>
-        <ul class="shops">
-            <li>Νέα Ζωή Βιολογικά Προϊόντα, Λεωφ. Πρωτόπαπα 38, Ηλιούπολη 163 43</li>
-            <li>Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77</li>
-            <li>Sports Cafe Tennis Club, Έβερτ Αγγέλου 7, Ηλιούπολη 163 42</li>
-            <li>The Beanerds, Αλεξιουπόλεως 62, Αργυρούπολη 164 52</li>
-            <li>Αmelie Sweet Shop, Κράτητος 63, Άνω Νέα Σμύρνη 117 44</li>
-            <li>Θέκλα Γκιώνη Διαιτολογικό Γραφείο, Γ. Γεννηματά 24, Γλυφάδα 165 62</li>
-            <li>Italus, Ελ. Βενιζέλου 104, Καλλιθέα 176 76</li>
-            <li>Μπαλάσκας
-                <p>Αφροδίτης 39, Π.Φάληρο 175 61</p>
-                <p>Π. Πέτρου 31, Γλυφάδα 166 74</p>
-                <p>Αλ. Παναγούλη 58, Γλυφάδα 166 75</p>
-                <p>Προόδου 42, Βούλα 166 73</p>
-                <p>Απόλωνος 2, Βάρκιζα 16672</p>
-            </li>
-            <li>Bufala Gelato
-                <p>Aρτέμιδος 1, Γλυφάδα 166 74</p>
-                <p>Ορφέως 2, Βουλιαγμένη 166 71</p>
-                <p>Βασ. Παύλου 80, Βούλα 166 73</p>
-                <p>2ας Μαϊου 22, Νέα Σμύρνη 171 21</p>
-            </li>
-            <li>Farai Chcocolates, Λεωφ. Βουλιαγμένης 276, Άγ. Δημήτριος 173 43 (εντός Athens Metro Mall)</li>
-            <li>Coffee Cup, Λεωφ. Ανδρέα Παπανδρέου 45, Ηλιούπολη 163 45</li>
-            <li>Βio ΛΕΩΝ, Λεωφ. Βουλιαγμένης 43-47, Ελληνικό 167 77 (εντός ΑΒ Βασιλόπουλος)</li>
-            <li>Μitgroup Roasters, Αλικαρνασσού 7, Νέα Σμύρνη 171 22</li>
-            <li>Παντοπωλείο Αχχιλέως & Αφροδίτης, Αχχιλέως 38, Π. Φάληρο 175 62</li>
-            <li>Αργώ, Αλκυόνης 24, Π. Φάληρο 175 61</li>
-        </ul>
-
-        <h3 class="shop-trigger">Πειραιάς:</h3>
-        <ul class="shops">
-            <li>TRAGREECEIONAL Βιολογικά Προϊόντα, Αγίας Μαρίνης 38, Πειραιάς 185 39</li>
-            <li>Το Εκλεκτόν, Μπουμπουλίνας 32, Πειραιάς 185 46</li>
-        </ul>
-
-        <h3 class="shop-trigger">Μαρκόπουλο:</h3>
-        <ul class="shops">
-            <li>Βιολογικός Θησαυρός, Γ. Παπαβασιλείου & Δραγωνέα 5, Μαρκόπουλο 190 03</li>
-        </ul>
-
-        <h3 class="shop-trigger">Θεσσαλονίκη:</h3>
-        <ul class="shops">
-            <li>Urban Deli, Βασιλέως Ηρακλείου 7, Θεσσαλονίκη 546 25</li>
-            <li>Byzance Epicerie Fine, Καρόλου Ντηλ 14, Θεσσαλονίκη 546 23</li>
-            <li>Little Big House (Θεσσαλονικη), Aνδοκίδου 24, Θεσσαλονίκη 546 34</li>
-            <li>Ζωή & Υγεία, Τσιμισκή 118, Θεσσαλονίκη 546 21</li>
-            <li>To Παντοπωλείο της Θεσσαλονίκης, Κομνηνών 12, Θεσσαλονίκη 546 24</li>
-            <li>Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22</li>
-            <li>Les Raquettes Tennis Club, Θέρμη 57001</li>
-            <li>Bufala Gelato (One Salonica), ΓΙΑΝΝΙΤΣΩΝ 61 & ΚΩΛΕΤΤΗ, ΘΕΣΣΑΛΟΝΙΚΗ 546 27</li>
-            <li>Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01</li>
-            <li>Φαρμακείο Καλογεράς Γεώργιος, Γυμνασιάρχου Μυστακίδη 33, Χαριλάου Θεσσαλονίκη 542 50</li>
-            <li>Θόλος, Γιαννιτσών 244 (εντός ΚΤΕΛ), Θεσσαλονίκη 546 28</li>
-            <li>TOMS Flagship, Τσιμισκή 22, Θεσσαλονίκη 546 24</li>
-            <li>Εκλεκτά της Γης, Κομνηνών 4, Πανόραμα Θεσσαλονίκη 552 36</li>
-            <li>Επι της Γης, Εθνικής Αντιστάσεως 54, Κουφάλια Θεσσαλονίκης 571 00</li>
-            <li>Δεκαεπτά Cafe, Αλ. Σβώλου 24, Θεσσαλονίκη 546 22</li>
-        </ul>
-
-        <h3 class="shop-trigger">Κόρινθος:</h3>
-        <ul class="shops">
-            <li>Βιοπαντοπωλείο, Φίλλυρα 1, Κιάτο Κορινθίας 202 00</li>
-            <li>Κουμαρό, Κύπρου 38 Κόρινθος 201 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Χαλκίδα:</h3>
-        <ul class="shops">
-            <li>Παντοπωλείο Τσίμπου Αντώνη, Αντωνίου & Φίλωνος 12Α, Χαλκίδα 341 32</li>
-        </ul>
-
-        <h3 class="shop-trigger">Nαύπλιο:</h3>
-        <ul class="shops">
-            <li>Τ' Αναπλιώτικο Μπακάλικο, Πλαπούτα 29, Ναύπλιο</li>
-        </ul>
-
-        <h3 class="shop-trigger">Τρίπολη:</h3>
-        <ul class="shops">
-            <li>Ιάματα, Πλ. Εθνάρχου Μακαρίου 6</li>
-        </ul>
-
-        <h3 class="shop-trigger">Μάνη:</h3>
-        <ul class="shops">
-            <li>Lola Frozen Yogurt, Επαρ. Οδός Καλαμάτας - Αρεόπολης, Kαρδαμύλη 240 22</li>
-        </ul>
-
-        <h3 class="shop-trigger">Kυπαρισσία:</h3>
-        <ul class="shops">
-            <li>Green & Blue, Μελίου 28, Κυπαρισσία 245 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Koρώνη:</h3>
-        <ul class="shops">
-            <li>Kiari Wine & Deli, Περικλή Ράλλη Κορώνη 240 04</li>
-        </ul>
-
-        <h3 class="shop-trigger">Αγρίνιο:</h3>
-        <ul class="shops">
-            <li>Βιολογικά - Οικολογικά Προϊόντα Αγρίνιο, Χαριλάου Τρικούπη 25, Αγρίνιο 301 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ιωάννινα:</h3>
-        <ul class="shops">
-            <li>Πράσινο Σπίτι, 28ης Οκτωβρίου 29Α, Ιωάννινα, 45333</li>
-        </ul>
-
-        <h3 class="shop-trigger">Πρέβεζα:</h3>
-        <ul class="shops">
-            <li>Γεύση & Άρωμα, Λεωφόρος Ειρήνης 41, Πρέβεζα 48100</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ηγουμενίτσα:</h3>
-        <ul class="shops">
-            <li>Αφθονία Βιολογικά, 8ης Δεκεμβρίου, Ελ. Βενιζέλου, Ηγουμενίτσα 461 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Έδεσσα:</h3>
-        <ul class="shops">
-            <li>Ελισάβετ, Αγίου Νικάνδρου 18, Αριδαία 58400</li>
-        </ul>
-
-        <h3 class="shop-trigger">Λάρισα:</h3>
-        <ul class="shops">
-            <li>Bufala Gelato (Fashion City Outlet), 4ο χιλ. Λεωφ. Κ. Καραμανλή, Λάρισα 41335</li>
-            <li>Κλίμαξ, Ηφαίστου 2 & Βενιζέλου, Λάρισα 412 21</li>
-        </ul>
-
-        <h3 class="shop-trigger">Βόλος:</h3>
-        <ul class="shops">
-            <li>Φώτου Ξηροί Καρποί, Ελ. Βενιζέλου 11, Βόλος 383 33</li>
-        </ul>
-
-        <h3 class="shop-trigger">Καβάλα:</h3>
-        <ul class="shops">
-            <li>Νησί Biomarket, Νέα Οδός 7 Ελευθερούπολη Καβάλας 641 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Κρήτη:</h3>
-        <ul class="shops">
-            <li>The Greek Project, Σαουνάτσου 4, Ρέθυμνο 741 00</li>
-            <li>Εσπρεσσάκι, Αρώνι Χανίων 731 00</li>
-            <li>Super Market Triton, Κoκκίνη Χάνι Ηρακλείου 715 00</li>
-            <li>Hacienda, Λεωφ. Ανδρέα Παπανδρέου 25, Ηράκλειο 713 05</li>
-            <li>Titos Cafe, Πλατεία Γεωργιούπολη Αποκορώνου, Χανιά 730 07</li>
-            <li>Biscuits & Berries, Τσουδερών 75, Παλιά πόλη Χανίων 731 32</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ρόδος:</h3>
-        <ul class="shops">
-            <li>Kori Lindos, Λίνδος</li>
-        </ul>
-
-        <h3 class="shop-trigger">Άνδρος:</h3>
-        <ul class="shops">
-            <li>Gasparis Foods</li>
-            <li>Ανδριακόν, Καραβοστάσι</li>
-        </ul>
-
-        <h3 class="shop-trigger">Μήλος:</h3>
-        <ul class="shops">
-            <li>Coffee Time, Πέρα Τριοβάσαλος, Μήλος 848 00</li>
-            <li>Cava Bottiglia, Μήλος 848 01</li>
-        </ul>
-
-        <h3 class="shop-trigger">Σαντορίνη:</h3>
-        <ul class="shops">
-            <li>Σούπερ Μάρκετ Καρρά Μαρία, Οία Θηρά, 84702</li>
-        </ul>
-
-        <h3 class="shop-trigger">Πάρος:</h3>
-        <ul class="shops">
-            <li>Σέσουλα, Παροικιά Πάρου 84 400</li>
-        </ul>
-
-        <h3 class="shop-trigger">Χίος:</h3>
-        <ul class="shops">
-            <li>The Grind, Βαρβάκη 3, Χίος</li>
-            <li>Μέσα Κει, Χωρέμη 8, Χίος 821 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Λήμνος:</h3>
-        <ul class="shops">
-            <li>Pezoula Cafe, Πλ. Ηρώων Μούδρος, Λήμνος</li>
-        </ul>
-
-        <h3 class="shop-trigger">Μυτιλήνη:</h3>
-        <ul class="shops">
-            <li>Αμυγδαλάκι, Μητροπόλεως 15, Μυτιλήνη 81 100</li>
-            <li>Alley Dog, Κομνηνάκη 7, Μυτιλήνη 81 100</li>
-        </ul>
-
-        <h3 class="shop-trigger">Σάμος:</h3>
-        <ul class="shops">
-            <li>Blue Roots, Αγίου Νικολάου, Σάμος 831 00</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ικαρία:</h3>
-        <ul class="shops">
-            <li>Mελία Φυσικά Προϊόντα, Ράχες</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ύδρα:</h3>
-        <ul class="shops">
-            <li>Το Μώλυ, Ύδρα 180 40</li>
-        </ul>
-
-        <h3 class="shop-trigger">Σκόπελος:</h3>
-        <ul class="shops">
-            <li>Ιdea Cafe, Σκόπελος Μαγνησία 370 03</li>
-        </ul>
-
-        <h3 class="shop-trigger">Kέρκυρα:</h3>
-        <ul class="shops">
-            <li>NOMH Store, Νικηφόρου Θεοτόκη 57, Κέρκυρα</li>
-        </ul>
-
-        <h2>ΕΞΩΤΕΡΙΚΟ</h2>
-
-        <h3 class="shop-trigger">Κύπρος:</h3>
-        <ul class="shops">
-            <li>CoffeeHouse (σε όλα τα καταστήματα της Κύπρου)</li>
-        </ul>
-
-        <h3 class="shop-trigger">Γερμανία:</h3>
-        <ul class="shops">
-            <li>Filiale Messehofpassage, Neumarkt 16-18, 04109 Leipzig, Germany</li>
-        </ul>
-
-        <h3 class="shop-trigger">Ζυρίχη:</h3>
-        <ul class="shops">
-            <li><a target="_blank" href="https://elliniko.ch/" rel="noopener noreferrer">https://elliniko.ch/</a></li>
-        </ul>
-
-        <h3 class="shop-trigger">Γαλλία:</h3>
-        <ul class="shops">
-            <li>Exelia Saveurs Grecques, Savigneux, France</li>
-        </ul>
-
-        <h3 class="shop-trigger">Bέλγιο:</h3>
-        <ul class="shops">
-            <li>Greek Appetite, Chaussée de Wavre 331, 1040 Brussels, Belgium</li>
-        </ul>
+    <section class="eshop-step-1 content-medium">
+        <h2>Επιλέξτε Ποσότητα</h2>
+        <article>
+            <a id="select-box-1" href="#">
+                <img src="images/eshop-box-1.png">
+                <p>29€</p>
+            </a>
+        </article>
+        <article>
+            <a id="select-box-2" href="#">
+                <img src="images/eshop-box-2.png">
+                <p>49€</p>
+            </a>
+        </article>
+        <article>
+            <a id="select-box-3" href="#">
+                <img src="images/eshop-box-3.png">
+                <p>8
+                    9€</p>
+            </a>
+        </article>
+    </section>
+    <section class="eshop-step-2 content-medium">
+        <h2>Επιλέξτε Γεύσεις</h2>
+        <article>
+            <a id="select-apple-cinnamon" href="#"><img src="images/eshop-apple-cinnamon.png"></a>
+        </article>
+        <article>
+            <a id="select-matcha" href="#"><img src="images/eshop-matcha.png"></a>
+        </article>
+        <article>
+            <a id="select-orange-carob" href="#"><img src="images/eshop-orange-carob.png"></a>
+        </article>
+        <article>
+            <a id="select-peanut-butter" href="#"><img src="images/eshop-peanut-butter.png"></a>
+        </article>
+        <article>
+            <a id="select-strawberry-praline" href="#"><img src="images/eshop-strawberry-praline.png"></a>
+        </article>
     </section>
 
     <section class="section-newsletter">
@@ -459,13 +177,56 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/eshop.js"></script>
 <script>
     // Toggle class to expand/collapse shop list
-    $(document).ready(function () {
-        $('.shop-trigger').click(function (e) {
+    jQuery(document).ready(function () {
+        jQuery('.shop-trigger').click(function (e) {
             e.preventDefault();
             $(this).next('.shops').toggleClass('active');
         });
+
+        jQuery('#select-box-1').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBox: 1}));
+        });
+
+        jQuery('#select-box-2').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBox: 2}));
+        });
+
+        jQuery('#select-box-3').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBox: 3}));
+        });
+
+        jQuery('#select-apple-cinnamon').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBars: {appleCinnamon: 1}}));
+        });
+
+        jQuery('#select-matcha').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBars: {matcha: 1}}));
+        });
+
+        jQuery('#select-orange-carob').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBars: {orangeCarob: 1}}));
+        });
+
+        jQuery('#select-peanut-butter').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBars: {peanutButter: 1}}));
+        });
+
+        jQuery('#select-strawberry-praline').click(function (e) {
+            e.preventDefault();
+            console.debug(NutreeJS.store({selectedBars: {strawberryPraline: 1}}));
+        });
+
+        console.debug(NutreeJS.getStorage());
     });
 </script>
 </body>

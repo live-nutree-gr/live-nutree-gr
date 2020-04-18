@@ -1,0 +1,14 @@
+.eshop-step-1 img {
+  border-radius: 8px;
+  margin: 1%;
+  max-width: 30%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+  .eshop-step-1 img {
+    max-width: 60%;
+    display: block;
+    margin: 1% auto;
+  }
+}
