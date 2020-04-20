@@ -56,63 +56,177 @@
     </div>
 </nav>
 
-<header class="header">
-    <div class="content-small">
-        <h1 class="title-with-dot">Αγοράστε<span>Online</span></h1>
-        <a href="contact.html" class="header-btn btn btn-coral btn-unfold">
-            <span>Επικοινωνήστε μαζί μας</span>
-        </a>
-    </div>
-</header>
-
-<main>
+<main class="eshop">
     <section class="home-section resellers-section">
         <div class="content">
-            <h2 class="section-title with-watermark">Οι συνεργάτες μας<span>.</span></h2>
+            <h2 class="section-title with-watermark">Βήμα 1: Επιλέξτε Ποσότητα</h2>
         </div>
     </section>
 
-    <section class="eshop-step-1 content-medium">
-        <h2>Επιλέξτε Ποσότητα</h2>
-        <article>
-            <a id="select-box-1" href="#">
+    <section id="eshop-step-1" class="content active-step">
+        <article id="smallBox">
+            <a href="#" onclick="return selectBox('small')">
                 <img src="images/eshop-box-1.png">
-                <p>29€</p>
+                <h1>1 NUTREE BOX (12 μπάρες)</h1>
+                <p class="price">29€</p>
             </a>
         </article>
-        <article>
-            <a id="select-box-2" href="#">
+        <article id="mediumBox">
+            <a href="#" onclick="return selectBox('medium')">
                 <img src="images/eshop-box-2.png">
-                <p>49€</p>
+                <h1>2 NUTREE BOXES (24 μπάρες)</h1>
+                <p class="price">49€</p>
             </a>
         </article>
-        <article>
-            <a id="select-box-3" href="#">
+        <article id="largeBox">
+            <a href="#" onclick="return selectBox('large')">
                 <img src="images/eshop-box-3.png">
-                <p>8
-                    9€</p>
+                <h1>4 NUTREE BOXES (48 μπάρες)</h1>
+                <p class="price">89€</p>
             </a>
-        </article>
-    </section>
-    <section class="eshop-step-2 content-medium">
-        <h2>Επιλέξτε Γεύσεις</h2>
-        <article>
-            <a id="select-apple-cinnamon" href="#"><img src="images/eshop-apple-cinnamon.png"></a>
-        </article>
-        <article>
-            <a id="select-matcha" href="#"><img src="images/eshop-matcha.png"></a>
-        </article>
-        <article>
-            <a id="select-orange-carob" href="#"><img src="images/eshop-orange-carob.png"></a>
-        </article>
-        <article>
-            <a id="select-peanut-butter" href="#"><img src="images/eshop-peanut-butter.png"></a>
-        </article>
-        <article>
-            <a id="select-strawberry-praline" href="#"><img src="images/eshop-strawberry-praline.png"></a>
         </article>
     </section>
 
+    <div id="eshop-step-2">
+        <section class="home-section resellers-section">
+            <div class="content">
+                <h2 class="section-title with-watermark">Βήμα 2: Επιλέξτε Γεύσεις</h2>
+            </div>
+        </section>
+
+        <section class="cart content-medium-large">
+            <article>
+                <div class="image">
+                    <a href="products.html#matcha-bar" target="_blank"><img src="images/eshop-matcha.png"></a>
+                </div>
+
+                <div class="description">
+                    <span>Μatcha</span>
+                    <span>Xoυρμάδες, Τσάι Μatcha Ninja ceremonial grade, Μαύρη Σοκολάτα 100%, Αμύγδαλα, Βρώμη χωρίς Γλουτένη, Κολοκυθόσπορος, Φυσικό Εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι</span>
+                    <span>340Kcal</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="matchaMinus"
+                            type="button"
+                            onclick="addProduct('matcha', -1)">-</button>
+                    <input id="matcha"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('matcha', 0)">
+                    <button id="matchaPlus"
+                            type="button"
+                            onclick="addProduct('matcha', 1)">+</button>
+                    <p>remaining: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <a href="products.html#strawberry-bar" target="_blank"><img
+                        src="images/eshop-strawberry-praline.png"></a>
+                </div>
+
+                <div class="description">
+                    <span>Πραλίνα Φράουλα</span>
+                    <span>Xoυρμάδες, Αποξηραμένες Φράουλες, Κακάο, Φουντούκια, Ακατέργαστα κομμάτια σπόρων κακάο, Βρώμη χωρίς Γλουτένη, Φυσικό Εκχύλισμα Φράουλας, Φυτική Ίνα Βρώμης</span>
+                    <span>372Kcal</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="strawberryPralineMinus"
+                            type="button"
+                            onclick="addProduct('strawberryPraline', -1)">-</button>
+                    <input id="strawberryPraline"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('matcha', 0)">
+                    <button id="strawberryPralinePlus"
+                            type="button"
+                            onclick="addProduct('strawberryPraline', 1)">+</button>
+                    <p>remaining: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <a href="products.html#peanutbutter-bar" target="_blank"><img src="images/eshop-peanut-butter.png"></a>
+                </div>
+
+                <div class="description">
+                    <span>Φυστικοβούτυρο</span>
+                    <span>Xουρμάδες, Φυστικοβούτυρο, Βρώμη χωρίς γλουτένη, Φυστίκια, Σταφίδες, Aκατέργαστα κομμάτια Κακάο, Κολοκυθόσποροι, Φυτική Ίνα Βρώμης</span>
+                    <span>400Kcal</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="peanutButterMinus"
+                            type="button"
+                            onclick="addProduct('peanutButter', -1)">-</button>
+                    <input id="peanutButter"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('matcha', 0)">
+                    <button id="peanutButterPlus"
+                            type="button"
+                            onclick="addProduct('peanutButter', 1)">+</button>
+                    <p>remaining: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <a href="products.html#orange-bar" target="_blank"><img src="images/eshop-orange-carob.png"></a>
+                </div>
+
+                <div class="description">
+                    <span>Πορτοκάλι Χαρούπι</span>
+                    <span>Xoυρμάδες, Βρώμη χωρίς γλουτένη, Φουντούκια, Αμύγδαλα, Χαρουπάλευρο, Φυσικό εκχύλισμα Πορτοκαλιού, Φυτική Ίνα Βρώμης, Ακατέργαστα κομμάτια κακάο</span>
+                    <span>382Kcal</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="orangeCarobMinus"
+                            type="button"
+                            onclick="addProduct('orangeCarob', -1)">-</button>
+                    <input id="orangeCarob"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('matcha', 0)">
+                    <button id="orangeCarobPlus"
+                            type="button"
+                            onclick="addProduct('orangeCarob', 1)">+</button>
+                    <p>remaining: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
+                    <a href="products.html#apple-bar" target="_blank"><img src="images/eshop-apple-cinnamon.png"></a>
+                </div>
+
+                <div class="description">
+                    <span>Μήλο Κανέλα</span>
+                    <span>Χουρμάδες, Aμύγδαλα, Aποξηραμένα Μήλα, Καρύδια, Φυσικό εκχύλισμα Μήλου, Κανέλα, Γαρύφαλλο, Φυτική Ίνα Βρώμης</span>
+                    <span>402Kcal</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="appleCinnamonMinus"
+                            type="button"
+                            onclick="addProduct('appleCinnamon', -1)">-</button>
+                    <input id="appleCinnamon"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('matcha', 0)">
+                    <button id="appleCinnamonPlus"
+                            type="button"
+                            onclick="addProduct('appleCinnamon', 1)">+</button>
+                    <p>remaining: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+        </section>
+    </div>
     <section class="section-newsletter">
         <div class="content cf">
             <h2 class="section-title">Ενημερωθείτε για <br>τα νέα μας<span>.</span></h2>
@@ -179,54 +293,79 @@
 <script src="js/common.js"></script>
 <script src="js/eshop.js"></script>
 <script>
-    // Toggle class to expand/collapse shop list
     jQuery(document).ready(function () {
         jQuery('.shop-trigger').click(function (e) {
             e.preventDefault();
             $(this).next('.shops').toggleClass('active');
         });
 
-        jQuery('#select-box-1').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBox: 1}));
-        });
+        window.selectBox = function (box) {
+            console.debug(NutreeJS.store({selectedBox: box}));
+            updateState();
+            let targetEl = jQuery('#eshop-step-2');
 
-        jQuery('#select-box-2').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBox: 2}));
-        });
+            jQuery('html, body').stop().animate({
+                'scrollTop': targetEl.offset().top
+            }, 500, 'swing', function () {
+            });
+            return false;
+        };
 
-        jQuery('#select-box-3').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBox: 3}));
-        });
+        window.addProduct = function (product, count) {
+            let inputElement = jQuery(`#${product}`);
+            let total = parseInt(inputElement.val()) + parseInt(count);
+            if (total < 0) {
+                total = 0;
+            }
+            let storePatch = {selectedBars: {}};
+            storePatch.selectedBars[product] = total;
+            console.debug(
+                NutreeJS.store(storePatch)
+            );
 
-        jQuery('#select-apple-cinnamon').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBars: {appleCinnamon: 1}}));
-        });
+            inputElement.val(total);
+            updateState();
+        };
 
-        jQuery('#select-matcha').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBars: {matcha: 1}}));
-        });
+        window.setButtonDisableState = function (product) {
+            let value = jQuery(`#${product}`).val();
+            if (value == 0) {
+                jQuery(`#${product}Minus`).prop("disabled", true);
+            } else {
+                jQuery(`#${product}Minus`).prop("disabled", false);
+            }
+        };
 
-        jQuery('#select-orange-carob').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBars: {orangeCarob: 1}}));
-        });
+        window.updateState = function () {
+            let nutreeStore = NutreeJS.getStorage();
 
-        jQuery('#select-peanut-butter').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBars: {peanutButter: 1}}));
-        });
+            if (!!nutreeStore.selectedBox) {
+                jQuery('#smallBox').removeClass('selected');
+                jQuery('#mediumBox').removeClass('selected');
+                jQuery('#largeBox').removeClass('selected');
+                jQuery('#smallBox').addClass('rejected');
+                jQuery('#mediumBox').addClass('rejected');
+                jQuery('#largeBox').addClass('rejected');
+                jQuery(`#${nutreeStore.selectedBox}Box`).addClass('selected');
+                jQuery('#eshop-step-1').removeClass('active-step');
+                jQuery('#eshop-step-2').addClass('active-step');
+            }
 
-        jQuery('#select-strawberry-praline').click(function (e) {
-            e.preventDefault();
-            console.debug(NutreeJS.store({selectedBars: {strawberryPraline: 1}}));
-        });
+            if (!!nutreeStore.selectedBars) {
+                jQuery('#matcha').val(nutreeStore.selectedBars.matcha || 0);
+                jQuery('#strawberryPraline').val(nutreeStore.selectedBars.strawberryPraline || 0);
+                jQuery('#peanutButter').val(nutreeStore.selectedBars.peanutButter || 0);
+                jQuery('#orangeCarob').val(nutreeStore.selectedBars.orangeCarob || 0);
+                jQuery('#appleCinnamon').val(nutreeStore.selectedBars.appleCinnamon || 0);
+            }
+            setButtonDisableState('matcha');
+            setButtonDisableState('strawberryPraline');
+            setButtonDisableState('peanutButter');
+            setButtonDisableState('orangeCarob');
+            setButtonDisableState('appleCinnamon');
+        };
 
-        console.debug(NutreeJS.getStorage());
+        updateState();
     });
 </script>
 </body>

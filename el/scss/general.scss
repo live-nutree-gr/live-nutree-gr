@@ -264,6 +264,10 @@ body {
   max-width: 1200px;
 }
 
+.content-medium-large {
+  max-width: 1000px;
+}
+
 .content-medium {
   max-width: 800px;
 }
@@ -794,4 +798,8 @@ main {
       display: none;
     }
   }
+}
+
+.hidden {
+  display: none;
 }

@@ -10,8 +10,7 @@
                     "Orange Carob",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI3OTkwMTc1Nw=="
-            }
-            ,
+            },
             matcha: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQxMDg4NjE=",
@@ -19,8 +18,7 @@
                     "Matcha",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI4NzgzMTYxMw=="
-            }
-            ,
+            },
             strawberryPraline: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQ4NjI1MjU=",
@@ -28,18 +26,15 @@
                     "Strawberry Praline",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NDA1NzUzMw=="
-            }
-            ,
-            "peanutButter":
-                {
-                    "id":
-                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDUxMjQ2Njk=",
-                    "title":
-                        "Peanut Butter",
-                    "defaultVariantId":
-                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NjIyMDIyMQ=="
-                }
-            ,
+            },
+            peanutButter: {
+                "id":
+                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDUxMjQ2Njk=",
+                "title":
+                    "Peanut Butter",
+                "defaultVariantId":
+                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NjIyMDIyMQ=="
+            },
             appleCinnamon: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDU4NzgzMzM=",
@@ -47,8 +42,7 @@
                     "Apple Cinnamon",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTMwNDgzODIwNQ=="
-            }
-            ,
+            },
             smallBox: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAyMTIyODU=",
@@ -56,8 +50,7 @@
                     "Small Box",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNDU2MzM4OQ=="
-            }
-            ,
+            },
             mediumBox: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAzNDMzNTc=",
@@ -65,8 +58,7 @@
                     "Medium Box",
                 "defaultVariantId":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNTY3NzUwMQ=="
-            }
-            ,
+            },
             largeBox: {
                 "id":
                     "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjA1MDcxOTc=",
