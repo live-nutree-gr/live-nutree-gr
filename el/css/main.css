@@ -1346,8 +1346,63 @@ main {
   display: none;
 }
 
-.hidden {
+#loading {
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
   display: none;
+}
+
+#loading.active {
+  display: block;
+}
+
+#loading .lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-left: calc(50% - 40px);
+  margin-top: calc(50% - 120px);
+}
+
+#loading .lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
+          animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /* Text indent method */
@@ -1993,15 +2048,15 @@ main {
   padding-top: 200px;
 }
 
-#eshop-step-1 {
+#eshop-step-1 .boxes {
   text-align: center;
 }
 
-#eshop-step-1.active-step {
+#eshop-step-1 .boxes.active-step {
   margin-bottom: 100px;
 }
 
-#eshop-step-1 article {
+#eshop-step-1 .boxes article {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -2009,32 +2064,32 @@ main {
   text-align: center;
 }
 
-#eshop-step-1 article.rejected:not(.selected) {
+#eshop-step-1 .boxes article.rejected:not(.selected) {
   opacity: 0.5;
 }
 
-#eshop-step-1 article.selected {
+#eshop-step-1 .boxes article.selected {
   border: 2px solid #f3a68f;
   -webkit-box-shadow: 0 0 16px 4px #cd9d8f;
           box-shadow: 0 0 16px 4px #cd9d8f;
   opacity: 1;
 }
 
-#eshop-step-1 article img {
+#eshop-step-1 .boxes article img {
   width: 100%;
 }
 
-#eshop-step-1 article h1 {
+#eshop-step-1 .boxes article h1 {
   margin: 5px 0;
 }
 
-#eshop-step-1 article .price {
+#eshop-step-1 .boxes article .price {
   color: grey;
   padding-bottom: 5px;
 }
 
 @media (hover: hover) {
-  #eshop-step-1 article:hover {
+  #eshop-step-1 .boxes article:hover {
     opacity: 0.65;
     -webkit-box-shadow: 0 0 16px 4px #cd9d8f;
             box-shadow: 0 0 16px 4px #cd9d8f;
@@ -2042,7 +2097,7 @@ main {
 }
 
 @media screen and (min-width: 960px) {
-  #eshop-step-1 article {
+  #eshop-step-1 .boxes article {
     display: inline-block;
     margin: 20px;
     max-width: 225px;
@@ -2050,7 +2105,7 @@ main {
 }
 
 @media screen and (min-width: 1132px) {
-  #eshop-step-1 article {
+  #eshop-step-1 .boxes article {
     max-width: 300px;
   }
 }
@@ -2098,7 +2153,7 @@ main {
 
 #eshop-step-2 .cart article .description span:first-child {
   margin-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 #eshop-step-2 .cart article .description span:last-child {
@@ -2171,6 +2226,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     border-bottom: 2px dotted #ccc;
+    text-align: center;
   }
   #eshop-step-2 .cart article .quantity {
     margin-top: 0;
@@ -2182,6 +2238,33 @@ main {
   #eshop-step-2 .cart .image {
     text-align: center;
   }
+}
+
+#eshop-step-2 #checkout {
+  text-align: center;
+  margin-bottom: 100px;
+  opacity: 0.5;
+}
+
+#eshop-step-2 #checkout a {
+  cursor: default;
+}
+
+#eshop-step-2 #checkout #remaining-bars-warning {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#eshop-step-2 #checkout.ready {
+  opacity: 1;
+}
+
+#eshop-step-2 #checkout.ready a {
+  cursor: pointer;
+}
+
+#eshop-step-2 #checkout.ready #remaining-bars-warning {
+  display: none;
 }
 
 /* Text indent method */

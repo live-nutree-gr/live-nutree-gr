@@ -57,35 +57,41 @@
 </nav>
 
 <main class="eshop">
-    <section class="home-section resellers-section">
-        <div class="content">
-            <h2 class="section-title with-watermark">Βήμα 1: Επιλέξτε Ποσότητα</h2>
-        </div>
-    </section>
+    <div id="loading">
+        <div class="lds-dual-ring"></div>
+    </div>
 
-    <section id="eshop-step-1" class="content active-step">
-        <article id="smallBox">
-            <a href="#" onclick="return selectBox('small')">
-                <img src="images/eshop-box-1.png">
-                <h1>1 NUTREE BOX (12 μπάρες)</h1>
-                <p class="price">29€</p>
-            </a>
-        </article>
-        <article id="mediumBox">
-            <a href="#" onclick="return selectBox('medium')">
-                <img src="images/eshop-box-2.png">
-                <h1>2 NUTREE BOXES (24 μπάρες)</h1>
-                <p class="price">49€</p>
-            </a>
-        </article>
-        <article id="largeBox">
-            <a href="#" onclick="return selectBox('large')">
-                <img src="images/eshop-box-3.png">
-                <h1>4 NUTREE BOXES (48 μπάρες)</h1>
-                <p class="price">89€</p>
-            </a>
-        </article>
-    </section>
+    <div id="eshop-step-1">
+        <section class="home-section resellers-section">
+            <div class="content">
+                <h2 class="section-title with-watermark">Βήμα 1: Επιλέξτε Ποσότητα</h2>
+            </div>
+        </section>
+
+        <section class="boxes content active-step">
+            <article id="smallBox">
+                <a href="#" onclick="return selectBox('smallBox')">
+                    <img src="images/eshop-box-1.png">
+                    <h1>1 NUTREE BOX (12 μπάρες)</h1>
+                    <p class="price">29€</p>
+                </a>
+            </article>
+            <article id="mediumBox">
+                <a href="#" onclick="return selectBox('mediumBox')">
+                    <img src="images/eshop-box-2.png">
+                    <h1>2 NUTREE BOXES (24 μπάρες)</h1>
+                    <p class="price">49€</p>
+                </a>
+            </article>
+            <article id="largeBox">
+                <a href="#" onclick="return selectBox('largeBox')">
+                    <img src="images/eshop-box-3.png">
+                    <h1>4 NUTREE BOXES (48 μπάρες)</h1>
+                    <p class="price">89€</p>
+                </a>
+            </article>
+        </section>
+    </div>
 
     <div id="eshop-step-2">
         <section class="home-section resellers-section">
@@ -97,134 +103,155 @@
         <section class="cart content-medium-large">
             <article>
                 <div class="image">
-                    <a href="products.html#matcha-bar" target="_blank"><img src="images/eshop-matcha.png"></a>
+                    <a href="products.html#matcha-bar" target="_blank">
+                        <img src="images/eshop-matcha.png" alt="">
+                    </a>
                 </div>
 
                 <div class="description">
                     <span>Μatcha</span>
-                    <span>Xoυρμάδες, Τσάι Μatcha Ninja ceremonial grade, Μαύρη Σοκολάτα 100%, Αμύγδαλα, Βρώμη χωρίς Γλουτένη, Κολοκυθόσπορος, Φυσικό Εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι</span>
-                    <span>340Kcal</span>
+                    <span>Συστατικά: Xουρμάδες, Τσάι Μatcha Ninja ceremonial grade, Μαύρη Σοκολάτα 100%, Αμύγδαλα, Βρώμη χωρίς Γλουτένη, Κολοκυθόσπορος, Φυσικό Εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι</span>
                 </div>
 
                 <div class="quantity">
                     <button id="matchaMinus"
                             type="button"
-                            onclick="addProduct('matcha', -1)">-</button>
+                            onclick="addProduct('matcha', -1)">-
+                    </button>
                     <input id="matcha"
                            type="number"
                            value="0"
                            onchange="addProduct('matcha', 0)">
                     <button id="matchaPlus"
                             type="button"
-                            onclick="addProduct('matcha', 1)">+</button>
-                    <p>remaining: <span class="remaining-bars">12</span></p>
+                            onclick="addProduct('matcha', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
                 </div>
             </article>
 
             <article>
                 <div class="image">
-                    <a href="products.html#strawberry-bar" target="_blank"><img
-                        src="images/eshop-strawberry-praline.png"></a>
+                    <a href="products.html#strawberry-bar" target="_blank">
+                        <img src="images/eshop-strawberry-praline.png" alt="">
+                    </a>
                 </div>
 
                 <div class="description">
                     <span>Πραλίνα Φράουλα</span>
-                    <span>Xoυρμάδες, Αποξηραμένες Φράουλες, Κακάο, Φουντούκια, Ακατέργαστα κομμάτια σπόρων κακάο, Βρώμη χωρίς Γλουτένη, Φυσικό Εκχύλισμα Φράουλας, Φυτική Ίνα Βρώμης</span>
-                    <span>372Kcal</span>
+                    <span>Συστατικά: Xουρμάδες, Αποξηραμένες Φράουλες, Κακάο, Φουντούκια, Ακατέργαστα κομμάτια σπόρων κακάο, Βρώμη χωρίς Γλουτένη, Φυσικό Εκχύλισμα Φράουλας, Φυτική Ίνα Βρώμης</span>
                 </div>
 
                 <div class="quantity">
                     <button id="strawberryPralineMinus"
                             type="button"
-                            onclick="addProduct('strawberryPraline', -1)">-</button>
+                            onclick="addProduct('strawberryPraline', -1)">-
+                    </button>
                     <input id="strawberryPraline"
                            type="number"
                            value="0"
                            onchange="addProduct('matcha', 0)">
                     <button id="strawberryPralinePlus"
                             type="button"
-                            onclick="addProduct('strawberryPraline', 1)">+</button>
-                    <p>remaining: <span class="remaining-bars">12</span></p>
+                            onclick="addProduct('strawberryPraline', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
                 </div>
             </article>
 
             <article>
                 <div class="image">
-                    <a href="products.html#peanutbutter-bar" target="_blank"><img src="images/eshop-peanut-butter.png"></a>
+                    <a href="products.html#peanutbutter-bar" target="_blank">
+                        <img src="images/eshop-peanut-butter.png" alt="">
+                    </a>
                 </div>
 
                 <div class="description">
                     <span>Φυστικοβούτυρο</span>
-                    <span>Xουρμάδες, Φυστικοβούτυρο, Βρώμη χωρίς γλουτένη, Φυστίκια, Σταφίδες, Aκατέργαστα κομμάτια Κακάο, Κολοκυθόσποροι, Φυτική Ίνα Βρώμης</span>
-                    <span>400Kcal</span>
+                    <span>Συστατικά: Xουρμάδες, Φυστικοβούτυρο, Βρώμη χωρίς γλουτένη, Φυστίκια, Σταφίδες, Aκατέργαστα κομμάτια Κακάο, Κολοκυθόσποροι, Φυτική Ίνα Βρώμης</span>
                 </div>
 
                 <div class="quantity">
                     <button id="peanutButterMinus"
                             type="button"
-                            onclick="addProduct('peanutButter', -1)">-</button>
+                            onclick="addProduct('peanutButter', -1)">-
+                    </button>
                     <input id="peanutButter"
                            type="number"
                            value="0"
                            onchange="addProduct('matcha', 0)">
                     <button id="peanutButterPlus"
                             type="button"
-                            onclick="addProduct('peanutButter', 1)">+</button>
-                    <p>remaining: <span class="remaining-bars">12</span></p>
+                            onclick="addProduct('peanutButter', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
                 </div>
             </article>
 
             <article>
                 <div class="image">
-                    <a href="products.html#orange-bar" target="_blank"><img src="images/eshop-orange-carob.png"></a>
+                    <a href="products.html#orange-bar" target="_blank">
+                        <img src="images/eshop-orange-carob.png" alt="">
+                    </a>
                 </div>
 
                 <div class="description">
                     <span>Πορτοκάλι Χαρούπι</span>
-                    <span>Xoυρμάδες, Βρώμη χωρίς γλουτένη, Φουντούκια, Αμύγδαλα, Χαρουπάλευρο, Φυσικό εκχύλισμα Πορτοκαλιού, Φυτική Ίνα Βρώμης, Ακατέργαστα κομμάτια κακάο</span>
-                    <span>382Kcal</span>
+                    <span>Συστατικά: Xουρμάδες, Βρώμη χωρίς γλουτένη, Φουντούκια, Αμύγδαλα, Χαρουπάλευρο, Φυσικό εκχύλισμα Πορτοκαλιού, Φυτική Ίνα Βρώμης, Ακατέργαστα κομμάτια κακάο</span>
                 </div>
 
                 <div class="quantity">
                     <button id="orangeCarobMinus"
                             type="button"
-                            onclick="addProduct('orangeCarob', -1)">-</button>
+                            onclick="addProduct('orangeCarob', -1)">-
+                    </button>
                     <input id="orangeCarob"
                            type="number"
                            value="0"
                            onchange="addProduct('matcha', 0)">
                     <button id="orangeCarobPlus"
                             type="button"
-                            onclick="addProduct('orangeCarob', 1)">+</button>
-                    <p>remaining: <span class="remaining-bars">12</span></p>
+                            onclick="addProduct('orangeCarob', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
                 </div>
             </article>
 
             <article>
                 <div class="image">
-                    <a href="products.html#apple-bar" target="_blank"><img src="images/eshop-apple-cinnamon.png"></a>
+                    <a href="products.html#apple-bar" target="_blank">
+                        <img src="images/eshop-apple-cinnamon.png" alt="">
+                    </a>
                 </div>
 
                 <div class="description">
                     <span>Μήλο Κανέλα</span>
-                    <span>Χουρμάδες, Aμύγδαλα, Aποξηραμένα Μήλα, Καρύδια, Φυσικό εκχύλισμα Μήλου, Κανέλα, Γαρύφαλλο, Φυτική Ίνα Βρώμης</span>
-                    <span>402Kcal</span>
+                    <span>Συστατικά: Χουρμάδες, Aμύγδαλα, Aποξηραμένα Μήλα, Καρύδια, Φυσικό εκχύλισμα Μήλου, Κανέλα, Γαρύφαλλο, Φυτική Ίνα Βρώμης</span>
                 </div>
 
                 <div class="quantity">
                     <button id="appleCinnamonMinus"
                             type="button"
-                            onclick="addProduct('appleCinnamon', -1)">-</button>
+                            onclick="addProduct('appleCinnamon', -1)">-
+                    </button>
                     <input id="appleCinnamon"
                            type="number"
                            value="0"
                            onchange="addProduct('matcha', 0)">
                     <button id="appleCinnamonPlus"
                             type="button"
-                            onclick="addProduct('appleCinnamon', 1)">+</button>
-                    <p>remaining: <span class="remaining-bars">12</span></p>
+                            onclick="addProduct('appleCinnamon', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
                 </div>
             </article>
+        </section>
+
+        <section id="checkout">
+            <a class="header-btn btn btn-coral" href="#" onclick="doCheckout()">
+                <span>Συμπληρώστε τα στοιχεία σας</span>
+            </a>
+            <p id="remaining-bars-warning">Απομένει να διαλέξετε άλλες 12 μπάρες!</p>
         </section>
     </div>
     <section class="section-newsletter">
@@ -296,27 +323,67 @@
     jQuery(document).ready(function () {
         jQuery('.shop-trigger').click(function (e) {
             e.preventDefault();
-            $(this).next('.shops').toggleClass('active');
+            jQuery(this).next('.shops').toggleClass('active');
         });
 
-        window.selectBox = function (box) {
-            console.debug(NutreeJS.store({selectedBox: box}));
-            updateState();
-            let targetEl = jQuery('#eshop-step-2');
+        window.setLoading = function (active) {
+            let loadingEl = jQuery('#loading');
+            if (!!active) {
+                loadingEl.addClass('active');
+            } else {
+                loadingEl.removeClass('active');
+            }
+        };
 
-            jQuery('html, body').stop().animate({
-                'scrollTop': targetEl.offset().top
-            }, 500, 'swing', function () {
+        window.selectBox = function (selectedBox) {
+            console.debug("storage: ",
+                NutreeJS.store({selectedBox: selectedBox})
+            );
+
+            setLoading(true);
+            NutreeJS.checkout.then(c => {
+                c.lineItems.reduce((promiseChain, lineItem) => {
+                    return promiseChain.then(() => {
+                        if (lineItem.variantId !== NutreeJS.boxes[selectedBox].defaultVariantId) {
+                            return NutreeJS.client.checkout.removeLineItems(c.id, [lineItem.id]);
+                        } else {
+                            return promiseChain;
+                        }
+                    })
+                }, Promise.resolve())
+                    .then(() => {
+                        NutreeJS.checkout = NutreeJS.client.checkout.addLineItems(c.id, [{
+                            variantId: NutreeJS.boxes[selectedBox].defaultVariantId,
+                            quantity: 1
+                        }])
+                    })
+                    .then(() => {
+                        updateState();
+                        setLoading(false);
+                        let targetEl = jQuery('#eshop-step-2');
+                        jQuery('html, body').stop().animate({
+                            'scrollTop': targetEl.offset().top
+                        }, 500, 'swing');
+                    })
             });
+
             return false;
         };
 
         window.addProduct = function (product, count) {
+            let remainingBars = NutreeJS.getRemainingBars();
             let inputElement = jQuery(`#${product}`);
-            let total = parseInt(inputElement.val()) + parseInt(count);
-            if (total < 0) {
-                total = 0;
+            let total;
+
+            if (remainingBars <= 0 && count > 0) {
+                total = NutreeJS.getStorage().selectedBars[product];
+            } else {
+                total = parseInt(inputElement.val()) + parseInt(count);
+                if (total < 0) {
+                    total = 0;
+                }
             }
+
             let storePatch = {selectedBars: {}};
             storePatch.selectedBars[product] = total;
             console.debug(
@@ -325,6 +392,14 @@
 
             inputElement.val(total);
             updateState();
+        };
+
+        window.doCheckout = function() {
+            setLoading(true);
+            NutreeJS.checkout.then(c => {
+                window.location.href = c.webUrl;
+            });
+            return false;
         };
 
         window.setButtonDisableState = function (product) {
@@ -338,6 +413,7 @@
 
         window.updateState = function () {
             let nutreeStore = NutreeJS.getStorage();
+            let barNames = Object.keys(NutreeJS.products);
 
             if (!!nutreeStore.selectedBox) {
                 jQuery('#smallBox').removeClass('selected');
@@ -346,26 +422,62 @@
                 jQuery('#smallBox').addClass('rejected');
                 jQuery('#mediumBox').addClass('rejected');
                 jQuery('#largeBox').addClass('rejected');
-                jQuery(`#${nutreeStore.selectedBox}Box`).addClass('selected');
+                jQuery(`#${nutreeStore.selectedBox}`).addClass('selected');
+
                 jQuery('#eshop-step-1').removeClass('active-step');
                 jQuery('#eshop-step-2').addClass('active-step');
+
+                if (window.scrollY === 0) {
+                    let targetEl = jQuery('#eshop-step-2');
+                    jQuery('html, body').stop().animate({
+                        'scrollTop': targetEl.offset().top
+                    }, 500, 'swing');
+                }
+            } else {
+                let targetEl = jQuery('#eshop-step-1');
+                jQuery('html, body').stop().animate({
+                    'scrollTop': targetEl.offset().top
+                }, 500, 'swing');
             }
 
             if (!!nutreeStore.selectedBars) {
-                jQuery('#matcha').val(nutreeStore.selectedBars.matcha || 0);
-                jQuery('#strawberryPraline').val(nutreeStore.selectedBars.strawberryPraline || 0);
-                jQuery('#peanutButter').val(nutreeStore.selectedBars.peanutButter || 0);
-                jQuery('#orangeCarob').val(nutreeStore.selectedBars.orangeCarob || 0);
-                jQuery('#appleCinnamon').val(nutreeStore.selectedBars.appleCinnamon || 0);
+                let remainingBars = NutreeJS.getRemainingBars();
+
+                if (remainingBars < 0) {
+                    barNames.forEach(bar => {
+                        nutreeStore.selectedBars[bar] = 0;
+                        NutreeJS.store(nutreeStore);
+                    });
+                }
+
+                barNames.forEach(bar => {
+                    jQuery(`#${bar}`).val(nutreeStore.selectedBars[bar] || 0);
+                });
+
+                jQuery('.remaining-bars').each((idx, e) => {
+                    jQuery(e).text(NutreeJS.getRemainingBars());
+                });
+
+                if (remainingBars > 0) {
+                    jQuery('#checkout').removeClass('ready');
+                } else {
+                    jQuery('#checkout').addClass('ready');
+                }
+
+                if (remainingBars === 1) {
+                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλη 1 μπάρα!`);
+                } else {
+                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλες ${remainingBars} μπάρες!`);
+                }
             }
-            setButtonDisableState('matcha');
-            setButtonDisableState('strawberryPraline');
-            setButtonDisableState('peanutButter');
-            setButtonDisableState('orangeCarob');
-            setButtonDisableState('appleCinnamon');
+
+            barNames.forEach(bar => {
+                setButtonDisableState(bar);
+            });
         };
 
         updateState();
+        NutreeJS.init({storageSyncCallback: updateState});
     });
 </script>
 </body>

@@ -2,15 +2,15 @@
   padding-top: 200px;
 }
 
-#eshop-step-1 {
+#eshop-step-1 .boxes {
   text-align: center;
 }
 
-#eshop-step-1.active-step {
+#eshop-step-1 .boxes.active-step {
   margin-bottom: 100px;
 }
 
-#eshop-step-1 article {
+#eshop-step-1 .boxes article {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -18,32 +18,32 @@
   text-align: center;
 }
 
-#eshop-step-1 article.rejected:not(.selected) {
+#eshop-step-1 .boxes article.rejected:not(.selected) {
   opacity: 0.5;
 }
 
-#eshop-step-1 article.selected {
+#eshop-step-1 .boxes article.selected {
   border: 2px solid #f3a68f;
   -webkit-box-shadow: 0 0 16px 4px #cd9d8f;
           box-shadow: 0 0 16px 4px #cd9d8f;
   opacity: 1;
 }
 
-#eshop-step-1 article img {
+#eshop-step-1 .boxes article img {
   width: 100%;
 }
 
-#eshop-step-1 article h1 {
+#eshop-step-1 .boxes article h1 {
   margin: 5px 0;
 }
 
-#eshop-step-1 article .price {
+#eshop-step-1 .boxes article .price {
   color: grey;
   padding-bottom: 5px;
 }
 
 @media (hover: hover) {
-  #eshop-step-1 article:hover {
+  #eshop-step-1 .boxes article:hover {
     opacity: 0.65;
     -webkit-box-shadow: 0 0 16px 4px #cd9d8f;
             box-shadow: 0 0 16px 4px #cd9d8f;
@@ -51,7 +51,7 @@
 }
 
 @media screen and (min-width: 960px) {
-  #eshop-step-1 article {
+  #eshop-step-1 .boxes article {
     display: inline-block;
     margin: 20px;
     max-width: 225px;
@@ -59,7 +59,7 @@
 }
 
 @media screen and (min-width: 1132px) {
-  #eshop-step-1 article {
+  #eshop-step-1 .boxes article {
     max-width: 300px;
   }
 }
@@ -107,7 +107,7 @@
 
 #eshop-step-2 .cart article .description span:first-child {
   margin-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 #eshop-step-2 .cart article .description span:last-child {
@@ -180,6 +180,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     border-bottom: 2px dotted #ccc;
+    text-align: center;
   }
   #eshop-step-2 .cart article .quantity {
     margin-top: 0;
@@ -191,4 +192,31 @@
   #eshop-step-2 .cart .image {
     text-align: center;
   }
+}
+
+#eshop-step-2 #checkout {
+  text-align: center;
+  margin-bottom: 100px;
+  opacity: 0.5;
+}
+
+#eshop-step-2 #checkout a {
+  cursor: default;
+}
+
+#eshop-step-2 #checkout #remaining-bars-warning {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#eshop-step-2 #checkout.ready {
+  opacity: 1;
+}
+
+#eshop-step-2 #checkout.ready a {
+  cursor: pointer;
+}
+
+#eshop-step-2 #checkout.ready #remaining-bars-warning {
+  display: none;
 }
