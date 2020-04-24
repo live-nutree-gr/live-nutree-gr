@@ -76,7 +76,12 @@
         },
 
         getBarLimit: () => {
-            return NutreeJS.boxes[NutreeJS.getStorage().selectedBox].totalBars;
+            let storage = NutreeJS.getStorage();
+            if (!storage || !storage.selectedBox) {
+                return 0;
+            } else {
+                return NutreeJS.boxes[storage.selectedBox].totalBars;
+            }
         },
 
         getRemainingBars: () => {
@@ -125,6 +130,13 @@
                 (config.storageSyncCallback || function () {
                 })();
             });
+
+            if (jQuery.isEmptyObject(NutreeJS.getStorage())) {
+                NutreeJS.store({
+                    selectedBox: null,
+                    selectedBars: {}
+                });
+            }
 
             NutreeJS.initCheckout().then(c => {
                 console.debug(c);

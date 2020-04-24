@@ -150,7 +150,7 @@
                     <input id="strawberryPraline"
                            type="number"
                            value="0"
-                           onchange="addProduct('matcha', 0)">
+                           onchange="addProduct('strawberryPraline', 0)">
                     <button id="strawberryPralinePlus"
                             type="button"
                             onclick="addProduct('strawberryPraline', 1)">+
@@ -179,7 +179,7 @@
                     <input id="peanutButter"
                            type="number"
                            value="0"
-                           onchange="addProduct('matcha', 0)">
+                           onchange="addProduct('peanutButter', 0)">
                     <button id="peanutButterPlus"
                             type="button"
                             onclick="addProduct('peanutButter', 1)">+
@@ -208,7 +208,7 @@
                     <input id="orangeCarob"
                            type="number"
                            value="0"
-                           onchange="addProduct('matcha', 0)">
+                           onchange="addProduct('orangeCarob', 0)">
                     <button id="orangeCarobPlus"
                             type="button"
                             onclick="addProduct('orangeCarob', 1)">+
@@ -237,7 +237,7 @@
                     <input id="appleCinnamon"
                            type="number"
                            value="0"
-                           onchange="addProduct('matcha', 0)">
+                           onchange="addProduct('appleCinnamon', 0)">
                     <button id="appleCinnamonPlus"
                             type="button"
                             onclick="addProduct('appleCinnamon', 1)">+
@@ -248,7 +248,7 @@
         </section>
 
         <section id="checkout">
-            <a class="header-btn btn btn-coral" href="#" onclick="doCheckout()">
+            <a class="header-btn btn btn-coral" href="#!" onclick="doCheckout()">
                 <span>Συμπληρώστε τα στοιχεία σας</span>
             </a>
             <p id="remaining-bars-warning">Απομένει να διαλέξετε άλλες 12 μπάρες!</p>
@@ -336,6 +336,14 @@
         };
 
         window.selectBox = function (selectedBox) {
+            if (selectedBox === NutreeJS.getStorage().selectedBox) {
+                let targetEl = jQuery('#eshop-step-2');
+                jQuery('html, body').stop().animate({
+                    'scrollTop': targetEl.offset().top
+                }, 500, 'swing');
+                return false;
+            }
+
             console.debug("storage: ",
                 NutreeJS.store({selectedBox: selectedBox})
             );
@@ -370,31 +378,49 @@
             return false;
         };
 
-        window.addProduct = function (product, count) {
+        window.addProduct = function (product, plusButton) {
             let remainingBars = NutreeJS.getRemainingBars();
             let inputElement = jQuery(`#${product}`);
-            let total;
+            let nextValue;
+            let oldValue = NutreeJS.getStorage().selectedBars[product] || 0;
+            let typedValue = inputElement.val();
 
-            if (remainingBars <= 0 && count > 0) {
-                total = NutreeJS.getStorage().selectedBars[product];
+            if (typedValue - oldValue + plusButton > remainingBars) {
+                nextValue = oldValue;
             } else {
-                total = parseInt(inputElement.val()) + parseInt(count);
-                if (total < 0) {
-                    total = 0;
+                nextValue = parseInt(inputElement.val()) + parseInt(plusButton);
+                if (nextValue < 0) {
+                    nextValue = 0;
                 }
             }
 
             let storePatch = {selectedBars: {}};
-            storePatch.selectedBars[product] = total;
-            console.debug(
-                NutreeJS.store(storePatch)
-            );
+            storePatch.selectedBars[product] = nextValue;
+            NutreeJS.store(storePatch);
+            inputElement.val(nextValue);
 
-            inputElement.val(total);
-            updateState();
+            if (nextValue !== oldValue) {
+                setLoading(true);
+                NutreeJS.checkout.then(c => {
+                    if (nextValue === 0) {
+                        let productLineItem = c.lineItems.find(lineItem => {
+                            return NutreeJS.products[product].defaultVariantId === lineItem.variant.id;
+                        });
+                        NutreeJS.checkout = NutreeJS.client.checkout.removeLineItems(c.id, [productLineItem.id]);
+                    } else {
+                        NutreeJS.checkout = NutreeJS.client.checkout.addLineItems(c.id, [{
+                            variantId: NutreeJS.products[product].defaultVariantId,
+                            quantity: nextValue - oldValue
+                        }]);
+                    }
+                }).then(() => {
+                    updateState();
+                    setLoading(false);
+                })
+            }
         };
 
-        window.doCheckout = function() {
+        window.doCheckout = function () {
             setLoading(true);
             NutreeJS.checkout.then(c => {
                 window.location.href = c.webUrl;
@@ -408,6 +434,12 @@
                 jQuery(`#${product}Minus`).prop("disabled", true);
             } else {
                 jQuery(`#${product}Minus`).prop("disabled", false);
+            }
+
+            if (NutreeJS.getRemainingBars() === 0) {
+                jQuery(`#${product}Plus`).prop("disabled", true);
+            } else {
+                jQuery(`#${product}Plus`).prop("disabled", false);
             }
         };
 
