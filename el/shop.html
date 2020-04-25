@@ -344,35 +344,39 @@
                 return false;
             }
 
-            console.debug("storage: ",
-                NutreeJS.store({selectedBox: selectedBox})
-            );
-
             setLoading(true);
             NutreeJS.checkout.then(c => {
-                c.lineItems.reduce((promiseChain, lineItem) => {
-                    return promiseChain.then(() => {
-                        if (lineItem.variantId !== NutreeJS.boxes[selectedBox].defaultVariantId) {
-                            return NutreeJS.client.checkout.removeLineItems(c.id, [lineItem.id]);
+                let selectedBars = NutreeJS.getSelectedBarCount();
+                let nextTotalBars = NutreeJS.boxes[selectedBox].totalBars;
+
+                let removeItems = c.lineItems
+                    .filter(lineItem => {
+                        if (nextTotalBars < selectedBars) {
+                            return true;
                         } else {
-                            return promiseChain;
+                            return NutreeJS.variantIdMap[lineItem.variant.id].type === 'box';
                         }
                     })
-                }, Promise.resolve())
-                    .then(() => {
+                    .map(lineItem => {
+                        return lineItem.id;
+                    });
+
+                NutreeJS.client.checkout.removeLineItems(c.id, removeItems)
+                    .then(c => {
                         NutreeJS.checkout = NutreeJS.client.checkout.addLineItems(c.id, [{
                             variantId: NutreeJS.boxes[selectedBox].defaultVariantId,
                             quantity: 1
                         }])
                     })
                     .then(() => {
+                        NutreeJS.store({selectedBox: selectedBox});
                         updateState();
                         setLoading(false);
                         let targetEl = jQuery('#eshop-step-2');
                         jQuery('html, body').stop().animate({
                             'scrollTop': targetEl.offset().top
                         }, 500, 'swing');
-                    })
+                    });
             });
 
             return false;

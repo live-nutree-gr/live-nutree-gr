@@ -1,70 +1,73 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
 
-    window.NutreeJS = {
-        products: {
-            orangeCarob: {
-                "id":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDMyODk2NjE=",
-                "title":
-                    "Orange Carob",
-                "defaultVariantId":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI3OTkwMTc1Nw=="
-            },
-            matcha: {
-                "id":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQxMDg4NjE=",
-                "title":
-                    "Matcha",
-                "defaultVariantId":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI4NzgzMTYxMw=="
-            },
-            strawberryPraline: {
-                "id":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQ4NjI1MjU=",
-                "title":
-                    "Strawberry Praline",
-                "defaultVariantId":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NDA1NzUzMw=="
-            },
-            peanutButter: {
-                "id":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDUxMjQ2Njk=",
-                "title":
-                    "Peanut Butter",
-                "defaultVariantId":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NjIyMDIyMQ=="
-            },
-            appleCinnamon: {
-                "id":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDU4NzgzMzM=",
-                "title":
-                    "Apple Cinnamon",
-                "defaultVariantId":
-                    "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTMwNDgzODIwNQ=="
-            }
+    let products = {
+        orangeCarob: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDMyODk2NjE=",
+            title: "Orange Carob",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI3OTkwMTc1Nw=="
         },
+        matcha: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQxMDg4NjE=",
+            title: "Matcha",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI4NzgzMTYxMw=="
+        },
+        strawberryPraline: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQ4NjI1MjU=",
+            title: "Strawberry Praline",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NDA1NzUzMw=="
+        },
+        peanutButter: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDUxMjQ2Njk=",
+            title: "Peanut Butter",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NjIyMDIyMQ=="
+        },
+        appleCinnamon: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDU4NzgzMzM=",
+            title: "Apple Cinnamon",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTMwNDgzODIwNQ=="
+        }
+    };
 
-        boxes: {
-            smallBox: {
-                id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAyMTIyODU=",
-                title: "Small Box",
-                defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNDU2MzM4OQ==",
-                totalBars: 12
-            },
-            mediumBox: {
-                id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAzNDMzNTc=",
-                title: "Medium Box",
-                defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNTY3NzUwMQ==",
-                totalBars: 24
-            },
-            largeBox: {
-                id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjA1MDcxOTc=",
-                title: "Large Box",
-                defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNjg1NzE0OQ==",
-                totalBars: 48
-            }
+    let boxes = {
+        smallBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAyMTIyODU=",
+            title: "Small Box",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNDU2MzM4OQ==",
+            totalBars: 12
         },
+        mediumBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAzNDMzNTc=",
+            title: "Medium Box",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNTY3NzUwMQ==",
+            totalBars: 24
+        },
+        largeBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjA1MDcxOTc=",
+            title: "Large Box",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNjg1NzE0OQ==",
+            totalBars: 48
+        }
+    };
+
+    window.NutreeJS = {
+        products: products,
+        boxes: boxes,
+
+        variantIdMap: Object.keys(boxes)
+            .concat(Object.keys(products))
+            .reduce((map, key) => {
+                let box = boxes[key];
+                let product = products[key];
+                let item = !!box ? box : product;
+
+                map[item.defaultVariantId] = {
+                    ...item,
+                    type: !!box ? 'box' : 'product'
+                };
+
+                return map;
+            }, {}),
 
         client: ShopifyBuy.buildClient({
             domain: 'nutree-gr.myshopify.com',
@@ -84,17 +87,19 @@
             }
         },
 
-        getRemainingBars: () => {
-            let barCount = 0;
+        getSelectedBarCount: () => {
             try {
                 let barNames = Object.keys(NutreeJS.products);
-                barCount = barNames.reduce((total, bar) => {
+                return barNames.reduce((total, bar) => {
                     return total + (NutreeJS.getStorage().selectedBars[bar] || 0);
                 }, 0);
             } catch (ignore) {
+                return 0;
             }
+        },
 
-            return NutreeJS.getBarLimit() - barCount;
+        getRemainingBars: () => {
+            return NutreeJS.getBarLimit() - NutreeJS.getSelectedBarCount();
         },
 
         store: (o) => {
