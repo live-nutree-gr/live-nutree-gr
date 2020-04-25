@@ -1,5 +1,6 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
+    const VERSION = 1.0;
 
     let products = {
         orangeCarob: {
@@ -51,6 +52,7 @@
     };
 
     window.NutreeJS = {
+        version: VERSION,
         products: products,
         boxes: boxes,
 
