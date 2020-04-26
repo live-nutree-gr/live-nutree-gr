@@ -559,9 +559,21 @@ table {
           box-sizing: border-box;
 }
 
+*::-moz-focus-inner {
+  border: 0;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:active, a:hover {
+  outline: 0;
 }
 
 .cf:before,
@@ -2185,6 +2197,7 @@ main {
   border: none;
   text-align: center;
   -webkit-appearance: none;
+  -moz-appearance: textfield;
   width: 42px;
   height: 42px;
   vertical-align: top;

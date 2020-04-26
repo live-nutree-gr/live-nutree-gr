@@ -1,6 +1,6 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
-    const VERSION = 1.0;
+    const VERSION = 1.1;
 
     let products = {
         orangeCarob: {
@@ -53,6 +53,7 @@
 
     window.NutreeJS = {
         version: VERSION,
+        shopifyDocs: 'https://github.com/Shopify/js-buy-sdk',
         products: products,
         boxes: boxes,
 
@@ -111,6 +112,14 @@
             return stored;
         },
 
+        resetStorage: () => {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                selectedBox: null,
+                selectedBars: {},
+                version: VERSION
+            }));
+        },
+
         initCheckout: () => {
             let storage = NutreeJS.getStorage();
             if (!storage.checkoutId) {
@@ -138,23 +147,21 @@
                 })();
             });
 
-            if (jQuery.isEmptyObject(NutreeJS.getStorage())) {
-                NutreeJS.store({
-                    selectedBox: null,
-                    selectedBars: {}
-                });
+            let storage = NutreeJS.getStorage();
+            if (jQuery.isEmptyObject(storage) || !storage.version || storage.version < VERSION) {
+                NutreeJS.resetStorage();
             }
 
             NutreeJS.initCheckout().then(c => {
                 console.debug(c);
                 if (!!c.completedAt) {
                     console.debug("resetting shopify checkout cart");
-                    let storage = NutreeJS.getStorage();
-                    storage.checkoutId = null;
+                    NutreeJS.resetStorage();
                     NutreeJS.initCheckout();
                 }
             }).catch(error => {
                 console.error(error);
+                NutreeJS.resetStorage();
                 NutreeJS.initCheckout();
             })
         }

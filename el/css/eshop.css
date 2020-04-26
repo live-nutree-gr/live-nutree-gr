@@ -139,6 +139,7 @@
   border: none;
   text-align: center;
   -webkit-appearance: none;
+  -moz-appearance: textfield;
   width: 42px;
   height: 42px;
   vertical-align: top;

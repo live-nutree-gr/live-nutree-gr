@@ -69,9 +69,22 @@
   box-sizing: border-box;
 }
 
+*::-moz-focus-inner {
+  border: 0;
+}
+
 a {
   text-decoration: none;
   color: black;
+
+  &:focus {
+    outline:0;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
 }
 
 .cf:before,
