@@ -193,8 +193,8 @@ table {
 
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot?lemujo");
-  src: url("../fonts/icons.eot?lemujo#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?lemujo") format("truetype"), url("../fonts/icons.woff?lemujo") format("woff"), url("../fonts/icons.svg?lemujo#icons") format("svg");
+  src: url("../../fonts/icons.eot?lemujo");
+  src: url("../../fonts/icons.eot?lemujo#iefix") format("embedded-opentype"), url("../../fonts/icons.ttf?lemujo") format("truetype"), url("../../fonts/icons.woff?lemujo") format("woff"), url("../../fonts/icons.svg?lemujo#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
