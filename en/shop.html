@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="google-site-verification" content="rvpf7_pLbYgBi1grZzEP7C9ybTZh8UzniECQA7TcD34"/>
-    <title>NUTREE: Αγορά Online | Ελληνικά υγιεινά σνακ!</title>
-    <meta name="description" content="Xειροποίητα προϊόντα που συνδυάζουν υψηλή διατροφική
-    αξία με μοναδική γεύση. Όλα μας τα παρασκευάσματα δημιουργούνται με αγνές πρώτες ύλες που
-    μας προσφέρει η Ελληνική γη.">
+    <title>NUTREE: Buy Online | Greek healthy snacks!</title>
+    <meta name="description"
+          content="Handmade products that combine high nutritional value with unique taste. All of our goods are made with natural ingredients from Greek soil.">
     <meta name="author" content="NUTREE">
     <meta name="keywords" content="snackbars,bars,snacks,healthy food,nuts bars,bar,health,diet">
     <meta property="og:title" content="NUTREE - Healthy snacks!">
-    <meta property="og:url" content="https://nutree.gr/el/shop.html">
-    <meta property="og:image" content="https://nutree.gr/el/images/logo.png">
-    <meta property="og:description" content="Xειροποίητα προϊόντα που συνδυάζουν υψηλή διατροφική
-    αξία με μοναδική γεύση. Όλα μας τα παρασκευάσματα δημιουργούνται με αγνές πρώτες ύλες που
-    μας προσφέρει η Ελληνική γη.">
+    <meta property="og:url" content="https://nutree.gr/en/shop.html">
+    <meta property="og:image" content="https://nutree.gr/en/images/logo.png">
+    <meta property="og:description"
+          content="Handmade products that combine high nutritional value with unique taste. All of our goods are made with natural ingredients from Greek soil.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
@@ -40,11 +38,11 @@
         <a href="index.html" class="logo">NUTREE</a>
         <a href="#" class="top-nav-icon icon-hamburger"></a>
         <ul class="top-nav-menu">
-            <li><a href="products.html">ΠΡΟΪΟΝΤΑ</a></li>
-            <li><a href="about.html">ΟΜΑΔΑ</a></li>
-            <li><a href="stores.html">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">THE TEAM</a></li>
+            <li><a href="stores.html">WHERE TO BUY</a></li>
             <li><a href="shop.html" class="active">SHOP</a></li>
-            <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
         </ul>
         <ul class="social-icons">
             <li><a href="https://www.facebook.com/nutree.gr/" class="icon-fb">facebook</a></li>
@@ -60,6 +58,13 @@
     <div id="loading">
         <div class="lds-dual-ring"></div>
     </div>
+
+    <section id="greek-warning" class="content content-medium-large dismissed">
+        <p>Our online store currently fulfils orders exclusively for deliveries within Greece.</p>
+        <a class="header-btn btn btn-coral" href="#!" onclick="return hideGreekWarning();">
+            <span>Hide warning</span>
+        </a>
+    </section>
 
     <div id="eshop-step-1" class="active-step">
         <section class="home-section resellers-section">
@@ -507,6 +512,16 @@
                 setButtonDisableState(bar);
             });
         };
+
+        window.hideGreekWarning = function() {
+            NutreeJS.store({greekWarningDismissed: true});
+            jQuery('#greek-warning').addClass('dismissed');
+            return false;
+        };
+
+        if (!NutreeJS.getStorage().greekWarningDismissed) {
+            jQuery('#greek-warning').removeClass('dismissed');
+        }
 
         setLoading(true);
         NutreeJS.init({
