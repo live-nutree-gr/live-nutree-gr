@@ -5,6 +5,10 @@
 }
 
 #eshop-step-1 {
+  &.active-step {
+    margin-bottom: 120px;
+  }
+
   .boxes {
     text-align: center;
 

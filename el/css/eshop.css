@@ -2,6 +2,10 @@
   padding-top: 200px;
 }
 
+#eshop-step-1.active-step {
+  margin-bottom: 120px;
+}
+
 #eshop-step-1 .boxes {
   text-align: center;
 }

@@ -713,9 +713,24 @@ main {
   background: $lighter-grey;
   padding: 60px 0 30px;
 
+  .content {
+    display: flex;
+  }
+
   .section-newsletter-right {
     float: right;
     width: 60%;
+  }
+
+  .section-newsletter-link {
+    margin: auto auto auto 0;
+    font-size: 30px;
+    font-family: $font-hand;
+
+    span {
+      font-size: 50px;
+      color: $coral;
+    }
   }
 
   h2 {

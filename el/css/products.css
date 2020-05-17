@@ -287,7 +287,7 @@
   width: 49%;
 }
 
-.section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
+.section-product-expanded .section-expanded-image .nutritious-list > li.asterisk, .section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
   width: 100%;
   margin-top: 10px;
   color: #999;

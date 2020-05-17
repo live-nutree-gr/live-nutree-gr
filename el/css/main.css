@@ -1260,9 +1260,27 @@ main {
   padding: 60px 0 30px;
 }
 
+.section-newsletter .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section-newsletter .section-newsletter-right {
   float: right;
   width: 60%;
+}
+
+.section-newsletter .section-newsletter-link {
+  margin: auto auto auto 0;
+  font-size: 30px;
+  font-family: "Alegreya", "Didact Gothic", "Open Sans", sans-serif;
+}
+
+.section-newsletter .section-newsletter-link span {
+  font-size: 50px;
+  color: #ca644e;
 }
 
 .section-newsletter h2 {
@@ -1895,7 +1913,7 @@ main {
   width: 49%;
 }
 
-.section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
+.section-product-expanded .section-expanded-image .nutritious-list > li.asterisk, .section-product-expanded .section-expanded-image .nutritious-list > li:last-child {
   width: 100%;
   margin-top: 10px;
   color: #999;
@@ -2058,6 +2076,10 @@ main {
 
 .eshop .home-section {
   padding-top: 200px;
+}
+
+#eshop-step-1.active-step {
+  margin-bottom: 120px;
 }
 
 #eshop-step-1 .boxes {
