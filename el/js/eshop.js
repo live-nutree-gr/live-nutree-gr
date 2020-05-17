@@ -1,32 +1,22 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
-    const VERSION = 1.1;
+    const VERSION = 1.2;
 
     let products = {
-        orangeCarob: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDMyODk2NjE=",
-            title: "Orange Carob",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI3OTkwMTc1Nw=="
-        },
         matcha: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQxMDg4NjE=",
-            title: "Matcha",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI4NzgzMTYxMw=="
+            title: "Μάτσα μαύρη σοκολάτα"
         },
         strawberryPraline: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDQ4NjI1MjU=",
-            title: "Strawberry Praline",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NDA1NzUzMw=="
+            title: "Πραλίνα φράουλα"
         },
         peanutButter: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDUxMjQ2Njk=",
-            title: "Peanut Butter",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTI5NjIyMDIyMQ=="
+            title: "Φυστικοβούτυρο"
+        },
+        orangeCarob: {
+            title: "Πορτοκάλι χαρούπι"
         },
         appleCinnamon: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzAyMDU4NzgzMzM=",
-            title: "Apple Cinnamon",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY0OTMwNDgzODIwNQ=="
+            title: "Μήλο κανέλα"
         }
     };
 
@@ -56,21 +46,6 @@
         shopifyDocs: 'https://github.com/Shopify/js-buy-sdk',
         products: products,
         boxes: boxes,
-
-        variantIdMap: Object.keys(boxes)
-            .concat(Object.keys(products))
-            .reduce((map, key) => {
-                let box = boxes[key];
-                let product = products[key];
-                let item = !!box ? box : product;
-
-                map[item.defaultVariantId] = {
-                    ...item,
-                    type: !!box ? 'box' : 'product'
-                };
-
-                return map;
-            }, {}),
 
         client: ShopifyBuy.buildClient({
             domain: 'nutree-gr.myshopify.com',
@@ -113,6 +88,7 @@
         },
 
         resetStorage: () => {
+            console.debug('resetting storage');
             localStorage.setItem(STORAGE_KEY, JSON.stringify({
                 selectedBox: null,
                 selectedBars: {},
@@ -124,10 +100,11 @@
             let storage = NutreeJS.getStorage();
             if (!storage.checkoutId) {
                 console.debug("creating new shopify checkout cart");
-                NutreeJS.checkout = NutreeJS.client.checkout.create();
-                NutreeJS.checkout.then(c => {
+                NutreeJS.checkout = NutreeJS.client.checkout.create().then(c => {
+                    NutreeJS.resetStorage();
                     storage.checkoutId = c.id;
                     NutreeJS.store(storage);
+                    return c;
                 });
             } else {
                 console.debug("fetching existing shopify checkout cart");
@@ -148,7 +125,7 @@
             });
 
             let storage = NutreeJS.getStorage();
-            if (jQuery.isEmptyObject(storage) || !storage.version || storage.version < VERSION) {
+            if (!storage.version || storage.version < VERSION) {
                 NutreeJS.resetStorage();
             }
 
@@ -157,12 +134,20 @@
                 if (!!c.completedAt) {
                     console.debug("resetting shopify checkout cart");
                     NutreeJS.resetStorage();
-                    NutreeJS.initCheckout();
+                    NutreeJS.initCheckout().then(() => {
+                        (config.storageSyncCallback || function () {
+                        })();
+                    });
                 }
+                (config.storageSyncCallback || function () {
+                })();
             }).catch(error => {
                 console.error(error);
                 NutreeJS.resetStorage();
-                NutreeJS.initCheckout();
+                NutreeJS.initCheckout().then(() => {
+                    (config.storageSyncCallback || function () {
+                    })();
+                });
             })
         }
     };

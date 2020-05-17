@@ -61,14 +61,14 @@
         <div class="lds-dual-ring"></div>
     </div>
 
-    <div id="eshop-step-1">
+    <div id="eshop-step-1" class="active-step">
         <section class="home-section resellers-section">
             <div class="content">
                 <h2 class="section-title with-watermark">Βήμα 1: Επιλέξτε Ποσότητα</h2>
             </div>
         </section>
 
-        <section class="boxes content active-step">
+        <section class="boxes content">
             <article id="smallBox">
                 <a href="#" onclick="return selectBox('smallBox')">
                     <img src="images/eshop-box-1.png">
@@ -346,20 +346,9 @@
 
             setLoading(true);
             NutreeJS.checkout.then(c => {
-                let selectedBars = NutreeJS.getSelectedBarCount();
-                let nextTotalBars = NutreeJS.boxes[selectedBox].totalBars;
-
-                let removeItems = c.lineItems
-                    .filter(lineItem => {
-                        if (nextTotalBars < selectedBars) {
-                            return true;
-                        } else {
-                            return NutreeJS.variantIdMap[lineItem.variant.id].type === 'box';
-                        }
-                    })
-                    .map(lineItem => {
-                        return lineItem.id;
-                    });
+                let removeItems = c.lineItems.map(lineItem => {
+                    return lineItem.id;
+                });
 
                 NutreeJS.client.checkout.removeLineItems(c.id, removeItems)
                     .then(c => {
@@ -402,32 +391,41 @@
             storePatch.selectedBars[product] = nextValue;
             NutreeJS.store(storePatch);
             inputElement.val(nextValue);
-
-            if (nextValue !== oldValue) {
-                setLoading(true);
-                NutreeJS.checkout.then(c => {
-                    if (nextValue === 0) {
-                        let productLineItem = c.lineItems.find(lineItem => {
-                            return NutreeJS.products[product].defaultVariantId === lineItem.variant.id;
-                        });
-                        NutreeJS.checkout = NutreeJS.client.checkout.removeLineItems(c.id, [productLineItem.id]);
-                    } else {
-                        NutreeJS.checkout = NutreeJS.client.checkout.addLineItems(c.id, [{
-                            variantId: NutreeJS.products[product].defaultVariantId,
-                            quantity: nextValue - oldValue
-                        }]);
-                    }
-                }).then(() => {
-                    updateState();
-                    setLoading(false);
-                })
-            }
+            updateState();
         };
 
         window.doCheckout = function () {
             setLoading(true);
             NutreeJS.checkout.then(c => {
-                window.location.href = c.webUrl;
+                let selectedBars = NutreeJS.getStorage().selectedBars;
+                let filteredBars = Object.keys(selectedBars)
+                    .filter(bar => selectedBars[bar] > 0);
+
+                let selectedBarsDisplayEmail = filteredBars.map(bar => {
+                    return {
+                        key: bar,
+                        value: NutreeJS.products[bar].title + ': ' + selectedBars[bar]
+                    }
+                });
+
+                let selectedBarsDisplayCheckout = filteredBars.map(bar => {
+                    return {
+                        key: NutreeJS.products[bar].title,
+                        value: '' + selectedBars[bar]
+                    }
+                });
+
+                // for merchant - order overview page
+                NutreeJS.client.checkout.updateAttributes(c.id, {
+                    customAttributes: selectedBarsDisplayEmail
+                }).then(c => {
+                    // for client - checkout page
+                    NutreeJS.client.checkout.updateLineItems(c.id, [{
+                        id: c.lineItems[0].id, customAttributes: selectedBarsDisplayCheckout
+                    }]).then(c => {
+                        window.location.href = c.webUrl;
+                    })
+                });
             });
             return false;
         };
@@ -470,6 +468,8 @@
                     }, 500, 'swing');
                 }
             } else {
+                jQuery('#eshop-step-1').addClass('active-step');
+                jQuery('#eshop-step-2').removeClass('active-step');
                 let targetEl = jQuery('#eshop-step-1');
                 jQuery('html, body').stop().animate({
                     'scrollTop': targetEl.offset().top
@@ -512,8 +512,13 @@
             });
         };
 
-        updateState();
-        NutreeJS.init({storageSyncCallback: updateState});
+        setLoading(true);
+        NutreeJS.init({
+            storageSyncCallback: () => {
+                updateState();
+                setLoading(false);
+            }
+        });
     });
 </script>
 </body>
