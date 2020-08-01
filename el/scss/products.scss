@@ -202,6 +202,18 @@
   }
 }
 
+.section-banana-almond-bar {
+
+  .section-expanded-image:before {
+    background: url(../images/shapes-bg.png) lighten($banana-almond, 20);
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba(lighten($banana-almond, 20), .3),
+    0 0 0 100px rgba(lighten($banana-almond, 20), .15);
+  }
+}
+
 .section-matcha-bar {
 
   .section-expanded-image:before {
@@ -256,7 +268,7 @@
     margin-right: 4%;
     text-align: center;
 
-    &:nth-child(5n),
+    &:nth-child(6n),
     &:last-child {
       margin-right: 0;
     }
