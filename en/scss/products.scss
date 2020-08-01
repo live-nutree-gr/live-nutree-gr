@@ -203,18 +203,6 @@
   }
 }
 
-.section-matcha-bar {
-
-  .section-expanded-image:before {
-    background: url(../images/shapes-bg.png) lighten($matcha, 20);
-  }
-
-  &.active .section-expanded-image:before {
-    box-shadow: 0 0 0 50px rgba(lighten($matcha, 20), .3),
-                0 0 0 100px rgba(lighten($matcha, 20), .15);
-  }
-}
-
 .section-banana-almond-bar {
 
   .section-expanded-image:before {
@@ -224,6 +212,18 @@
   &.active .section-expanded-image:before {
     box-shadow: 0 0 0 50px rgba(lighten($banana-almond, 20), .3),
     0 0 0 100px rgba(lighten($banana-almond, 20), .15);
+  }
+}
+
+.section-matcha-bar {
+
+  .section-expanded-image:before {
+    background: url(../images/shapes-bg.png) lighten($matcha, 20);
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba(lighten($matcha, 20), .3),
+                0 0 0 100px rgba(lighten($matcha, 20), .15);
   }
 }
 
