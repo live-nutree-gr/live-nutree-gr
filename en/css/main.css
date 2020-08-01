@@ -1884,6 +1884,15 @@ main {
           box-shadow: 0 0 0 50px rgba(225, 233, 180, 0.3), 0 0 0 100px rgba(225, 233, 180, 0.15);
 }
 
+.section-banana-almond-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #fcdc8f;
+}
+
+.section-banana-almond-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(252, 220, 143, 0.3), 0 0 0 100px rgba(252, 220, 143, 0.15);
+          box-shadow: 0 0 0 50px rgba(252, 220, 143, 0.3), 0 0 0 100px rgba(252, 220, 143, 0.15);
+}
+
 .section-strawberry-bar .section-expanded-image:before {
   background: url(../images/shapes-bg.png) #e54a4e;
 }
@@ -1931,7 +1940,7 @@ main {
   text-align: center;
 }
 
-.products-preview-list li:nth-child(5n), .products-preview-list li:last-child {
+.products-preview-list li:nth-child(6n), .products-preview-list li:last-child {
   margin-right: 0;
 }
 
@@ -2546,11 +2555,12 @@ main {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
   }
-  .section-peanutbutter-bar .right-content,
-  .section-orange-bar .left-content,
-  .section-apple-bar .right-content,
-  .section-matcha-bar .right-content,
-  .section-strawberry-bar .left-content {
+  .section-banana-almond-bar .right-content,
+  .section-matcha-bar .left-content,
+  .section-strawberry-bar .right-content,
+  .section-peanutbutter-bar .left-content,
+  .section-orange-bar .right-content,
+  .section-apple-bar .left-content {
     display: none;
   }
   .mobile-nutritious-list {

@@ -338,6 +338,15 @@
           box-shadow: 0 0 0 50px rgba(225, 233, 180, 0.3), 0 0 0 100px rgba(225, 233, 180, 0.15);
 }
 
+.section-banana-almond-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #fcdc8f;
+}
+
+.section-banana-almond-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(252, 220, 143, 0.3), 0 0 0 100px rgba(252, 220, 143, 0.15);
+          box-shadow: 0 0 0 50px rgba(252, 220, 143, 0.3), 0 0 0 100px rgba(252, 220, 143, 0.15);
+}
+
 .section-strawberry-bar .section-expanded-image:before {
   background: url(../images/shapes-bg.png) #e54a4e;
 }
@@ -385,7 +394,7 @@
   text-align: center;
 }
 
-.products-preview-list li:nth-child(5n), .products-preview-list li:last-child {
+.products-preview-list li:nth-child(6n), .products-preview-list li:last-child {
   margin-right: 0;
 }
 
