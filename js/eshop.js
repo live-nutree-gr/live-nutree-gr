@@ -3,6 +3,9 @@
     const VERSION = 1.2;
 
     let products = {
+        banana: {
+            title: "Μπανάνα Αμυγδαλοβούτυρο"
+        },
         matcha: {
             title: "Μάτσα μαύρη σοκολάτα"
         },

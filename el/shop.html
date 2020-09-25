@@ -103,6 +103,35 @@
         <section class="cart content-medium-large">
             <article>
                 <div class="image">
+                    <a href="products.html#banana-almond-bar" target="_blank">
+                        <img src="images/eshop-banana-almond.png" alt="">
+                    </a>
+                </div>
+
+                <div class="description">
+                    <span>Μπανάνα Αμυγδαλοβούτυρο</span>
+                    <span>Συστατικά: Χουρμάδες, Αμυγδαλοβούτυρο, Βρώμη χωρίς γλουτένη, Αποξηραμένη Μπανάνα, Κανέλα Κευλάνης, Σπόροι Chia, Ακατέργαστοι σπόροι Κακάο, Φυτική Ίνα Βρώμης</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="bananaMinus"
+                            type="button"
+                            onclick="addProduct('banana', -1)">-
+                    </button>
+                    <input id="banana"
+                           type="number"
+                           value="0"
+                           onchange="addProduct('banana', 0)">
+                    <button id="bananaPlus"
+                            type="button"
+                            onclick="addProduct('banana', 1)">+
+                    </button>
+                    <p>απομένουν: <span class="remaining-bars">12</span></p>
+                </div>
+            </article>
+
+            <article>
+                <div class="image">
                     <a href="products.html#matcha-bar" target="_blank">
                         <img src="images/eshop-matcha.png" alt="">
                     </a>
