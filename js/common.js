@@ -13,6 +13,7 @@ jQuery(document).ready(function () {
     jQuery('.top-nav-icon.icon-hamburger').click(function (e) {
         e.preventDefault();
         jQuery('.top-nav-menu').toggleClass('active');
+        jQuery('.top-nav-language').toggleClass('active');
     });
 
     setTimeout(function () {
