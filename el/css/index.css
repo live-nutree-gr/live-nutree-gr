@@ -306,17 +306,32 @@
   color: #ca644e;
 }
 
-.products-categories-sections-images .products-categories-sections-peanut {
-  background: url(../images/index-peanut.jpg) center no-repeat #f6f6f6;
+.products-categories-sections-images .products-categories-sections-strawberry {
+  background: url(../images/homepage_1.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
-.products-categories-sections-images .products-categories-sections-orange {
-  background: url(../images/index-orange.jpg) center no-repeat #f6f6f6;
+.products-categories-sections-images .products-categories-sections-banana {
+  background: url(../images/homepage_2.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-apple {
-  background: url(../images/index-apple.jpg) center no-repeat #f6f6f6;
+  background: url(../images/homepage_3.jpg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-matcha {
+  background: url(../images/homepage_4.jpg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-peanut {
+  background: url(../images/homepage_5.jpg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-orange {
+  background: url(../images/homepage_6.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }

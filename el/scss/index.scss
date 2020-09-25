@@ -173,18 +173,33 @@
     }
   }
 
-  .products-categories-sections-peanut {
-    background: url(../images/index-peanut.jpg) center no-repeat $lighter-grey;
+  .products-categories-sections-strawberry {
+    background: url(../images/homepage_1.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
-  .products-categories-sections-orange {
-    background: url(../images/index-orange.jpg) center no-repeat $lighter-grey;
+  .products-categories-sections-banana {
+    background: url(../images/homepage_2.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-apple {
-    background: url(../images/index-apple.jpg) center no-repeat $lighter-grey;
+    background: url(../images/homepage_3.jpg) center no-repeat $lighter-grey;
+    background-size: cover;
+  }
+
+  .products-categories-sections-matcha {
+    background: url(../images/homepage_4.jpg) center no-repeat $lighter-grey;
+    background-size: cover;
+  }
+
+  .products-categories-sections-peanut {
+    background: url(../images/homepage_5.jpg) center no-repeat $lighter-grey;
+    background-size: cover;
+  }
+
+  .products-categories-sections-orange {
+    background: url(../images/homepage_6.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 }
