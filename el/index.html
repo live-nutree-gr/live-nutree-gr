@@ -56,7 +56,7 @@
 
 <header class="header">
     <ul class="slider">
-        <li class="slide-1 desktop show">
+        <li class="slide-1 show">
             <a href="shop.html" style="
                 width: 100%;
                 height: 100%;
@@ -260,8 +260,7 @@
 <script src="../js/common.js"></script>
 <script>
     (function () {
-        let isDesktop = !window.isMobile() || window.innerWidth > 640,
-            $slides = jQuery('.slider li').filter((i, el) => isDesktop || !el.classList.contains("desktop")),
+        let $slides = jQuery('.slider li'),
             currentSlide = $slides.first(),
 
             nextSlide = function () {
@@ -342,9 +341,6 @@
                     });
                 }
             });
-        } else {
-            jQuery('.slider li.desktop').remove();
-            currentSlide.addClass('show');
         }
     }());
 </script>

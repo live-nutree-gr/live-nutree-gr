@@ -577,8 +577,15 @@ main {
     }
 
     .slide-1 {
-      background: url(../images/hero-black-friday.jpg) no-repeat center;
-      background-size: cover;
+      @media screen and (max-width: 640px) {
+        background: url(../images/hero-black-friday-mobile.jpg) no-repeat center;
+        background-size: cover;
+      }
+
+      @media screen and (min-width: 640px) {
+        background: url(../images/hero-black-friday.jpg) no-repeat center;
+        background-size: cover;
+      }
     }
 
     .slide-2 {
