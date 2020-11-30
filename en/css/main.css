@@ -1122,31 +1122,17 @@ main {
   left: 0;
 }
 
-@media screen and (max-width: 640px) {
-  .header .slider .slide-1 {
-    background: url(../images/hero-black-friday-mobile.jpg) no-repeat center;
-    background-size: cover;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .header .slider .slide-1 {
-    background: url(../images/hero-black-friday.jpg) no-repeat center;
-    background-size: cover;
-  }
-}
-
-.header .slider .slide-2 {
+.header .slider .slide-1 {
   background: url(../images/hero-bg-1.jpg) no-repeat center;
   background-size: cover;
 }
 
-.header .slider .slide-3 {
+.header .slider .slide-2 {
   background: url(../images/hero-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
-.header .slider .slide-4 {
+.header .slider .slide-3 {
   background: url(../images/hero-bg-3.jpg) no-repeat center;
   background-size: cover;
 }

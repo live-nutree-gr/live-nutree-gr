@@ -56,15 +56,15 @@
 
 <header class="header">
     <ul class="slider">
+<!--        <li class="slide-1 show">-->
+<!--            <a href="shop.html" style="-->
+<!--                width: 100%;-->
+<!--                height: 100%;-->
+<!--                cursor: pointer !important;-->
+<!--                z-index: 7;-->
+<!--            "></a>-->
+<!--        </li>-->
         <li class="slide-1 show">
-            <a href="shop.html" style="
-                width: 100%;
-                height: 100%;
-                cursor: pointer !important;
-                z-index: 7;
-            "></a>
-        </li>
-        <li class="slide-2">
             <div class="content-small">
                 <h1 class="title-with-dot">Welcome to the Future of<span>Healthy Snacking</span></h1>
                 <a class="btn btn-big btn-coral btn-unfold" href="products.html">
@@ -72,7 +72,7 @@
                 </a>
             </div>
         </li>
-        <li class="slide-3">
+        <li class="slide-2">
             <div class="content-small">
                 <h1 class="title-with-dot">Recipes inspired by<span>Greek Nature</span></h1>
                 <a class="btn btn-big btn-coral btn-unfold" href="products.html">
@@ -80,7 +80,7 @@
                 </a>
             </div>
         </li>
-        <li class="slide-4">
+        <li class="slide-3">
             <div class="content-small">
                 <h1 class="title-with-dot">Natural boost to<span>Your Spirit</span></h1>
                 <a class="btn btn-big btn-coral btn-unfold" href="products.html">
@@ -299,16 +299,16 @@
                         }, 6000)
                     };
 
-                // startAutoplay();
+                startAutoplay();
 
                 // add 2nd function on click
                 jQuery('.next').on('click', function () {
-                    // startAutoplay();
+                    startAutoplay();
                 });
 
                 // add 2nd function on click
                 jQuery('.prev').on('click', function () {
-                    // startAutoplay();
+                    startAutoplay();
                 });
 
                 // replaces swipe functions
@@ -316,11 +316,11 @@
                     jQuery('.slider').swipe({
                         swipeLeft: function () {
                             nextSlide();
-                            // startAutoplay();
+                            startAutoplay();
                         },
                         swipeRight: function () {
                             prevSlide();
-                            // startAutoplay();
+                            startAutoplay();
                         }
                     });
                 }
