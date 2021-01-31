@@ -167,6 +167,42 @@
 // Products bars explicit styles (colors)
 // ---------------------------------------
 
+.section-cookie-dough-bar {
+
+  .section-expanded-image:before {
+    background: url(../images/shapes-bg.png) $cookie;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($cookie, .3),
+    0 0 0 100px rgba($cookie, .15);
+  }
+}
+
+.section-brownie-praline-bar {
+
+  .section-expanded-image:before {
+    background: url(../images/shapes-bg.png) $brownie;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($brownie, .3),
+    0 0 0 100px rgba($brownie, .15);
+  }
+}
+
+.section-cinnamon-roll-bar {
+
+  .section-expanded-image:before {
+    background: url(../images/shapes-bg.png) $cinnamon;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($cinnamon, .3),
+    0 0 0 100px rgba($cinnamon, .15);
+  }
+}
+
 .section-peanutbutter-bar {
 
   .section-expanded-image:before {
