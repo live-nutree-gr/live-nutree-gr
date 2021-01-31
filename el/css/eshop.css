@@ -8,6 +8,7 @@
 
 #eshop-step-1 .boxes {
   text-align: center;
+  max-width: 1400px;
 }
 
 #eshop-step-1 .boxes.active-step {
@@ -98,7 +99,14 @@
 }
 
 #eshop-step-2 .cart article .image img {
-  max-width: 180px;
+  max-height: 145px;
+  margin: 0 2em;
+}
+
+@media screen and (min-width: 960px) {
+  #eshop-step-2 .cart article .image img {
+    margin: 0.5em 2em;
+  }
 }
 
 #eshop-step-2 .cart article .description {
@@ -224,4 +232,14 @@
 
 #eshop-step-2 #checkout.ready #remaining-bars-warning {
   display: none;
+}
+
+#group-protein-bars,
+#group-raw-bars {
+  display: none;
+}
+
+#group-protein-bars.active,
+#group-raw-bars.active {
+  display: block;
 }

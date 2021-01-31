@@ -71,7 +71,7 @@
     <div id="eshop-step-1" class="active-step">
         <section class="home-section resellers-section">
             <div class="content">
-                <h2 class="section-title with-watermark">Βήμα 1: Επιλογή ποσότητας</h2>
+                <h2 class="section-title with-watermark">Βήμα 1: Επιλογή προϊόντος</h2>
             </div>
         </section>
 
@@ -90,11 +90,18 @@
                     <p class="price">49€</p>
                 </a>
             </article>
-            <article id="largeBox">
-                <a href="#" onclick="return selectBox('largeBox')">
-                    <img src="images/eshop-box-3.jpg">
-                    <h1>NUTREE MEGA PACK (48 μπάρες)</h1>
-                    <p class="price">89€</p>
+            <article id="proteinSmallBox">
+                <a href="#" onclick="return selectBox('proteinSmallBox')">
+                    <img src="images/eshop-box-4.jpg">
+                    <h1>1 PROTEIN FUDGE BOX (12 μπάρες)</h1>
+                    <p class="price">33€</p>
+                </a>
+            </article>
+            <article id="proteinMediumBox">
+                <a href="#" onclick="return selectBox('proteinMediumBox')">
+                    <img src="images/eshop-box-6.jpg">
+                    <h1>2 PROTEIN FUDGE BOX (24 μπάρες)</h1>
+                    <p class="price">56€</p>
                 </a>
             </article>
         </section>
@@ -108,179 +115,290 @@
         </section>
 
         <section class="cart content-medium-large">
-            <article>
-                <div class="image">
-                    <a href="products.html#banana-almond-bar" target="_blank">
-                        <img src="images/eshop-banana-almond.png" alt="">
-                    </a>
-                </div>
 
-                <div class="description">
-                    <span>Μπανάνα Αμυγδαλοβούτυρο</span>
-                    <span>Συστατικά: Χουρμάδες, Αμυγδαλοβούτυρο, Βρώμη χωρίς γλουτένη, Αποξηραμένη Μπανάνα, Κανέλα Κευλάνης, Σπόροι Chia, Ακατέργαστοι σπόροι Κακάο, Φυτική Ίνα Βρώμης</span>
-                </div>
+            <div id="group-protein-bars">
 
-                <div class="quantity">
-                    <button id="bananaMinus"
-                            type="button"
-                            onclick="addProduct('banana', -1)">-
-                    </button>
-                    <input id="banana"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('banana', 0)">
-                    <button id="bananaPlus"
-                            type="button"
-                            onclick="addProduct('banana', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+                <article>
+                    <div class="image">
+                        <a href="products.html#cookie-dough-bar" target="_blank">
+                            <img src="images/eshop-cookie-dough.png" alt="">
+                        </a>
+                    </div>
 
-            <article>
-                <div class="image">
-                    <a href="products.html#matcha-bar" target="_blank">
-                        <img src="images/eshop-matcha.png" alt="">
-                    </a>
-                </div>
+                    <div class="description">
+                        <span>Μπισκότο</span>
+                        <span>
+                                Χουρμάδες, Φυτική Πρωτεΐνη Αρακά*, Βούτυρο Κάσιους (100% Κάσιους), Φυστικοβούτυρο (100% Φυστίκι),
+                                Σοκολάτα (Κακαόμαζα 100%), Φυτική ίνα Βρώμης, Ακατέργαστοι Σπόροι Κακάο*, Φυσικό εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι*
+                                <br/>
+                                * Προϊόν Βιολογικής Καλλιέργειας
+                            </span>
+                    </div>
 
-                <div class="description">
-                    <span>Μάτσα μαύρη σοκολάτα</span>
-                    <span>Συστατικά: Xουρμάδες, Τσάι Μatcha Ninja ceremonial grade, Μαύρη Σοκολάτα 100%, Αμύγδαλα, Βρώμη χωρίς Γλουτένη, Κολοκυθόσπορος, Φυσικό Εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι</span>
-                </div>
+                    <div class="quantity">
+                        <button id="cookieMinus"
+                                type="button"
+                                onclick="addProduct('cookie', -1)">-
+                        </button>
+                        <input id="cookie"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('cookie', 0)">
+                        <button id="cookiePlus"
+                                type="button"
+                                onclick="addProduct('cookie', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
 
-                <div class="quantity">
-                    <button id="matchaMinus"
-                            type="button"
-                            onclick="addProduct('matcha', -1)">-
-                    </button>
-                    <input id="matcha"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('matcha', 0)">
-                    <button id="matchaPlus"
-                            type="button"
-                            onclick="addProduct('matcha', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+                <article>
+                    <div class="image">
+                        <a href="products.html#brownie-praline-bar" target="_blank">
+                            <img src="images/eshop-brownie-praline.png" alt="">
+                        </a>
+                    </div>
 
-            <article>
-                <div class="image">
-                    <a href="products.html#strawberry-bar" target="_blank">
-                        <img src="images/eshop-strawberry-praline.png" alt="">
-                    </a>
-                </div>
+                    <div class="description">
+                        <span>Μπράουνι πραλίνα</span>
+                        <span>
+                                Χουρμάδες, Φυτική Πρωτεΐνη Αρακά*, Βούτυρο Φουντουκιού (100% Φουντούκια), Φουντούκια, Κακάο*,
+                                Φυτική ίνα Βρώμης, Ακατέργαστοι Σπόροι Κακάο*, Θαλασσινό Αλάτι*
+                                <br/>
+                                * Προϊόν Βιολογικής Καλλιέργειας
+                            </span>
+                    </div>
 
-                <div class="description">
-                    <span>Πραλίνα Φράουλα</span>
-                    <span>Συστατικά: Xουρμάδες, Αποξηραμένες Φράουλες, Κακάο, Φουντούκια, Ακατέργαστα κομμάτια σπόρων κακάο, Βρώμη χωρίς Γλουτένη, Φυσικό Εκχύλισμα Φράουλας, Φυτική Ίνα Βρώμης</span>
-                </div>
+                    <div class="quantity">
+                        <button id="brownieMinus"
+                                type="button"
+                                onclick="addProduct('brownie', -1)">-
+                        </button>
+                        <input id="brownie"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('brownie', 0)">
+                        <button id="browniePlus"
+                                type="button"
+                                onclick="addProduct('brownie', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
 
-                <div class="quantity">
-                    <button id="strawberryPralineMinus"
-                            type="button"
-                            onclick="addProduct('strawberryPraline', -1)">-
-                    </button>
-                    <input id="strawberryPraline"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('strawberryPraline', 0)">
-                    <button id="strawberryPralinePlus"
-                            type="button"
-                            onclick="addProduct('strawberryPraline', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+                <article>
+                    <div class="image">
+                        <a href="products.html#cinnamon-roll-bar" target="_blank">
+                            <img src="images/eshop-cinnamon-roll.png" alt="">
+                        </a>
+                    </div>
 
-            <article>
-                <div class="image">
-                    <a href="products.html#peanutbutter-bar" target="_blank">
-                        <img src="images/eshop-peanut-butter.png" alt="">
-                    </a>
-                </div>
+                    <div class="description">
+                        <span>Ρολό κανέλας</span>
+                        <span>
+                                Χουρμάδες, Φυτική Πρωτεΐνη Αρακά*, Βούτυρο Κάσιους (100% Κάσιους), Καρύδια, Κανέλα Κευλάνης*,
+                                Φυτική ίνα Βρώμης, Φυσικό εκχύλισμα Καραμέλας, Θαλασσινό Αλάτι*
+                                <br/>
+                                * Προϊόν Βιολογικής Καλλιέργειας
+                            </span>
+                    </div>
 
-                <div class="description">
-                    <span>Φυστικοβούτυρο</span>
-                    <span>Συστατικά: Xουρμάδες, Φυστικοβούτυρο, Βρώμη χωρίς γλουτένη, Φυστίκια, Σταφίδες, Aκατέργαστα κομμάτια Κακάο, Κολοκυθόσποροι, Φυτική Ίνα Βρώμης</span>
-                </div>
+                    <div class="quantity">
+                        <button id="cinnamonMinus"
+                                type="button"
+                                onclick="addProduct('cinnamon', -1)">-
+                        </button>
+                        <input id="cinnamon"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('cinnamon', 0)">
+                        <button id="cinnamonPlus"
+                                type="button"
+                                onclick="addProduct('cinnamon', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
 
-                <div class="quantity">
-                    <button id="peanutButterMinus"
-                            type="button"
-                            onclick="addProduct('peanutButter', -1)">-
-                    </button>
-                    <input id="peanutButter"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('peanutButter', 0)">
-                    <button id="peanutButterPlus"
-                            type="button"
-                            onclick="addProduct('peanutButter', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+            </div>
 
-            <article>
-                <div class="image">
-                    <a href="products.html#orange-bar" target="_blank">
-                        <img src="images/eshop-orange-carob.png" alt="">
-                    </a>
-                </div>
+            <div id="group-raw-bars">
 
-                <div class="description">
-                    <span>Πορτοκάλι Χαρούπι</span>
-                    <span>Συστατικά: Xουρμάδες, Βρώμη χωρίς γλουτένη, Φουντούκια, Αμύγδαλα, Χαρουπάλευρο, Φυσικό εκχύλισμα Πορτοκαλιού, Φυτική Ίνα Βρώμης, Ακατέργαστα κομμάτια κακάο</span>
-                </div>
+                <article>
+                    <div class="image">
+                        <a href="products.html#banana-almond-bar" target="_blank">
+                            <img src="images/eshop-banana-almond.png" alt="">
+                        </a>
+                    </div>
 
-                <div class="quantity">
-                    <button id="orangeCarobMinus"
-                            type="button"
-                            onclick="addProduct('orangeCarob', -1)">-
-                    </button>
-                    <input id="orangeCarob"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('orangeCarob', 0)">
-                    <button id="orangeCarobPlus"
-                            type="button"
-                            onclick="addProduct('orangeCarob', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+                    <div class="description">
+                        <span>Μπανάνα Αμυγδαλοβούτυρο</span>
+                        <span>Συστατικά: Χουρμάδες, Αμυγδαλοβούτυρο, Βρώμη χωρίς γλουτένη, Αποξηραμένη Μπανάνα, Κανέλα Κευλάνης, Σπόροι Chia, Ακατέργαστοι σπόροι Κακάο, Φυτική Ίνα Βρώμης</span>
+                    </div>
 
-            <article>
-                <div class="image">
-                    <a href="products.html#apple-bar" target="_blank">
-                        <img src="images/eshop-apple-cinnamon.png" alt="">
-                    </a>
-                </div>
+                    <div class="quantity">
+                        <button id="bananaMinus"
+                                type="button"
+                                onclick="addProduct('banana', -1)">-
+                        </button>
+                        <input id="banana"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('banana', 0)">
+                        <button id="bananaPlus"
+                                type="button"
+                                onclick="addProduct('banana', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
 
-                <div class="description">
-                    <span>Μήλο Κανέλα</span>
-                    <span>Συστατικά: Χουρμάδες, Aμύγδαλα, Aποξηραμένα Μήλα, Καρύδια, Φυσικό εκχύλισμα Μήλου, Κανέλα, Γαρύφαλλο, Φυτική Ίνα Βρώμης</span>
-                </div>
+                <article>
+                    <div class="image">
+                        <a href="products.html#matcha-bar" target="_blank">
+                            <img src="images/eshop-matcha.png" alt="">
+                        </a>
+                    </div>
 
-                <div class="quantity">
-                    <button id="appleCinnamonMinus"
-                            type="button"
-                            onclick="addProduct('appleCinnamon', -1)">-
-                    </button>
-                    <input id="appleCinnamon"
-                           type="number"
-                           value="0"
-                           onchange="addProduct('appleCinnamon', 0)">
-                    <button id="appleCinnamonPlus"
-                            type="button"
-                            onclick="addProduct('appleCinnamon', 1)">+
-                    </button>
-                    <p>απομένουν: <span class="remaining-bars">12</span></p>
-                </div>
-            </article>
+                    <div class="description">
+                        <span>Μάτσα μαύρη σοκολάτα</span>
+                        <span>Συστατικά: Xουρμάδες, Τσάι Μatcha Ninja ceremonial grade, Μαύρη Σοκολάτα 100%, Αμύγδαλα, Βρώμη χωρίς Γλουτένη, Κολοκυθόσπορος, Φυσικό Εκχύλισμα Βανίλιας, Θαλασσινό Αλάτι</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button id="matchaMinus"
+                                type="button"
+                                onclick="addProduct('matcha', -1)">-
+                        </button>
+                        <input id="matcha"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('matcha', 0)">
+                        <button id="matchaPlus"
+                                type="button"
+                                onclick="addProduct('matcha', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="image">
+                        <a href="products.html#strawberry-bar" target="_blank">
+                            <img src="images/eshop-strawberry-praline.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="description">
+                        <span>Πραλίνα Φράουλα</span>
+                        <span>Συστατικά: Xουρμάδες, Αποξηραμένες Φράουλες, Κακάο, Φουντούκια, Ακατέργαστα κομμάτια σπόρων κακάο, Βρώμη χωρίς Γλουτένη, Φυσικό Εκχύλισμα Φράουλας, Φυτική Ίνα Βρώμης</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button id="strawberryPralineMinus"
+                                type="button"
+                                onclick="addProduct('strawberryPraline', -1)">-
+                        </button>
+                        <input id="strawberryPraline"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('strawberryPraline', 0)">
+                        <button id="strawberryPralinePlus"
+                                type="button"
+                                onclick="addProduct('strawberryPraline', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="image">
+                        <a href="products.html#peanutbutter-bar" target="_blank">
+                            <img src="images/eshop-peanut-butter.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="description">
+                        <span>Φυστικοβούτυρο</span>
+                        <span>Συστατικά: Xουρμάδες, Φυστικοβούτυρο, Βρώμη χωρίς γλουτένη, Φυστίκια, Σταφίδες, Aκατέργαστα κομμάτια Κακάο, Κολοκυθόσποροι, Φυτική Ίνα Βρώμης</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button id="peanutButterMinus"
+                                type="button"
+                                onclick="addProduct('peanutButter', -1)">-
+                        </button>
+                        <input id="peanutButter"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('peanutButter', 0)">
+                        <button id="peanutButterPlus"
+                                type="button"
+                                onclick="addProduct('peanutButter', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="image">
+                        <a href="products.html#orange-bar" target="_blank">
+                            <img src="images/eshop-orange-carob.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="description">
+                        <span>Πορτοκάλι Χαρούπι</span>
+                        <span>Συστατικά: Xουρμάδες, Βρώμη χωρίς γλουτένη, Φουντούκια, Αμύγδαλα, Χαρουπάλευρο, Φυσικό εκχύλισμα Πορτοκαλιού, Φυτική Ίνα Βρώμης, Ακατέργαστα κομμάτια κακάο</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button id="orangeCarobMinus"
+                                type="button"
+                                onclick="addProduct('orangeCarob', -1)">-
+                        </button>
+                        <input id="orangeCarob"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('orangeCarob', 0)">
+                        <button id="orangeCarobPlus"
+                                type="button"
+                                onclick="addProduct('orangeCarob', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="image">
+                        <a href="products.html#apple-bar" target="_blank">
+                            <img src="images/eshop-apple-cinnamon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="description">
+                        <span>Μήλο Κανέλα</span>
+                        <span>Συστατικά: Χουρμάδες, Aμύγδαλα, Aποξηραμένα Μήλα, Καρύδια, Φυσικό εκχύλισμα Μήλου, Κανέλα, Γαρύφαλλο, Φυτική Ίνα Βρώμης</span>
+                    </div>
+
+                    <div class="quantity">
+                        <button id="appleCinnamonMinus"
+                                type="button"
+                                onclick="addProduct('appleCinnamon', -1)">-
+                        </button>
+                        <input id="appleCinnamon"
+                               type="number"
+                               value="0"
+                               onchange="addProduct('appleCinnamon', 0)">
+                        <button id="appleCinnamonPlus"
+                                type="button"
+                                onclick="addProduct('appleCinnamon', 1)">+
+                        </button>
+                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
         <section id="checkout">
@@ -491,13 +609,26 @@
                 jQuery('#smallBox').removeClass('selected');
                 jQuery('#mediumBox').removeClass('selected');
                 jQuery('#largeBox').removeClass('selected');
+                jQuery('#proteinSmallBox').removeClass('selected');
+                jQuery('#proteinMediumBox').removeClass('selected');
+
                 jQuery('#smallBox').addClass('rejected');
                 jQuery('#mediumBox').addClass('rejected');
                 jQuery('#largeBox').addClass('rejected');
+                jQuery('#proteinSmallBox').addClass('rejected');
+                jQuery('#proteinMediumBox').addClass('rejected');
                 jQuery(`#${nutreeStore.selectedBox}`).addClass('selected');
 
                 jQuery('#eshop-step-1').removeClass('active-step');
                 jQuery('#eshop-step-2').addClass('active-step');
+
+                if (NutreeJS.boxes[nutreeStore.selectedBox].type == 'protein') {
+                    jQuery('#group-protein-bars').addClass('active');
+                    jQuery('#group-raw-bars').removeClass('active');
+                } else {
+                    jQuery('#group-raw-bars').addClass('active');
+                    jQuery('#group-protein-bars').removeClass('active');
+                }
 
                 if (window.scrollY === 0) {
                     let targetEl = jQuery('#eshop-step-2');

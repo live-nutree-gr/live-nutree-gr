@@ -1,6 +1,6 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
-    const VERSION = 1.2;
+    const VERSION = 1.3;
 
     let products = {
         banana: {
@@ -20,27 +20,47 @@
         },
         appleCinnamon: {
             title: "Μήλο κανέλα"
+        },
+        cookie: {
+            title: "Μπισκότο"
+        },
+        brownie: {
+            title: "Μπράουνι πραλίνα"
+        },
+        cinnamon: {
+            title: "Ρολό κανέλας"
         }
     };
 
     let boxes = {
         smallBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAyMTIyODU=",
-            title: "Small Box",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNDU2MzM4OQ==",
-            totalBars: 12
+            totalBars: 12,
+            type: 'raw'
         },
         mediumBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAzNDMzNTc=",
-            title: "Medium Box",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNTY3NzUwMQ==",
-            totalBars: 24
+            totalBars: 24,
+            type: 'raw'
         },
-        largeBox: {
-            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjA1MDcxOTc=",
-            title: "Large Box",
-            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNjg1NzE0OQ==",
-            totalBars: 48
+        proteinSmallBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMTk3NjU0NDM=",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc1NTAyNDA2Nw==",
+            totalBars: 12,
+            type: 'protein'
+        },
+        proteinMediumBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMjEyMDcyMzU=",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc1OTc3NTQyNw==",
+            totalBars: 24,
+            type: 'protein'
+        },
+        mixMediumBox: {
+            id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMjI4MTI4Njc=",
+            defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc2MjMzMTMzMQ==",
+            totalBars: 24
         }
     };
 
