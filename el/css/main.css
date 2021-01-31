@@ -1981,6 +1981,33 @@ main {
   right: -50%;
 }
 
+.section-cookie-dough-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #c59968;
+}
+
+.section-cookie-dough-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(197, 153, 104, 0.3), 0 0 0 100px rgba(197, 153, 104, 0.15);
+          box-shadow: 0 0 0 50px rgba(197, 153, 104, 0.3), 0 0 0 100px rgba(197, 153, 104, 0.15);
+}
+
+.section-brownie-praline-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #6d3a22;
+}
+
+.section-brownie-praline-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(109, 58, 34, 0.3), 0 0 0 100px rgba(109, 58, 34, 0.15);
+          box-shadow: 0 0 0 50px rgba(109, 58, 34, 0.3), 0 0 0 100px rgba(109, 58, 34, 0.15);
+}
+
+.section-cinnamon-roll-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #ba7a5a;
+}
+
+.section-cinnamon-roll-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(186, 122, 90, 0.3), 0 0 0 100px rgba(186, 122, 90, 0.15);
+          box-shadow: 0 0 0 50px rgba(186, 122, 90, 0.3), 0 0 0 100px rgba(186, 122, 90, 0.15);
+}
+
 .section-peanutbutter-bar .section-expanded-image:before {
   background: url(../images/shapes-bg.png) #bed4b2;
 }
@@ -2925,6 +2952,11 @@ main {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
+  }
+  .section-cookie-dough-bar .right-content,
+  .section-brownie-praline-bar .left-content,
+  .section-cinnamon-roll-bar .right-content {
+    display: none;
   }
   .section-banana-almond-bar .right-content,
   .section-matcha-bar .left-content,
