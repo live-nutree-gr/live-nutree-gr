@@ -23,4 +23,8 @@ jQuery(document).ready(function () {
     setTimeout(function () {
         jQuery(".header").addClass("unmask");
     }, 1000);
+
+    jQuery('#product-select').on('click', function () {
+        jQuery('.drop').toggleClass('active');
+    });
 });
