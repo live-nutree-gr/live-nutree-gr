@@ -1707,6 +1707,7 @@ main {
   font-size: 30px;
   margin-bottom: 20px;
   font-family: "Alegreya", "Didact Gothic", "Open Sans", sans-serif;
+  text-shadow: 0 0 10px #000;
 }
 
 .products-categories-sections-images h3 span {

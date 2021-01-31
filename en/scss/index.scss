@@ -166,11 +166,27 @@
     font-size: 30px;
     margin-bottom: 20px;
     font-family: $font-hand;
+    text-shadow: 0 0 10px #000;
 
     span {
       font-size: 50px;
       color: $coral;
     }
+  }
+
+  .products-categories-sections-cookie-dough {
+    background: url(../images/homepage-protein-1.jpeg) center no-repeat $lighter-grey;
+    background-size: cover;
+  }
+
+  .products-categories-sections-brownie-praline {
+    background: url(../images/homepage-protein-2.jpeg) center no-repeat $lighter-grey;
+    background-size: cover;
+  }
+
+  .products-categories-sections-cinnamon-roll {
+    background: url(../images/homepage-protein-3.jpeg) center no-repeat $lighter-grey;
+    background-size: cover;
   }
 
   .products-categories-sections-strawberry {
