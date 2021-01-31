@@ -306,6 +306,21 @@
   color: #ca644e;
 }
 
+.products-categories-sections-images .products-categories-sections-cookie-dough {
+  background: url(../images/homepage-protein-1.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-brownie-praline {
+  background: url(../images/homepage-protein-2.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-cinnamon-roll {
+  background: url(../images/homepage-protein-3.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
 .products-categories-sections-images .products-categories-sections-strawberry {
   background: url(../images/homepage_1.jpg) center no-repeat #f6f6f6;
   background-size: cover;
