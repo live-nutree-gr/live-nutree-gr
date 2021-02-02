@@ -1,34 +1,54 @@
 (function () {
     const STORAGE_KEY = 'nutree-storage';
-    const VERSION = 1.3;
+    const VERSION = 1.4;
+    const TYPE_RAW = 'raw';
+    const TYPE_PROTEIN = 'protein';
 
     let products = {
         banana: {
-            title: "Μπανάνα Αμυγδαλοβούτυρο"
+            key: 'banana',
+            title: "Μπανάνα Αμυγδαλοβούτυρο",
+            type: TYPE_RAW
         },
         matcha: {
-            title: "Μάτσα μαύρη σοκολάτα"
+            key: 'matcha',
+            title: "Μάτσα μαύρη σοκολάτα",
+            type: TYPE_RAW
         },
         strawberryPraline: {
-            title: "Πραλίνα φράουλα"
+            key: 'strawberryPraline',
+            title: "Πραλίνα φράουλα",
+            type: TYPE_RAW
         },
         peanutButter: {
-            title: "Φυστικοβούτυρο"
+            key: 'peanutButter',
+            title: "Φυστικοβούτυρο",
+            type: TYPE_RAW
         },
         orangeCarob: {
-            title: "Πορτοκάλι χαρούπι"
+            key: 'orangeCarob',
+            title: "Πορτοκάλι χαρούπι",
+            type: TYPE_RAW
         },
         appleCinnamon: {
-            title: "Μήλο κανέλα"
+            key: 'appleCinnamon',
+            title: "Μήλο κανέλα",
+            type: TYPE_RAW
         },
         cookie: {
-            title: "Μπισκότο"
+            key: 'cookie',
+            title: "Μπισκότο",
+            type: TYPE_PROTEIN
         },
         brownie: {
-            title: "Μπράουνι πραλίνα"
+            key: 'brownie',
+            title: "Μπράουνι πραλίνα",
+            type: TYPE_PROTEIN
         },
         cinnamon: {
-            title: "Ρολό κανέλας"
+            key: 'cinnamon',
+            title: "Ρολό κανέλας",
+            type: TYPE_PROTEIN
         }
     };
 
@@ -36,31 +56,45 @@
         smallBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAyMTIyODU=",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNDU2MzM4OQ==",
-            totalBars: 12,
-            type: 'raw'
+            contents: [{
+                type: TYPE_RAW,
+                limit: 12
+            }]
         },
         mediumBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzQ0MzQ4NjAzNDMzNTc=",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zMTY2NjczNTY3NzUwMQ==",
-            totalBars: 24,
-            type: 'raw'
+            contents: [{
+                type: TYPE_RAW,
+                limit: 24
+            }]
         },
         proteinSmallBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMTk3NjU0NDM=",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc1NTAyNDA2Nw==",
-            totalBars: 12,
-            type: 'protein'
+            contents: [{
+                type: TYPE_PROTEIN,
+                limit: 12
+            }]
         },
         proteinMediumBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMjEyMDcyMzU=",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc1OTc3NTQyNw==",
-            totalBars: 24,
-            type: 'protein'
+            contents: [{
+                type: TYPE_PROTEIN,
+                limit: 24
+            }]
         },
         mixMediumBox: {
             id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzYyMzEyMjI4MTI4Njc=",
             defaultVariantId: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zODA0ODc2MjMzMTMzMQ==",
-            totalBars: 24
+            contents: [{
+                type: TYPE_PROTEIN,
+                limit: 12
+            }, {
+                type: TYPE_RAW,
+                limit: 12
+            }]
         }
     };
 
@@ -79,28 +113,44 @@
             return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
         },
 
-        getBarLimit: () => {
+        getSelectedBox: () => {
             let storage = NutreeJS.getStorage();
             if (!storage || !storage.selectedBox) {
-                return 0;
+                return null;
             } else {
-                return NutreeJS.boxes[storage.selectedBox].totalBars;
+                return NutreeJS.boxes[storage.selectedBox];
             }
         },
 
         getSelectedBarCount: () => {
             try {
-                let barNames = Object.keys(NutreeJS.products);
-                return barNames.reduce((total, bar) => {
-                    return total + (NutreeJS.getStorage().selectedBars[bar] || 0);
-                }, 0);
+                return Object.values(NutreeJS.products).reduce((ret, bar) => {
+                    ret[bar.type] = ret[bar.type] + (NutreeJS.getStorage().selectedBars[bar.key] || 0)
+                    return ret;
+                }, {
+                    [TYPE_RAW]: 0,
+                    [TYPE_PROTEIN]: 0
+                });
             } catch (ignore) {
-                return 0;
+                return {
+                    [TYPE_RAW]: 0,
+                    [TYPE_PROTEIN]: 0
+                }
             }
         },
 
         getRemainingBars: () => {
-            return NutreeJS.getBarLimit() - NutreeJS.getSelectedBarCount();
+            let box = NutreeJS.getSelectedBox() || {contents: []}
+            let selectedBars = NutreeJS.getSelectedBarCount();
+            return {
+                [TYPE_RAW]: box.contents
+                    .reduce((_ret, boxContent) => {
+                        return _ret + (boxContent.type === TYPE_RAW ? boxContent.limit : 0)
+                    }, 0) - selectedBars[TYPE_RAW],
+                [TYPE_PROTEIN]: box.contents.reduce((_ret, boxContent) => {
+                    return _ret + (boxContent.type === TYPE_PROTEIN ? boxContent.limit : 0)
+                }, 0) - selectedBars[TYPE_PROTEIN]
+            };
         },
 
         store: (o) => {
