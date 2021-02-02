@@ -79,14 +79,14 @@
             <article id="smallBox">
                 <a href="#" onclick="return selectBox('smallBox')">
                     <img src="images/eshop-box-1.jpg">
-                    <h1>1 NUTREE BOX (12 μπάρες)</h1>
+                    <h1>1 HANDMADE RAW BAR BOX (12 μπάρες)</h1>
                     <p class="price">29€</p>
                 </a>
             </article>
             <article id="mediumBox">
                 <a href="#" onclick="return selectBox('mediumBox')">
                     <img src="images/eshop-box-2.jpg">
-                    <h1>2 NUTREE BOXES (24 μπάρες)</h1>
+                    <h1>2 HANDMADE RAW BAR BOX (24 μπάρες)</h1>
                     <p class="price">49€</p>
                 </a>
             </article>
@@ -102,6 +102,14 @@
                     <img src="images/eshop-box-6.jpg">
                     <h1>2 PROTEIN FUDGE BOX (24 μπάρες)</h1>
                     <p class="price">56€</p>
+                </a>
+            </article>
+            <article id="mixMediumBox">
+                <a href="#" onclick="return selectBox('mixMediumBox')">
+                    <img src="images/eshop-box-5.jpg">
+                    <h1>1 HANDMADE RAW BAR BOX (12 μπάρες)</h1>
+                    <h1>+ 1 PROTEIN FUDGE BOX (12 μπάρες)</h1>
+                    <p class="price">52€</p>
                 </a>
             </article>
         </section>
@@ -148,7 +156,7 @@
                                 type="button"
                                 onclick="addProduct('cookie', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-protein">12</span></p>
                     </div>
                 </article>
 
@@ -182,7 +190,7 @@
                                 type="button"
                                 onclick="addProduct('brownie', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-protein">12</span></p>
                     </div>
                 </article>
 
@@ -216,10 +224,11 @@
                                 type="button"
                                 onclick="addProduct('cinnamon', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-protein">12</span></p>
                     </div>
                 </article>
 
+                <hr/>
             </div>
 
             <div id="group-raw-bars">
@@ -249,7 +258,7 @@
                                 type="button"
                                 onclick="addProduct('banana', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -278,7 +287,7 @@
                                 type="button"
                                 onclick="addProduct('matcha', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -307,7 +316,7 @@
                                 type="button"
                                 onclick="addProduct('strawberryPraline', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -336,7 +345,7 @@
                                 type="button"
                                 onclick="addProduct('peanutButter', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -365,7 +374,7 @@
                                 type="button"
                                 onclick="addProduct('orangeCarob', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -394,7 +403,7 @@
                                 type="button"
                                 onclick="addProduct('appleCinnamon', 1)">+
                         </button>
-                        <p>απομένουν: <span class="remaining-bars">12</span></p>
+                        <p>απομένουν: <span class="remaining-bars-raw">12</span></p>
                     </div>
                 </article>
 
@@ -477,11 +486,6 @@
 <script src="../js/eshop.js"></script>
 <script>
     jQuery(document).ready(function () {
-        jQuery('.shop-trigger').click(function (e) {
-            e.preventDefault();
-            jQuery(this).next('.shops').toggleClass('active');
-        });
-
         window.setLoading = function (active) {
             let loadingEl = jQuery('#loading');
             if (!!active) {
@@ -528,7 +532,8 @@
         };
 
         window.addProduct = function (product, plusButton) {
-            let remainingBars = NutreeJS.getRemainingBars();
+            let type = NutreeJS.products[product].type;
+            let remainingBars = NutreeJS.getRemainingBars()[type];
             let inputElement = jQuery(`#${product}`);
             let nextValue;
             let oldValue = NutreeJS.getStorage().selectedBars[product] || 0;
@@ -587,6 +592,7 @@
         };
 
         window.setButtonDisableState = function (product) {
+            let type = NutreeJS.products[product].type;
             let value = jQuery(`#${product}`).val();
             if (value == 0) {
                 jQuery(`#${product}Minus`).prop("disabled", true);
@@ -594,7 +600,7 @@
                 jQuery(`#${product}Minus`).prop("disabled", false);
             }
 
-            if (NutreeJS.getRemainingBars() === 0) {
+            if (NutreeJS.getRemainingBars()[type] === 0) {
                 jQuery(`#${product}Plus`).prop("disabled", true);
             } else {
                 jQuery(`#${product}Plus`).prop("disabled", false);
@@ -605,29 +611,37 @@
             let nutreeStore = NutreeJS.getStorage();
             let barNames = Object.keys(NutreeJS.products);
 
-            if (!!nutreeStore.selectedBox) {
+            if (!jQuery.isEmptyObject(nutreeStore.selectedBox)) {
                 jQuery('#smallBox').removeClass('selected');
                 jQuery('#mediumBox').removeClass('selected');
                 jQuery('#largeBox').removeClass('selected');
                 jQuery('#proteinSmallBox').removeClass('selected');
                 jQuery('#proteinMediumBox').removeClass('selected');
+                jQuery('#mixMediumBox').removeClass('selected');
 
                 jQuery('#smallBox').addClass('rejected');
                 jQuery('#mediumBox').addClass('rejected');
                 jQuery('#largeBox').addClass('rejected');
                 jQuery('#proteinSmallBox').addClass('rejected');
                 jQuery('#proteinMediumBox').addClass('rejected');
+                jQuery('#mixMediumBox').addClass('rejected');
                 jQuery(`#${nutreeStore.selectedBox}`).addClass('selected');
 
                 jQuery('#eshop-step-1').removeClass('active-step');
                 jQuery('#eshop-step-2').addClass('active-step');
 
-                if (NutreeJS.boxes[nutreeStore.selectedBox].type == 'protein') {
+                let selectedBox = NutreeJS.boxes[nutreeStore.selectedBox];
+                let boxType = selectedBox.contents.length === 2 ? 'mix' : selectedBox.contents[0].type;
+
+                if (boxType === 'protein') {
                     jQuery('#group-protein-bars').addClass('active');
                     jQuery('#group-raw-bars').removeClass('active');
-                } else {
+                } else if (boxType === 'raw') {
                     jQuery('#group-raw-bars').addClass('active');
                     jQuery('#group-protein-bars').removeClass('active');
+                } else {
+                    jQuery('#group-protein-bars').addClass('active');
+                    jQuery('#group-raw-bars').addClass('active');
                 }
 
                 if (window.scrollY === 0) {
@@ -641,34 +655,41 @@
                 jQuery('#eshop-step-2').removeClass('active-step');
             }
 
-            if (!!nutreeStore.selectedBars) {
-                let remainingBars = NutreeJS.getRemainingBars();
+            if (!jQuery.isEmptyObject(nutreeStore.selectedBars)) {
+                var remainingBarsMap = NutreeJS.getRemainingBars();
 
-                if (remainingBars < 0) {
-                    barNames.forEach(bar => {
-                        nutreeStore.selectedBars[bar] = 0;
+                Object.values(NutreeJS.products).forEach(product => {
+                    let barType = product.type;
+                    if (remainingBarsMap[barType] < 0) {
+                        nutreeStore.selectedBars[product.key] = 0;
                         NutreeJS.store(nutreeStore);
+                    }
+                    jQuery(`#${product.key}`).val(nutreeStore.selectedBars[product.key] || 0);
+                });
+
+                remainingBarsMap = NutreeJS.getRemainingBars()
+
+                Object.keys(remainingBarsMap).forEach(barType => {
+                    let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
+                    jQuery('.remaining-bars-' + barType).each((idx, e) => {
+                        jQuery(e).text(remainingBarsForType);
                     });
-                }
-
-                barNames.forEach(bar => {
-                    jQuery(`#${bar}`).val(nutreeStore.selectedBars[bar] || 0);
                 });
 
-                jQuery('.remaining-bars').each((idx, e) => {
-                    jQuery(e).text(NutreeJS.getRemainingBars());
-                });
+                let remainingBarsTotal = Object.keys(remainingBarsMap).reduce((count, barType) => {
+                    return count + remainingBarsMap[barType]
+                }, 0)
 
-                if (remainingBars > 0) {
+                if (remainingBarsTotal > 0) {
                     jQuery('#checkout').removeClass('ready');
                 } else {
                     jQuery('#checkout').addClass('ready');
                 }
 
-                if (remainingBars === 1) {
+                if (remainingBarsTotal === 1) {
                     jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλη 1 μπάρα!`);
                 } else {
-                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλες ${remainingBars} μπάρες!`);
+                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλες ${remainingBarsTotal} μπάρες!`);
                 }
             }
 
