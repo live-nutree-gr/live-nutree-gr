@@ -36,7 +36,7 @@
 <nav class="top-nav">
     <div class="content">
         <a href="index.html" class="logo">NUTREE</a>
-        <a href="#" class="top-nav-icon icon-hamburger"></a>
+        <a href="#!" class="top-nav-icon icon-hamburger"></a>
         <ul class="top-nav-menu">
             <li id="product-select">
                 PRODUCTS
@@ -82,38 +82,41 @@
 
         <section class="boxes content">
             <article id="smallBox">
-                <a href="#" onclick="return selectBox('smallBox')">
+                <a href="#!" onclick="return selectBox('smallBox')">
                     <img src="images/eshop-box-1.jpg">
-                    <h1>1 HANDMADE RAW BAR BOX (12 μπάρες)</h1>
+                    <h1>1 HANDMADE RAW BAR BOX (12 τμχ)</h1>
                     <p class="price">29€</p>
                 </a>
             </article>
             <article id="mediumBox">
-                <a href="#" onclick="return selectBox('mediumBox')">
+                <a href="#!" onclick="return selectBox('mediumBox')">
                     <img src="images/eshop-box-2.jpg">
-                    <h1>2 HANDMADE RAW BAR BOX (24 μπάρες)</h1>
+                    <h1>2 HANDMADE RAW BAR BOX (24 τμχ)</h1>
                     <p class="price">49€</p>
                 </a>
             </article>
             <article id="proteinSmallBox">
-                <a href="#" onclick="return selectBox('proteinSmallBox')">
+                <a href="#!" onclick="return selectBox('proteinSmallBox')">
                     <img src="images/eshop-box-4.jpg">
-                    <h1>1 PROTEIN FUDGE BOX (12 μπάρες)</h1>
+                    <h1>1 PROTEIN FUDGE BOX (12 τμχ)</h1>
                     <p class="price">33€</p>
                 </a>
             </article>
             <article id="proteinMediumBox">
-                <a href="#" onclick="return selectBox('proteinMediumBox')">
+                <a href="#!" onclick="return selectBox('proteinMediumBox')">
                     <img src="images/eshop-box-6.jpg">
-                    <h1>2 PROTEIN FUDGE BOX (24 μπάρες)</h1>
+                    <h1>2 PROTEIN FUDGE BOX (24 τμχ)</h1>
                     <p class="price">56€</p>
                 </a>
             </article>
             <article id="mixMediumBox">
-                <a href="#" onclick="return selectBox('mixMediumBox')">
+                <a href="#!" onclick="return selectBox('mixMediumBox')">
                     <img src="images/eshop-box-5.jpg">
-                    <h1>1 HANDMADE RAW BAR BOX (12 μπάρες)</h1>
-                    <h1>+ 1 PROTEIN FUDGE BOX (12 μπάρες)</h1>
+                    <h1>
+                        1 HANDMADE RAW BAR BOX (12 τμχ)
+                        <br/>
+                        + 1 PROTEIN FUDGE BOX (12 τμχ)
+                    </h1>
                     <p class="price">52€</p>
                 </a>
             </article>
@@ -416,10 +419,10 @@
         </section>
 
         <section id="checkout">
+            <p id="remaining-bars-warning">Απομένει να διαλέξετε άλλες 12 μπάρες!</p>
             <a class="header-btn btn btn-coral" href="#!" onclick="doCheckout()">
                 <span>Συμπλήρωση στοιχείων &amp; πληρωμή</span>
             </a>
-            <p id="remaining-bars-warning">Απομένει να διαλέξετε άλλες 12 μπάρες!</p>
         </section>
     </div>
     <section class="section-newsletter">
@@ -499,10 +502,7 @@
 
         window.selectBox = function (selectedBox) {
             if (selectedBox === NutreeJS.getStorage().selectedBox) {
-                let targetEl = jQuery('#eshop-step-2');
-                jQuery('html, body').stop().animate({
-                    'scrollTop': targetEl.offset().top
-                }, 500, 'swing');
+                document.getElementById('eshop-step-2').scrollIntoView({behavior: "smooth"});
                 return false;
             }
 
@@ -523,10 +523,7 @@
                         NutreeJS.store({selectedBox: selectedBox});
                         updateState();
                         setLoading(false);
-                        let targetEl = jQuery('#eshop-step-2');
-                        jQuery('html, body').stop().animate({
-                            'scrollTop': targetEl.offset().top
-                        }, 500, 'swing');
+                        document.getElementById('eshop-step-2').scrollIntoView({behavior: "smooth"});
                     });
             });
 
@@ -596,7 +593,7 @@
         window.setButtonDisableState = function (product) {
             let type = NutreeJS.products[product].type;
             let value = jQuery(`#${product}`).val();
-            if (value == 0) {
+            if (value === 0) {
                 jQuery(`#${product}Minus`).prop("disabled", true);
             } else {
                 jQuery(`#${product}Minus`).prop("disabled", false);
@@ -647,10 +644,7 @@
                 }
 
                 if (window.scrollY === 0) {
-                    let targetEl = jQuery('#eshop-step-2');
-                    jQuery('html, body').stop().animate({
-                        'scrollTop': targetEl.offset().top
-                    }, 500, 'swing');
+                    document.getElementById('eshop-step-2').scrollIntoView({behavior: "smooth"});
                 }
             } else {
                 jQuery('#eshop-step-1').addClass('active-step');
@@ -658,7 +652,7 @@
             }
 
             if (!jQuery.isEmptyObject(nutreeStore.selectedBars)) {
-                var remainingBarsMap = NutreeJS.getRemainingBars();
+                let remainingBarsMap = NutreeJS.getRemainingBars();
 
                 Object.values(NutreeJS.products).forEach(product => {
                     let barType = product.type;
@@ -682,17 +676,37 @@
                     return count + remainingBarsMap[barType]
                 }, 0)
 
+                let warningMsg = '';
                 if (remainingBarsTotal > 0) {
                     jQuery('#checkout').removeClass('ready');
+                    warningMsg = 'Απομένει να διαλέξετε ακόμα ';
+
+                    warningMsg += Object.keys(remainingBarsMap)
+                        .filter(barType => NutreeJS.getRemainingBars()[barType] > 0)
+                        .map(barType => {
+                            let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
+                            let msgPart = `${remainingBarsForType} μπάρ`
+                            if (remainingBarsForType === 1) {
+                                msgPart += `α`
+                            } else {
+                                msgPart += `ες`
+                            }
+                            if (barType === 'protein') {
+                                msgPart += ` προτεΐνης`
+                            } else {
+                                msgPart += ` ενέργειας`
+                            }
+
+                            return msgPart;
+                        }).join(' και ');
+
+                    warningMsg += '!'
                 } else {
                     jQuery('#checkout').addClass('ready');
+                    warningMsg = 'Το πακέτο σας είναι έτοιμο!'
                 }
 
-                if (remainingBarsTotal === 1) {
-                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλη 1 μπάρα!`);
-                } else {
-                    jQuery('#remaining-bars-warning').text(`Απομένει να διαλέξετε άλλες ${remainingBarsTotal} μπάρες!`);
-                }
+                jQuery('#remaining-bars-warning').text(warningMsg);
             }
 
             barNames.forEach(bar => {
