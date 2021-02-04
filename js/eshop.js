@@ -1,5 +1,5 @@
 (function () {
-    const STORAGE_KEY = 'nutree-storage';
+    const STORAGE_KEY = 'nutree-shop';
     const VERSION = 1.4;
     const TYPE_RAW = 'raw';
     const TYPE_PROTEIN = 'protein';

@@ -45,40 +45,47 @@ jQuery(document).ready(function () {
 
     if (!window.isMobile() || window.innerWidth > 640) {
         // rotate hero image slideshow for desktop
-        jQuery('.slide-1').waitForImages(function () {
-            let autoplayId,
-                startAutoplay = function () {
-                    clearInterval(autoplayId);
-                    autoplayId = setInterval(function () {
-                        nextSlide();
-                    }, 6000)
-                };
+        window.onscroll = function () {
+            setTimeout(function () {
+                nextSlide();
+                jQuery('.slide-1').waitForImages(function () {
+                    let autoplayId,
+                        startAutoplay = function () {
+                            clearInterval(autoplayId);
+                            autoplayId = setInterval(function () {
+                                nextSlide();
+                            }, 5000)
+                        };
 
-            startAutoplay();
+                    startAutoplay();
 
-            // add 2nd function on click
-            jQuery('.next').on('click', function () {
-                startAutoplay();
-            });
-
-            // add 2nd function on click
-            jQuery('.prev').on('click', function () {
-                startAutoplay();
-            });
-
-            // replaces swipe functions
-            if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
-                jQuery('.slider').swipe({
-                    swipeLeft: function () {
-                        nextSlide();
+                    // add 2nd function on click
+                    jQuery('.next').on('click', function () {
                         startAutoplay();
-                    },
-                    swipeRight: function () {
-                        prevSlide();
+                    });
+
+                    // add 2nd function on click
+                    jQuery('.prev').on('click', function () {
                         startAutoplay();
+                    });
+
+                    // replaces swipe functions
+                    if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
+                        jQuery('.slider').swipe({
+                            swipeLeft: function () {
+                                nextSlide();
+                                startAutoplay();
+                            },
+                            swipeRight: function () {
+                                prevSlide();
+                                startAutoplay();
+                            }
+                        });
                     }
                 });
-            }
-        });
+            }, 1000);
+
+            window.onscroll = null;
+        }
     }
 });
