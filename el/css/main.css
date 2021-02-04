@@ -2449,8 +2449,8 @@ main {
 }
 
 @media screen and (min-width: 580px) {
-  #group-protein-bars hr,
-  #group-raw-bars hr {
+  #group-protein-bars hr.active,
+  #group-raw-bars hr.active {
     display: block;
   }
 }

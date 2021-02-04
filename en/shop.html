@@ -236,7 +236,7 @@
                     </div>
                 </article>
 
-                <hr/>
+                <hr id="group-separator"/>
             </div>
 
             <div id="group-raw-bars">
@@ -635,12 +635,15 @@
                 if (boxType === 'protein') {
                     jQuery('#group-protein-bars').addClass('active');
                     jQuery('#group-raw-bars').removeClass('active');
+                    jQuery('#group-separator').removeClass('active');
                 } else if (boxType === 'raw') {
                     jQuery('#group-raw-bars').addClass('active');
                     jQuery('#group-protein-bars').removeClass('active');
+                    jQuery('#group-separator').removeClass('active');
                 } else {
                     jQuery('#group-protein-bars').addClass('active');
                     jQuery('#group-raw-bars').addClass('active');
+                    jQuery('#group-separator').addClass('active');
                 }
 
                 if (window.scrollY === 0) {
@@ -651,63 +654,61 @@
                 jQuery('#eshop-step-2').removeClass('active-step');
             }
 
-            if (!jQuery.isEmptyObject(nutreeStore.selectedBars)) {
-                let remainingBarsMap = NutreeJS.getRemainingBars();
+            let remainingBarsMap = NutreeJS.getRemainingBars();
 
-                Object.values(NutreeJS.products).forEach(product => {
-                    let barType = product.type;
-                    if (remainingBarsMap[barType] < 0) {
-                        nutreeStore.selectedBars[product.key] = 0;
-                        NutreeJS.store(nutreeStore);
-                    }
-                    jQuery(`#${product.key}`).val(nutreeStore.selectedBars[product.key] || 0);
-                });
-
-                remainingBarsMap = NutreeJS.getRemainingBars()
-
-                Object.keys(remainingBarsMap).forEach(barType => {
-                    let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
-                    jQuery('.remaining-bars-' + barType).each((idx, e) => {
-                        jQuery(e).text(remainingBarsForType);
-                    });
-                });
-
-                let remainingBarsTotal = Object.keys(remainingBarsMap).reduce((count, barType) => {
-                    return count + remainingBarsMap[barType]
-                }, 0)
-
-                let warningMsg = '';
-                if (remainingBarsTotal > 0) {
-                    jQuery('#checkout').removeClass('ready');
-                    warningMsg = 'Απομένει να διαλέξετε ακόμα ';
-
-                    warningMsg += Object.keys(remainingBarsMap)
-                        .filter(barType => NutreeJS.getRemainingBars()[barType] > 0)
-                        .map(barType => {
-                            let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
-                            let msgPart = `${remainingBarsForType} μπάρ`
-                            if (remainingBarsForType === 1) {
-                                msgPart += `α`
-                            } else {
-                                msgPart += `ες`
-                            }
-                            if (barType === 'protein') {
-                                msgPart += ` προτεΐνης`
-                            } else {
-                                msgPart += ` ενέργειας`
-                            }
-
-                            return msgPart;
-                        }).join(' και ');
-
-                    warningMsg += '!'
-                } else {
-                    jQuery('#checkout').addClass('ready');
-                    warningMsg = 'Το πακέτο σας είναι έτοιμο!'
+            Object.values(NutreeJS.products).forEach(product => {
+                let barType = product.type;
+                if (remainingBarsMap[barType] < 0) {
+                    nutreeStore.selectedBars[product.key] = 0;
+                    NutreeJS.store(nutreeStore);
                 }
+                jQuery(`#${product.key}`).val(nutreeStore.selectedBars[product.key] || 0);
+            });
 
-                jQuery('#remaining-bars-warning').text(warningMsg);
+            remainingBarsMap = NutreeJS.getRemainingBars()
+
+            Object.keys(remainingBarsMap).forEach(barType => {
+                let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
+                jQuery('.remaining-bars-' + barType).each((idx, e) => {
+                    jQuery(e).text(remainingBarsForType);
+                });
+            });
+
+            let remainingBarsTotal = Object.keys(remainingBarsMap).reduce((count, barType) => {
+                return count + remainingBarsMap[barType]
+            }, 0);
+
+            let warningMsg = '';
+            if (remainingBarsTotal > 0) {
+                jQuery('#checkout').removeClass('ready');
+                warningMsg = 'Απομένει να διαλέξετε ακόμα ';
+
+                warningMsg += Object.keys(remainingBarsMap)
+                    .filter(barType => NutreeJS.getRemainingBars()[barType] > 0)
+                    .map(barType => {
+                        let remainingBarsForType = NutreeJS.getRemainingBars()[barType];
+                        let msgPart = `${remainingBarsForType} μπάρ`
+                        if (remainingBarsForType === 1) {
+                            msgPart += `α`
+                        } else {
+                            msgPart += `ες`
+                        }
+                        if (barType === 'protein') {
+                            msgPart += ` προτεΐνης`
+                        } else {
+                            msgPart += ` ενέργειας`
+                        }
+
+                        return msgPart;
+                    }).join(' και ');
+
+                warningMsg += '!'
+            } else {
+                jQuery('#checkout').addClass('ready');
+                warningMsg = 'Το πακέτο σας είναι έτοιμο!'
             }
+
+            jQuery('#remaining-bars-warning').text(warningMsg);
 
             barNames.forEach(bar => {
                 setButtonDisableState(bar);
