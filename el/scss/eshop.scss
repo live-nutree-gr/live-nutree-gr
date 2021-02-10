@@ -37,7 +37,11 @@
       }
 
       h1 {
-        margin: 5px 0;
+        display: flex;
+        margin: 0 auto;
+        min-height: 2em;
+        align-items: center;
+        justify-content: center;
       }
 
       .price {
@@ -88,7 +92,14 @@
 
       .image {
         img {
-          max-width: 180px;
+          max-height: 145px;
+          margin: 0 2em;
+        }
+
+        @media screen and (min-width: 960px) {
+          img {
+            margin: 0.5em 2em;
+          }
         }
       }
 
@@ -188,27 +199,52 @@
 
   #checkout {
     text-align: center;
-    margin-bottom: 100px;
-    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    background-color: #eee;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 0 15px -2px;
 
     a {
+      opacity: 0.5;
       cursor: default;
+      pointer-events: none;
+      margin-bottom: 30px;
     }
 
     #remaining-bars-warning {
-      margin-top: 30px;
-      font-weight: bold;
+      margin: 20px;
+      font-weight: normal;
+      color: #333;
     }
 
     &.ready {
-      opacity: 1;
-
       a {
+        opacity: 1;
         cursor: pointer;
+        pointer-events: auto;
       }
+    }
+  }
+}
 
-      #remaining-bars-warning {
-        display: none;
+#group-protein-bars,
+#group-raw-bars {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  hr {
+    display: none;
+
+    &.active {
+      @media screen and (min-width: 580px) {
+        display: block;
       }
     }
   }

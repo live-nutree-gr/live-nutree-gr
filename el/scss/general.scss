@@ -78,7 +78,7 @@ a {
   color: black;
 
   &:focus {
-    outline:0;
+    outline: 0;
   }
 
   &:active,
@@ -414,6 +414,36 @@ main {
   padding: 0 30px;
   z-index: 9999;
 
+  #product-select.active {
+    color: lighten($red, 10);
+    font-weight: bold;
+
+    a {
+      font-weight: initial;
+    }
+  }
+
+  .drop {
+    display: none;
+    position: absolute;
+    background: #212121;
+    padding: 0 25px;
+    padding-top: 10px;
+
+    a {
+      padding: 1em 0;
+      display: block;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .lang-select {
+    display: none;
+  }
+
   &.unmask {
 
     .logo {
@@ -421,11 +451,15 @@ main {
       transition: opacity .25s .25s;
     }
 
-    .top-nav-menu li {
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-          opacity: 1;
-          transition: opacity .25s (.25s + $i / 4);
+    .top-nav-menu {
+      li {
+        cursor: pointer;
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            opacity: 1;
+            transition: opacity .25s (.25s + $i / 4);
+          }
         }
       }
     }
@@ -589,7 +623,7 @@ main {
     //}
 
     .slide-1 {
-      background: url(../images/hero-bg-1.jpg) no-repeat center;
+      background: url(../images/hero-bg-protein-launch.jpg) no-repeat center;
       background-size: cover;
     }
 
@@ -773,6 +807,7 @@ main {
 
 .footer {
   padding: 50px 0 100px;
+  margin-bottom: 160px;
 
   .footer-list-title {
     font-family: $font;

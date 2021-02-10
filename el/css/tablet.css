@@ -9,6 +9,14 @@
     position: absolute;
     padding: 0;
   }
+  .top-nav .drop {
+    position: relative;
+    background: initial;
+    padding-top: 0;
+  }
+  .top-nav .lang-select {
+    display: block;
+  }
   .top-nav .content {
     width: 90%;
   }
@@ -66,43 +74,7 @@
     opacity: 0;
   }
   .top-nav .top-nav-language {
-    max-height: 0;
-    background: #141414;
-    position: absolute;
-    top: 310px;
-    width: 100%;
-    left: 0;
-    margin-left: 0;
-    overflow: hidden;
-    -webkit-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s;
-    -webkit-transition-delay: 0s;
-         -o-transition-delay: 0s;
-            transition-delay: 0s;
-  }
-  .top-nav .top-nav-language.active {
-    max-height: 250px;
-    padding: 20px 30px;
-    border-top: 1px white solid;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-    -webkit-transition-delay: 0.3s;
-         -o-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  .top-nav .top-nav-language.active > li a {
-    opacity: 1;
-    -webkit-transition: opacity .3s .3s linear;
-    -o-transition: opacity .3s .3s linear;
-    transition: opacity .3s .3s linear;
-  }
-  .top-nav .top-nav-language > li {
-    width: 100%;
-  }
-  .top-nav .top-nav-language a {
-    padding: 5px 0;
+    display: none;
   }
   .section-newsletter .section-title {
     font-size: 30px;

@@ -38,11 +38,18 @@
         <a href="index.html" class="logo">NUTREE</a>
         <a href="#" class="top-nav-icon icon-hamburger"></a>
         <ul class="top-nav-menu">
-            <li><a href="products.html">ΠΡΟΪΟΝΤΑ</a></li>
+            <li id="product-select">
+                ΠΡΟΪΟΝΤΑ
+                <div class="drop">
+                    <a href="products.html#section-protein-fudge">Γλυκίσματα Πρωτεΐνης</a>
+                    <a href="products.html#section-raw-energy-bars">Μπάρες Ενέργειας</a>
+                </div>
+            </li>
             <li><a href="about.html">ΟΜΑΔΑ</a></li>
             <li><a href="stores.html">ΣΗΜΕΙΑ ΠΩΛΗΣΗΣ</a></li>
             <li><a href="shop.html">SHOP</a></li>
             <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            <li class="lang-select"><a href="../en/index.html">EN</a> / <a href="../el/index.html">GR</a></li>
         </ul>
         <ul class="social-icons">
             <li><a href="https://www.facebook.com/nutree.gr/" class="icon-fb">facebook</a></li>
@@ -56,17 +63,17 @@
 
 <header class="header">
     <ul class="slider">
-<!--        <li class="slide-1 show">-->
-<!--            <a href="shop.html" style="-->
-<!--                width: 100%;-->
-<!--                height: 100%;-->
-<!--                cursor: pointer !important;-->
-<!--                z-index: 7;-->
-<!--            "></a>-->
-<!--        </li>-->
+        <!--        <li class="slide-1 show">-->
+        <!--            <a href="shop.html" style="-->
+        <!--                width: 100%;-->
+        <!--                height: 100%;-->
+        <!--                cursor: pointer !important;-->
+        <!--                z-index: 7;-->
+        <!--            "></a>-->
+        <!--        </li>-->
         <li class="slide-1 show">
             <div class="content-small">
-                <h1 class="title-with-dot">Welcome to the Future of<span>Healthy Snacking</span></h1>
+                <h1 class="title-with-dot">Καινοτόμα Υγιεινά σνακ που <span>ξεχωρίζουν</span></h1>
                 <a class="btn btn-big btn-coral btn-unfold" href="products.html">
                     <span>Τα προϊόντα μας</span>
                 </a>
@@ -104,6 +111,44 @@
 <main>
     <section class="home-section">
         <div class="content-medium">
+            <h2 class="section-title with-watermark">Tο πρωτεϊνικό σνακ του μέλλοντος<span>!</span></h2>
+            <p class="text">
+                Ξεχάστε τις μπάρες πρωτεΐνης όπως τις ξέρατε! H νέα σειρά με πρωτεϊνικά γλυκίσματα της NUTREE – Protein
+                Fudge – είναι το πρωτεϊνικό σνακ του μέλλοντος! Πλούσια σε υψηλής ποιότητας φυτική πρωτεΐνη αρακά, έχει
+                βουτυρένια υφή από καρπούς και απολαυστική μπισκοτένια γεύση αλατισμένης καραμέλας, χωρίς πρόσθετη
+                ζάχαρη. Περιλαμβάνει 3 εκρηκτικούς συνδυασμούς γεύσεων που θυμίζουν αγαπημένες λιχουδιές μικρών και
+                μεγάλων.
+            </p>
+            <a href="products.html#section-protein-fudge" class="section-vision-btn btn btn-outline">Ανακαλύψτε τις
+                γεύσεις μας</a>
+        </div>
+    </section>
+
+    <section class="section-index-products">
+        <ul class="products-categories-sections-images">
+            <li class="products-categories-sections-cookie-dough">
+                <div class="inner">
+                    <h3>Μπισκότο<span>.</span></h3>
+                    <a href="products.html#cookie-dough-bar" class="btn btn-coral">Μάθε περισσότερα</a>
+                </div>
+            </li>
+            <li class="products-categories-sections-brownie-praline">
+                <div class="inner">
+                    <h3>Μπράουνι πραλίνα<span>.</span></h3>
+                    <a href="products.html#brownie-praline-bar" class="btn btn-coral">Μάθε περισσότερα</a>
+                </div>
+            </li>
+            <li class="products-categories-sections-cinnamon-roll">
+                <div class="inner">
+                    <h3>Ρολό κανέλας<span>.</span></h3>
+                    <a href="products.html#cinnamon-roll-bar" class="btn btn-coral">Μάθε περισσότερα</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="home-section">
+        <div class="content-medium">
             <h2 class="section-title with-watermark">Μπάρες ενέργειας που ξεχωρίζουν<span>!</span></h2>
             <p class="text">
                 Έχετε δοκιμάσει ποτέ ένα υγιεινό σνακ που να συνδυάζει υψηλή διατροφική αξία με μοναδική γεύση?
@@ -111,7 +156,8 @@
                 Αφεθείτε σε ξεχωριστούς συνδυασμούς γεύσεων και αντλήστε φυσική πηγή ενέργειας που αναδεικνύει τον
                 δημιουργικό εαυτό σας.
             </p>
-            <a href="about.html" class="section-vision-btn btn btn-outline">Ανακαλύψτε τις γεύσεις μας</a>
+            <a href="products.html#section-raw-energy-bars" class="section-vision-btn btn btn-outline">Ανακαλύψτε τις
+                γεύσεις μας</a>
         </div>
     </section>
 
@@ -210,7 +256,8 @@
     <ul class="footer-list-left">
         <li class="footer-list-title">Κατηγορίες</li>
         <li><a href="index.html">Αρχική</a></li>
-        <li><a href="products.html">Προϊόντα</a></li>
+        <li><a href="products.html#section-protein-fudge">Γλυκίσματα Πρωτεΐνης</a></li>
+        <li><a href="products.html#section-raw-energy-bars">Μπάρες Ενέργειας</a></li>
         <li><a href="about.html">Oμάδα</a></li>
         <li><a href="stores.html">Σημεία πώλησης</a></li>
         <li><a href="contact.html">Επικοινωνία</a></li>
@@ -258,91 +305,6 @@
 <script src="../js/jquery.touchSwipe.min.js"></script>
 <script src="../js/jquery.waitforimages.min.js"></script>
 <script src="../js/common.js"></script>
-<script>
-    (function () {
-        let $slides = jQuery('.slider li'),
-            currentSlide = $slides.first(),
-
-            nextSlide = function () {
-                currentSlide.removeClass('show');
-                currentSlide = currentSlide.next();
-                if (currentSlide.length === 0) {
-                    currentSlide = $slides.first();
-                }
-                currentSlide.addClass('show');
-            },
-
-            prevSlide = function () {
-                currentSlide.removeClass('show');
-                currentSlide = currentSlide.prev();
-                if (currentSlide.length === 0) {
-                    currentSlide = $slides.last();
-                }
-                currentSlide.addClass('show');
-            };
-
-        // Slider next button
-        jQuery('.next').on('click', function () {
-            nextSlide();
-        });
-
-        // Slider prev button
-        jQuery('.prev').on('click', function () {
-            prevSlide();
-        });
-
-        if (window.innerWidth < 640
-            && (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement)
-        ) {
-            jQuery('.slider').swipe({
-                swipeLeft: function () {
-                    nextSlide();
-                },
-                swipeRight: function () {
-                    prevSlide();
-                }
-            });
-        }
-
-        if (!window.isMobile() || window.innerWidth > 640) {
-            // rotate hero image slideshow for desktop
-            jQuery('.slide-1').waitForImages(function () {
-                let autoplayId,
-                    startAutoplay = function () {
-                        clearInterval(autoplayId);
-                        autoplayId = setInterval(function () {
-                            nextSlide();
-                        }, 6000)
-                    };
-
-                startAutoplay();
-
-                // add 2nd function on click
-                jQuery('.next').on('click', function () {
-                    startAutoplay();
-                });
-
-                // add 2nd function on click
-                jQuery('.prev').on('click', function () {
-                    startAutoplay();
-                });
-
-                // replaces swipe functions
-                if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
-                    jQuery('.slider').swipe({
-                        swipeLeft: function () {
-                            nextSlide();
-                            startAutoplay();
-                        },
-                        swipeRight: function () {
-                            prevSlide();
-                            startAutoplay();
-                        }
-                    });
-                }
-            });
-        }
-    }());
-</script>
+<script src="../js/index.js"></script>
 </body>
 </html>

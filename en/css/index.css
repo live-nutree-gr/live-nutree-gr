@@ -299,11 +299,27 @@
   font-size: 30px;
   margin-bottom: 20px;
   font-family: "Alegreya", "Didact Gothic", "Open Sans", sans-serif;
+  text-shadow: 0 0 10px #000;
 }
 
 .products-categories-sections-images h3 span {
   font-size: 50px;
   color: #ca644e;
+}
+
+.products-categories-sections-images .products-categories-sections-cookie-dough {
+  background: url(../images/homepage-protein-1.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-brownie-praline {
+  background: url(../images/homepage-protein-2.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-cinnamon-roll {
+  background: url(../images/homepage-protein-3.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-strawberry {

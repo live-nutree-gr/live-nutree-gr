@@ -887,11 +887,45 @@ main {
   z-index: 9999;
 }
 
+.top-nav #product-select.active {
+  color: #f3a68f;
+  font-weight: bold;
+}
+
+.top-nav #product-select.active a {
+  font-weight: initial;
+}
+
+.top-nav .drop {
+  display: none;
+  position: absolute;
+  background: #212121;
+  padding: 0 25px;
+  padding-top: 10px;
+}
+
+.top-nav .drop a {
+  padding: 1em 0;
+  display: block;
+}
+
+.top-nav .drop.active {
+  display: block;
+}
+
+.top-nav .lang-select {
+  display: none;
+}
+
 .top-nav.unmask .logo {
   opacity: 1;
   -webkit-transition: opacity .25s .25s;
   -o-transition: opacity .25s .25s;
   transition: opacity .25s .25s;
+}
+
+.top-nav.unmask .top-nav-menu li {
+  cursor: pointer;
 }
 
 .top-nav.unmask .top-nav-menu li:nth-child(1) {
@@ -1123,7 +1157,7 @@ main {
 }
 
 .header .slider .slide-1 {
-  background: url(../images/hero-bg-1.jpg) no-repeat center;
+  background: url(../images/hero-bg-protein-launch.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1306,6 +1340,7 @@ main {
 
 .footer {
   padding: 50px 0 100px;
+  margin-bottom: 160px;
 }
 
 .footer .footer-list-title {
@@ -1673,11 +1708,27 @@ main {
   font-size: 30px;
   margin-bottom: 20px;
   font-family: "Alegreya", "Didact Gothic", "Open Sans", sans-serif;
+  text-shadow: 0 0 10px #000;
 }
 
 .products-categories-sections-images h3 span {
   font-size: 50px;
   color: #ca644e;
+}
+
+.products-categories-sections-images .products-categories-sections-cookie-dough {
+  background: url(../images/homepage-protein-1.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-brownie-praline {
+  background: url(../images/homepage-protein-2.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
+}
+
+.products-categories-sections-images .products-categories-sections-cinnamon-roll {
+  background: url(../images/homepage-protein-3.jpeg) center no-repeat #f6f6f6;
+  background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-strawberry {
@@ -1947,6 +1998,33 @@ main {
   right: -50%;
 }
 
+.section-cookie-dough-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #c59968;
+}
+
+.section-cookie-dough-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(197, 153, 104, 0.3), 0 0 0 100px rgba(197, 153, 104, 0.15);
+          box-shadow: 0 0 0 50px rgba(197, 153, 104, 0.3), 0 0 0 100px rgba(197, 153, 104, 0.15);
+}
+
+.section-brownie-praline-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #6d3a22;
+}
+
+.section-brownie-praline-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(109, 58, 34, 0.3), 0 0 0 100px rgba(109, 58, 34, 0.15);
+          box-shadow: 0 0 0 50px rgba(109, 58, 34, 0.3), 0 0 0 100px rgba(109, 58, 34, 0.15);
+}
+
+.section-cinnamon-roll-bar .section-expanded-image:before {
+  background: url(../images/shapes-bg.png) #ba7a5a;
+}
+
+.section-cinnamon-roll-bar.active .section-expanded-image:before {
+  -webkit-box-shadow: 0 0 0 50px rgba(186, 122, 90, 0.3), 0 0 0 100px rgba(186, 122, 90, 0.15);
+          box-shadow: 0 0 0 50px rgba(186, 122, 90, 0.3), 0 0 0 100px rgba(186, 122, 90, 0.15);
+}
+
 .section-peanutbutter-bar .section-expanded-image:before {
   background: url(../images/shapes-bg.png) #bed4b2;
 }
@@ -2142,7 +2220,20 @@ main {
 }
 
 #eshop-step-1 .boxes article h1 {
-  margin: 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  min-height: 2em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #eshop-step-1 .boxes article .price {
@@ -2202,7 +2293,14 @@ main {
 }
 
 #eshop-step-2 .cart article .image img {
-  max-width: 180px;
+  max-height: 145px;
+  margin: 0 2em;
+}
+
+@media screen and (min-width: 960px) {
+  #eshop-step-2 .cart article .image img {
+    margin: 0.5em 2em;
+  }
 }
 
 #eshop-step-2 .cart article .description {
@@ -2305,29 +2403,56 @@ main {
 
 #eshop-step-2 #checkout {
   text-align: center;
-  margin-bottom: 100px;
-  opacity: 0.5;
+  position: fixed;
+  bottom: 0;
+  background-color: #eee;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px -2px;
+          box-shadow: 0 0 15px -2px;
 }
 
 #eshop-step-2 #checkout a {
+  opacity: 0.5;
   cursor: default;
+  pointer-events: none;
+  margin-bottom: 30px;
 }
 
 #eshop-step-2 #checkout #remaining-bars-warning {
-  margin-top: 30px;
-  font-weight: bold;
-}
-
-#eshop-step-2 #checkout.ready {
-  opacity: 1;
+  margin: 20px;
+  font-weight: normal;
+  color: #333;
 }
 
 #eshop-step-2 #checkout.ready a {
+  opacity: 1;
   cursor: pointer;
+  pointer-events: auto;
 }
 
-#eshop-step-2 #checkout.ready #remaining-bars-warning {
+#group-protein-bars,
+#group-raw-bars {
   display: none;
+}
+
+#group-protein-bars.active,
+#group-raw-bars.active {
+  display: block;
+}
+
+#group-protein-bars hr,
+#group-raw-bars hr {
+  display: none;
+}
+
+@media screen and (min-width: 580px) {
+  #group-protein-bars hr.active,
+  #group-raw-bars hr.active {
+    display: block;
+  }
 }
 
 /* Text indent method */
@@ -2632,6 +2757,14 @@ main {
     position: absolute;
     padding: 0;
   }
+  .top-nav .drop {
+    position: relative;
+    background: initial;
+    padding-top: 0;
+  }
+  .top-nav .lang-select {
+    display: block;
+  }
   .top-nav .content {
     width: 90%;
   }
@@ -2689,43 +2822,7 @@ main {
     opacity: 0;
   }
   .top-nav .top-nav-language {
-    max-height: 0;
-    background: #141414;
-    position: absolute;
-    top: 310px;
-    width: 100%;
-    left: 0;
-    margin-left: 0;
-    overflow: hidden;
-    -webkit-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s;
-    -webkit-transition-delay: 0s;
-         -o-transition-delay: 0s;
-            transition-delay: 0s;
-  }
-  .top-nav .top-nav-language.active {
-    max-height: 250px;
-    padding: 20px 30px;
-    border-top: 1px white solid;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-    -webkit-transition-delay: 0.3s;
-         -o-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-  .top-nav .top-nav-language.active > li a {
-    opacity: 1;
-    -webkit-transition: opacity .3s .3s linear;
-    -o-transition: opacity .3s .3s linear;
-    transition: opacity .3s .3s linear;
-  }
-  .top-nav .top-nav-language > li {
-    width: 100%;
-  }
-  .top-nav .top-nav-language a {
-    padding: 5px 0;
+    display: none;
   }
   .section-newsletter .section-title {
     font-size: 30px;
@@ -2919,6 +3016,11 @@ main {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
+  }
+  .section-cookie-dough-bar .right-content,
+  .section-brownie-praline-bar .left-content,
+  .section-cinnamon-roll-bar .right-content {
+    display: none;
   }
   .section-banana-almond-bar .right-content,
   .section-matcha-bar .left-content,

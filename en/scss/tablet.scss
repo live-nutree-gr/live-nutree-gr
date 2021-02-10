@@ -15,6 +15,16 @@
     position: absolute;
     padding: 0;
 
+    .drop {
+      position: relative;
+      background: initial;
+      padding-top: 0;
+    }
+
+    .lang-select {
+      display: block;
+    }
+
     .content {
       width: 90%;
     }
@@ -76,38 +86,7 @@
     }
 
     .top-nav-language {
-      max-height: 0;
-      background: #141414;
-      position: absolute;
-      top: 310px;
-      width: 100%;
-      left: 0;
-      margin-left: 0;
-      overflow: hidden;
-      transition: all 0s;
-      transition-delay: 0s;
-
-      &.active {
-        max-height: 250px;
-        padding: 20px 30px;
-        border-top: 1px white solid;
-        transition: all .3s linear;
-        transition-delay: 0.3s;
-
-        > li a {
-          opacity: 1;
-          transition: opacity .3s .3s linear;
-        }
-      }
-
-      > li {
-        //opacity: 0;
-        width: 100%;
-      }
-
-      a {
-        padding: 5px 0;
-      }
+      display: none;
     }
   }
 

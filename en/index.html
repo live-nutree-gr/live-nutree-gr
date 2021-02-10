@@ -38,11 +38,18 @@
         <a class="logo" href="index.html">NUTREE</a>
         <a class="top-nav-icon icon-hamburger" href="#"></a>
         <ul class="top-nav-menu">
-            <li><a href="products.html">PRODUCTS</a></li>
+            <li id="product-select">
+                PRODUCTS
+                <div class="drop">
+                    <a href="products.html#section-protein-fudge">Protein Fudge</a>
+                    <a href="products.html#section-raw-energy-bars">Raw Energy Bars</a>
+                </div>
+            </li>
             <li><a href="about.html">THE TEAM</a></li>
             <li><a href="stores.html">WHERE TO BUY</a></li>
             <li><a href="shop.html">SHOP</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
+            <li class="lang-select"><a href="../en/index.html">EN</a> / <a href="../el/index.html">GR</a></li>
         </ul>
         <ul class="social-icons">
             <li><a class="icon-fb" href="https://www.facebook.com/nutree.gr/">facebook</a></li>
@@ -56,18 +63,18 @@
 
 <header class="header">
     <ul class="slider">
-<!--        <li class="slide-1 show">-->
-<!--            <a href="shop.html" style="-->
-<!--                width: 100%;-->
-<!--                height: 100%;-->
-<!--                cursor: pointer !important;-->
-<!--                z-index: 7;-->
-<!--            "></a>-->
-<!--        </li>-->
+        <!--        <li class="slide-1 show">-->
+        <!--            <a href="shop.html" style="-->
+        <!--                width: 100%;-->
+        <!--                height: 100%;-->
+        <!--                cursor: pointer !important;-->
+        <!--                z-index: 7;-->
+        <!--            "></a>-->
+        <!--        </li>-->
         <li class="slide-1 show">
             <div class="content-small">
                 <h1 class="title-with-dot">Welcome to the Future of<span>Healthy Snacking</span></h1>
-                <a class="btn btn-big btn-coral btn-unfold" href="products.html">
+                <a class="btn btn-big btn-coral btn-unfold" href="products-2.html">
                     <span>Our products</span>
                 </a>
             </div>
@@ -96,13 +103,50 @@
 <main>
     <section class="home-section">
         <div class="content-medium">
+            <h2 class="section-title with-watermark">The protein snack of the future<span>!</span></h2>
+            <p class="text">
+                Forget about Protein bars! NUTREE's new protein fudge series is the protein snack of the future! Rich in
+                clean plant-based pea protein, no added sugar, this snack series has a fudgy buttery texture with
+                biscotti salted caramel aromas. It comes in 3 all-time favourite desserts flavours that will satisfy
+                your cookie/chocolate cravings.
+            </p>
+            <a href="products.html#section-protein-fudge" class="section-vision-btn btn btn-outline">Discover more</a>
+        </div>
+    </section>
+
+    <section class="section-index-products">
+        <ul class="products-categories-sections-images">
+            <li class="products-categories-sections-cookie-dough">
+                <div class="inner">
+                    <h3>Cookie Dough<span>.</span></h3>
+                    <a href="products.html#cookie-dough-bar" class="btn btn-coral">Learn more</a>
+                </div>
+            </li>
+            <li class="products-categories-sections-brownie-praline">
+                <div class="inner">
+                    <h3>Brownie Praline<span>.</span></h3>
+                    <a href="products.html#brownie-praline-bar" class="btn btn-coral">Learn more</a>
+                </div>
+            </li>
+            <li class="products-categories-sections-cinnamon-roll">
+                <div class="inner">
+                    <h3>Cinnamon Roll<span>.</span></h3>
+                    <a href="products.html#cinnamon-roll-bar" class="btn btn-coral">Learn more</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="home-section">
+        <div class="content-medium">
             <h2 class="section-title with-watermark">Experts in healthy snacking<span>!</span></h2>
             <p class="text">
                 NUTREE was founded in 2018 with the vision to integrate gourmet and healthy snacks - which combine real,
                 Mediterranean-inspired (mostly Greek) raw materials and authentic flavors – in everyone’s daily eating
                 habits.
             </p>
-            <a class="section-vision-btn btn btn-outline" href="about.html">Discover more</a>
+            <a class="section-vision-btn btn btn-outline" href="products.html#section-raw-energy-bars">Discover more</a>
         </div>
     </section>
 
@@ -191,7 +235,8 @@
     <ul class="footer-list-left">
         <li class="footer-list-title">Categories</li>
         <li><a href="index.html">Home Page</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html#section-protein-fudge">Products: Protein Fudge</a></li>
+        <li><a href="products.html#section-raw-energy-bars">Products: Raw Energy Bars</a></li>
         <li><a href="about.html">The Team</a></li>
         <li><a href="stores.html">Where To Buy</a></li>
         <li><a href="contact.html">Contact Us</a></li>
@@ -242,91 +287,6 @@
 <script src="../js/jquery.touchSwipe.min.js"></script>
 <script src="../js/jquery.waitforimages.min.js"></script>
 <script src="../js/common.js"></script>
-<script>
-    (function () {
-        let $slides = jQuery('.slider li'),
-            currentSlide = $slides.first(),
-
-            nextSlide = function () {
-                currentSlide.removeClass('show');
-                currentSlide = currentSlide.next();
-                if (currentSlide.length === 0) {
-                    currentSlide = $slides.first();
-                }
-                currentSlide.addClass('show');
-            },
-
-            prevSlide = function () {
-                currentSlide.removeClass('show');
-                currentSlide = currentSlide.prev();
-                if (currentSlide.length === 0) {
-                    currentSlide = $slides.last();
-                }
-                currentSlide.addClass('show');
-            };
-
-        // Slider next button
-        jQuery('.next').on('click', function () {
-            nextSlide();
-        });
-
-        // Slider prev button
-        jQuery('.prev').on('click', function () {
-            prevSlide();
-        });
-
-        if (window.innerWidth < 640
-            && (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement)
-        ) {
-            jQuery('.slider').swipe({
-                swipeLeft: function () {
-                    nextSlide();
-                },
-                swipeRight: function () {
-                    prevSlide();
-                }
-            });
-        }
-
-        if (!window.isMobile() || window.innerWidth > 640) {
-            // rotate hero image slideshow for desktop
-            jQuery('.slide-1').waitForImages(function () {
-                let autoplayId,
-                    startAutoplay = function () {
-                        clearInterval(autoplayId);
-                        autoplayId = setInterval(function () {
-                            nextSlide();
-                        }, 6000)
-                    };
-
-                startAutoplay();
-
-                // add 2nd function on click
-                jQuery('.next').on('click', function () {
-                    startAutoplay();
-                });
-
-                // add 2nd function on click
-                jQuery('.prev').on('click', function () {
-                    startAutoplay();
-                });
-
-                // replaces swipe functions
-                if (!!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement) {
-                    jQuery('.slider').swipe({
-                        swipeLeft: function () {
-                            nextSlide();
-                            startAutoplay();
-                        },
-                        swipeRight: function () {
-                            prevSlide();
-                            startAutoplay();
-                        }
-                    });
-                }
-            });
-        }
-    }());
-</script>
+<script src="../js/index.js"></script>
 </body>
 </html>
