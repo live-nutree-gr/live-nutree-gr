@@ -68,6 +68,17 @@
         <div class="lds-dual-ring"></div>
     </div>
 
+    <div id="top-warnings">
+        <section id="swamped-warning" class="content content-medium-large popup-warning dismissed">
+            <p>Λόγω μεγάλου όγκου παραγγελιών για παραγγελίες μέχρι και 12/03, ο εκτιμώμενος χρόνος παράδοσης θα είναι
+                7-10 εργάσιμες.</p>
+            <p>Σας ευχαριστούμε για την κατανόηση.</p>
+            <a class="header-btn btn btn-coral" href="#!" onclick="return hideSwampedWarning();">
+                <span>OK</span>
+            </a>
+        </section>
+    </div>
+
     <div id="eshop-step-1" class="active-step">
         <section class="home-section resellers-section">
             <div class="content">
@@ -712,6 +723,16 @@
                 setButtonDisableState(bar);
             });
         };
+
+        window.hideSwampedWarning = function () {
+            NutreeJS.store({swampedWarningDismissed: true});
+            jQuery('#swamped-warning').addClass('dismissed');
+            return false;
+        };
+
+        if (!NutreeJS.getStorage().swampedWarningDismissed) {
+            jQuery('#swamped-warning').removeClass('dismissed');
+        }
 
         setLoading(true);
         NutreeJS.init({

@@ -66,12 +66,23 @@
         <div class="lds-dual-ring"></div>
     </div>
 
-    <section id="greek-warning" class="content content-medium-large dismissed">
-        <p>Our online store currently fulfils orders exclusively for deliveries within Greece.</p>
-        <a class="header-btn btn btn-coral" href="#!" onclick="return hideGreekWarning();">
-            <span>Hide warning</span>
-        </a>
-    </section>
+    <div id="top-warnings">
+        <section id="greek-warning" class="content content-medium-large popup-warning dismissed">
+            <p>Our online store currently fulfils orders exclusively for deliveries within Greece.</p>
+            <a class="header-btn btn btn-coral" href="#!" onclick="return hideGreekWarning();">
+                <span>OK</span>
+            </a>
+        </section>
+
+        <section id="swamped-warning" class="content content-medium-large popup-warning dismissed">
+            <p>Λόγω μεγάλου όγκου παραγγελιών για παραγγελίες μέχρι και 12/03, ο εκτιμώμενος χρόνος παράδοσης θα είναι
+                7-10 εργάσιμες.</p>
+            <p>Σας ευχαριστούμε για την κατανόηση.</p>
+            <a class="header-btn btn btn-coral" href="#!" onclick="return hideSwampedWarning();">
+                <span>OK</span>
+            </a>
+        </section>
+    </div>
 
     <div id="eshop-step-1" class="active-step">
         <section class="home-section resellers-section">
@@ -723,6 +734,16 @@
 
         if (!NutreeJS.getStorage().greekWarningDismissed) {
             jQuery('#greek-warning').removeClass('dismissed');
+        }
+
+        window.hideSwampedWarning = function () {
+            NutreeJS.store({swampedWarningDismissed: true});
+            jQuery('#swamped-warning').addClass('dismissed');
+            return false;
+        };
+
+        if (!NutreeJS.getStorage().swampedWarningDismissed) {
+            jQuery('#swamped-warning').removeClass('dismissed');
         }
 
         setLoading(true);
