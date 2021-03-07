@@ -2,27 +2,30 @@
   padding-top: 200px;
 }
 
-#greek-warning {
+#top-warnings {
   margin-top: 120px;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+}
+
+.popup-warning {
+  margin-top: 20px;
+  width: 80%;
   padding: 10px;
   border: 4px solid #f3a68f;
   text-align: center;
   background-color: #f6f6f6;
 }
 
-#greek-warning.dismissed {
+.popup-warning.dismissed {
   display: none;
 }
 
-#greek-warning p {
-  line-height: 2em;
+.popup-warning p {
+  /* line-height: 2em; */
+  padding: 10px;
   font-size: 1.5em;
 }
 
-#greek-warning .btn {
+.popup-warning .btn {
   padding: 12px 40px;
   margin: 10px;
 }
