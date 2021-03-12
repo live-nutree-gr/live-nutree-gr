@@ -75,7 +75,7 @@
         </section>
 
         <section id="swamped-warning" class="content content-medium-large popup-warning dismissed">
-            <p>Λόγω μεγάλου όγκου παραγγελιών για παραγγελίες μέχρι και 12/03, ο εκτιμώμενος χρόνος παράδοσης θα είναι
+            <p>Λόγω μεγάλου όγκου παραγγελιών για παραγγελίες μέχρι και 14/03, ο εκτιμώμενος χρόνος παράδοσης θα είναι
                 7-10 εργάσιμες.</p>
             <p>Σας ευχαριστούμε για την κατανόηση.</p>
             <a class="header-btn btn btn-coral" href="#!" onclick="return hideSwampedWarning();">
@@ -742,7 +742,7 @@
             return false;
         };
 
-        if (!NutreeJS.getStorage().swampedWarningDismissed) {
+        if (!NutreeJS.getStorage().swampedWarningDismissed && new Date() < new Date('2021-03-15T00:00:00Z')) {
             jQuery('#swamped-warning').removeClass('dismissed');
         }
 
