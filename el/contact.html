@@ -74,19 +74,16 @@
 
         <p class="text">We're here to answer each one of your questions, feel free to send us an email and we will get
             back with you as soon as possible!</p>
-        <form action="https://www.enformed.io/u272zwid" method="POST">
-            <input type="text" class="order-name" id="name" name="name" placeholder="ΟΝΟΜΑ *" required>
-            <input type="email" class="order-email" id="email" name="email" placeholder="EMAIL *" required>
-            <input type="text" class="order-phone" id="phone" name="phone" placeholder="ΤΗΛΕΦΩΝΟ *" required>
-            <textarea name="message" id="message" rows="8" cols="80"></textarea>
+        <form action="https://api.slapform.com/info+slapform@nutree.gr" method="POST">
+            <input class="order-name" id="name" name="name" placeholder="ΟΝΟΜΑ *" required type="text">
+            <input class="order-email" id="email" name="email" placeholder="EMAIL *" required type="email">
+            <input class="order-phone" id="phone" name="phone" placeholder="ΤΗΛΕΦΩΝΟ *" required type="text">
+            <textarea cols="80" id="message" name="message" rows="8"></textarea>
 
-            <input type="hidden" name="*formname" value="Nutree Contact Form"/>
-            <input type="hidden" name="*subject" value="nutree.gr - Φόρμα επικοινωνίας"/>
-            <input type="hidden" name="*reply" value="info@nutree.gr"/>
-            <input type="hidden" name="*default_email" value="info@nutree.gr"/>
-            <input type="hidden" name="*honeypot"/>
+            <input name="slap_subject" type="hidden" value="nutree.gr - Contact Form - ${name}"/>
+            <input type="hidden" name="slap_honey"/>
 
-            <input type="submit" class="order-submit btn btn-coral" name="submit" value="Αποστολή">
+            <input class="order-submit btn btn-coral" name="submit" type="submit" value="Αποστολή">
         </form>
     </section>
 

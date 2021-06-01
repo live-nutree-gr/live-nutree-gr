@@ -74,17 +74,14 @@
 
         <p class="text">We're here to answer each one of your questions, feel free to send us an email and we will get
             back with you as soon as possible!</p>
-        <form action="https://www.enformed.io/u272zwid" method="POST">
+        <form action="https://api.slapform.com/info+slapform@nutree.gr" method="POST">
             <input class="order-name" id="name" name="name" placeholder="NAME *" required type="text">
             <input class="order-email" id="email" name="email" placeholder="EMAIL *" required type="email">
             <input class="order-phone" id="phone" name="phone" placeholder="PHONE *" required type="text">
             <textarea cols="80" id="message" name="message" rows="8"></textarea>
 
-            <input name="*formname" type="hidden" value="Nutree Contact Form"/>
-            <input name="*subject" type="hidden" value="nutree.gr - Φόρμα επικοινωνίας"/>
-            <input name="*reply" type="hidden" value="info@nutree.gr"/>
-            <input name="*default_email" type="hidden" value="info@nutree.gr"/>
-            <input name="*honeypot" type="hidden"/>
+            <input name="slap_subject" type="hidden" value="nutree.gr - Φόρμα Επικοινωνίας - ${name}"/>
+            <input type="hidden" name="slap_honey"/>
 
             <input class="order-submit btn btn-coral" name="submit" type="submit" value="Submit">
         </form>
