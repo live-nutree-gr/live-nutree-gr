@@ -2605,6 +2605,8 @@ main {
 
 .contact-form .order-submit {
   margin-top: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .shops-list {
