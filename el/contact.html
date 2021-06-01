@@ -74,13 +74,15 @@
 
         <p class="text">We're here to answer each one of your questions, feel free to send us an email and we will get
             back with you as soon as possible!</p>
-        <form action="https://api.slapform.com/info+slapform@nutree.gr" method="POST">
+        <form action="https://api.slapform.com/" method="POST">
             <input class="order-name" id="name" name="name" placeholder="ΟΝΟΜΑ *" required type="text">
             <input class="order-email" id="email" name="email" placeholder="EMAIL *" required type="email">
             <input class="order-phone" id="phone" name="phone" placeholder="ΤΗΛΕΦΩΝΟ *" required type="text">
             <textarea cols="80" id="message" name="message" rows="8"></textarea>
 
             <input name="slap_subject" type="hidden" value="nutree.gr - Contact Form - ${name}"/>
+            <input name="slap_email" type="hidden" value="info+slapform@nutree.gr"/>
+            <input name="slap_replyto" type="hidden" value="${email}"/>
             <input type="hidden" name="slap_honey"/>
 
             <input class="order-submit btn btn-coral" name="submit" type="submit" value="Αποστολή">
