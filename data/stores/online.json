@@ -1,0 +1,21 @@
+{
+    "title": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
+    "stores": [
+        {
+            "displayText": "https://www.agrolicious.gr/",
+            "link": "https://www.agrolicious.gr/"
+        },
+        {
+            "displayText": "https://www.mygreektaste.com/",
+            "link": "https://www.mygreektaste.com/"
+        },
+        {
+            "displayText": "https://drplus.gr/",
+            "link": "https://drplus.gr/"
+        },
+        {
+            "displayText": "https://nomeefoods.gr/",
+            "link": "https://nomeefoods.gr/"
+        }
+    ]
+}
