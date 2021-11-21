@@ -84,7 +84,7 @@
 // ---------------------------------------
 
 .section-testimonials {
-  background: url(../images/testimonials-bg.png) center;
+  background: url(../../images/testimonials-bg.png) center;
   background-size: cover;
   text-align: center;
   color: $white;
@@ -107,7 +107,7 @@
     &:before,
     &:after {
       content: '';
-      background: url(../images/quotes.png) no-repeat;
+      background: url(../../images/quotes.png) no-repeat;
       position: absolute;
       width: 85px;
       height: 55px;
@@ -175,47 +175,47 @@
   }
 
   .products-categories-sections-cookie-dough {
-    background: url(../images/homepage-protein-1.jpeg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage-protein-1.jpeg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-brownie-praline {
-    background: url(../images/homepage-protein-2.jpeg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage-protein-2.jpeg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-cinnamon-roll {
-    background: url(../images/homepage-protein-3.jpeg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage-protein-3.jpeg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-strawberry {
-    background: url(../images/homepage_1.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_1.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-banana {
-    background: url(../images/homepage_2.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_2.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-apple {
-    background: url(../images/homepage_3.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_3.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-matcha {
-    background: url(../images/homepage_4.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_4.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-peanut {
-    background: url(../images/homepage_5.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_5.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 
   .products-categories-sections-orange {
-    background: url(../images/homepage_6.jpg) center no-repeat $lighter-grey;
+    background: url(../../images/homepage_6.jpg) center no-repeat $lighter-grey;
     background-size: cover;
   }
 }

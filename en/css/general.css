@@ -518,7 +518,7 @@ main {
 
 .section-title.with-watermark:before {
   content: '';
-  background: url(../images/vision-title-bg.png) no-repeat center;
+  background: url(../../images/vision-title-bg.png) no-repeat center;
   background-size: contain;
   width: 200px;
   height: 200px;
@@ -675,7 +675,7 @@ main {
   width: 190px;
   height: 50px;
   margin: 10px 0;
-  background: url(../images/logo.svg) no-repeat;
+  background: url(../../images/logo.svg) no-repeat;
   background-size: contain;
   opacity: 0;
 }
@@ -847,17 +847,17 @@ main {
 }
 
 .header .slider .slide-1 {
-  background: url(../images/hero-bg-protein-launch.jpg) no-repeat center;
+  background: url(../../images/hero-bg-protein-launch.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-2 {
-  background: url(../images/hero-bg-2.jpg) no-repeat center;
+  background: url(../../images/hero-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-3 {
-  background: url(../images/hero-bg-3.jpg) no-repeat center;
+  background: url(../../images/hero-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -922,22 +922,22 @@ main {
 
 .products-page .header,
 .bars-page .header {
-  background: url(../images/header-products-bg.jpg) no-repeat center;
+  background: url(../../images/header-products-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 .about-page .header {
-  background: url(../images/header-about-bg.jpg) no-repeat center;
+  background: url(../../images/header-about-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 .order-page .header {
-  background: url(../images/header-order-bg-2.jpg) no-repeat center;
+  background: url(../../images/header-order-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .contact-page .header {
-  background: url(../images/header-contact-bg.jpg) no-repeat center;
+  background: url(../../images/header-contact-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1003,7 +1003,7 @@ main {
 }
 
 .section-newsletter h2 {
-  background: url(../images/newsletter-bg.png) right no-repeat #f6f6f6;
+  background: url(../../images/newsletter-bg.png) right no-repeat #f6f6f6;
   background-size: contain;
   height: 150px;
   float: left;

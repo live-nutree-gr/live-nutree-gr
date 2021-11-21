@@ -828,7 +828,7 @@ main {
 
 .section-title.with-watermark:before {
   content: '';
-  background: url(../images/vision-title-bg.png) no-repeat center;
+  background: url(../../images/vision-title-bg.png) no-repeat center;
   background-size: contain;
   width: 200px;
   height: 200px;
@@ -985,7 +985,7 @@ main {
   width: 190px;
   height: 50px;
   margin: 10px 0;
-  background: url(../images/logo.svg) no-repeat;
+  background: url(../../images/logo.svg) no-repeat;
   background-size: contain;
   opacity: 0;
 }
@@ -1157,17 +1157,17 @@ main {
 }
 
 .header .slider .slide-1 {
-  background: url(../images/hero-bg-protein-launch.jpg) no-repeat center;
+  background: url(../../images/hero-bg-protein-launch.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-2 {
-  background: url(../images/hero-bg-2.jpg) no-repeat center;
+  background: url(../../images/hero-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .header .slider .slide-3 {
-  background: url(../images/hero-bg-3.jpg) no-repeat center;
+  background: url(../../images/hero-bg-3.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1232,22 +1232,22 @@ main {
 
 .products-page .header,
 .bars-page .header {
-  background: url(../images/header-products-bg.jpg) no-repeat center;
+  background: url(../../images/header-products-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 .about-page .header {
-  background: url(../images/header-about-bg.jpg) no-repeat center;
+  background: url(../../images/header-about-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 .order-page .header {
-  background: url(../images/header-order-bg-2.jpg) no-repeat center;
+  background: url(../../images/header-order-bg-2.jpg) no-repeat center;
   background-size: cover;
 }
 
 .contact-page .header {
-  background: url(../images/header-contact-bg.jpg) no-repeat center;
+  background: url(../../images/header-contact-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1313,7 +1313,7 @@ main {
 }
 
 .section-newsletter h2 {
-  background: url(../images/newsletter-bg.png) right no-repeat #f6f6f6;
+  background: url(../../images/newsletter-bg.png) right no-repeat #f6f6f6;
   background-size: contain;
   height: 150px;
   float: left;
@@ -1610,7 +1610,7 @@ main {
 }
 
 .section-testimonials {
-  background: url(../images/testimonials-bg.png) center;
+  background: url(../../images/testimonials-bg.png) center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -1634,7 +1634,7 @@ main {
 
 .section-testimonials p:before, .section-testimonials p:after {
   content: '';
-  background: url(../images/quotes.png) no-repeat;
+  background: url(../../images/quotes.png) no-repeat;
   position: absolute;
   width: 85px;
   height: 55px;
@@ -1712,47 +1712,47 @@ main {
 }
 
 .products-categories-sections-images .products-categories-sections-cookie-dough {
-  background: url(../images/homepage-protein-1.jpeg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage-protein-1.jpeg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-brownie-praline {
-  background: url(../images/homepage-protein-2.jpeg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage-protein-2.jpeg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-cinnamon-roll {
-  background: url(../images/homepage-protein-3.jpeg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage-protein-3.jpeg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-strawberry {
-  background: url(../images/homepage_1.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_1.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-banana {
-  background: url(../images/homepage_2.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_2.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-apple {
-  background: url(../images/homepage_3.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_3.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-matcha {
-  background: url(../images/homepage_4.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_4.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-peanut {
-  background: url(../images/homepage_5.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_5.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
 .products-categories-sections-images .products-categories-sections-orange {
-  background: url(../images/homepage_6.jpg) center no-repeat #f6f6f6;
+  background: url(../../images/homepage_6.jpg) center no-repeat #f6f6f6;
   background-size: cover;
 }
 
@@ -1994,7 +1994,7 @@ main {
 }
 
 .section-cookie-dough-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #c59968;
+  background: url(../../images/shapes-bg.png) #c59968;
 }
 
 .section-cookie-dough-bar.active .section-expanded-image:before {
@@ -2003,7 +2003,7 @@ main {
 }
 
 .section-brownie-praline-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #6d3a22;
+  background: url(../../images/shapes-bg.png) #6d3a22;
 }
 
 .section-brownie-praline-bar.active .section-expanded-image:before {
@@ -2012,7 +2012,7 @@ main {
 }
 
 .section-cinnamon-roll-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #ba7a5a;
+  background: url(../../images/shapes-bg.png) #ba7a5a;
 }
 
 .section-cinnamon-roll-bar.active .section-expanded-image:before {
@@ -2021,7 +2021,7 @@ main {
 }
 
 .section-peanutbutter-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #bed4b2;
+  background: url(../../images/shapes-bg.png) #bed4b2;
 }
 
 .section-peanutbutter-bar.active .section-expanded-image:before {
@@ -2030,7 +2030,7 @@ main {
 }
 
 .section-orange-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #f9cb5c;
+  background: url(../../images/shapes-bg.png) #f9cb5c;
 }
 
 .section-orange-bar.active .section-expanded-image:before {
@@ -2039,7 +2039,7 @@ main {
 }
 
 .section-apple-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #c3dfe3;
+  background: url(../../images/shapes-bg.png) #c3dfe3;
 }
 
 .section-apple-bar.active .section-expanded-image:before {
@@ -2048,7 +2048,7 @@ main {
 }
 
 .section-banana-almond-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #fcdc8f;
+  background: url(../../images/shapes-bg.png) #fcdc8f;
 }
 
 .section-banana-almond-bar.active .section-expanded-image:before {
@@ -2057,7 +2057,7 @@ main {
 }
 
 .section-matcha-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #e1e9b4;
+  background: url(../../images/shapes-bg.png) #e1e9b4;
 }
 
 .section-matcha-bar.active .section-expanded-image:before {
@@ -2066,7 +2066,7 @@ main {
 }
 
 .section-strawberry-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #e54a4e;
+  background: url(../../images/shapes-bg.png) #e54a4e;
 }
 
 .section-strawberry-bar.active .section-expanded-image:before {

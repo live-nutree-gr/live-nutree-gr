@@ -303,7 +303,7 @@
 }
 
 .section-cookie-dough-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #c59968;
+  background: url(../../images/shapes-bg.png) #c59968;
 }
 
 .section-cookie-dough-bar.active .section-expanded-image:before {
@@ -312,7 +312,7 @@
 }
 
 .section-brownie-praline-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #6d3a22;
+  background: url(../../images/shapes-bg.png) #6d3a22;
 }
 
 .section-brownie-praline-bar.active .section-expanded-image:before {
@@ -321,7 +321,7 @@
 }
 
 .section-cinnamon-roll-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #ba7a5a;
+  background: url(../../images/shapes-bg.png) #ba7a5a;
 }
 
 .section-cinnamon-roll-bar.active .section-expanded-image:before {
@@ -330,7 +330,7 @@
 }
 
 .section-peanutbutter-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #bed4b2;
+  background: url(../../images/shapes-bg.png) #bed4b2;
 }
 
 .section-peanutbutter-bar.active .section-expanded-image:before {
@@ -339,7 +339,7 @@
 }
 
 .section-orange-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #f9cb5c;
+  background: url(../../images/shapes-bg.png) #f9cb5c;
 }
 
 .section-orange-bar.active .section-expanded-image:before {
@@ -348,7 +348,7 @@
 }
 
 .section-apple-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #c3dfe3;
+  background: url(../../images/shapes-bg.png) #c3dfe3;
 }
 
 .section-apple-bar.active .section-expanded-image:before {
@@ -357,7 +357,7 @@
 }
 
 .section-banana-almond-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #fcdc8f;
+  background: url(../../images/shapes-bg.png) #fcdc8f;
 }
 
 .section-banana-almond-bar.active .section-expanded-image:before {
@@ -366,7 +366,7 @@
 }
 
 .section-matcha-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #e1e9b4;
+  background: url(../../images/shapes-bg.png) #e1e9b4;
 }
 
 .section-matcha-bar.active .section-expanded-image:before {
@@ -375,7 +375,7 @@
 }
 
 .section-strawberry-bar .section-expanded-image:before {
-  background: url(../images/shapes-bg.png) #e54a4e;
+  background: url(../../images/shapes-bg.png) #e54a4e;
 }
 
 .section-strawberry-bar.active .section-expanded-image:before {

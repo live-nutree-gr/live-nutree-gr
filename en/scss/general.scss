@@ -349,7 +349,7 @@ main {
 
     &:before {
       content: '';
-      background: url(../images/vision-title-bg.png) no-repeat center;
+      background: url(../../images/vision-title-bg.png) no-repeat center;
       background-size: contain;
       width: 200px;
       height: 200px;
@@ -476,7 +476,7 @@ main {
     width: 190px;
     height: 50px;
     margin: 10px 0;
-    background: url(../images/logo.svg) no-repeat;
+    background: url(../../images/logo.svg) no-repeat;
     background-size: contain;
     opacity: 0;
   }
@@ -623,17 +623,17 @@ main {
     //}
 
     .slide-1 {
-      background: url(../images/hero-bg-protein-launch.jpg) no-repeat center;
+      background: url(../../images/hero-bg-protein-launch.jpg) no-repeat center;
       background-size: cover;
     }
 
     .slide-2 {
-      background: url(../images/hero-bg-2.jpg) no-repeat center;
+      background: url(../../images/hero-bg-2.jpg) no-repeat center;
       background-size: cover;
     }
 
     .slide-3 {
-      background: url(../images/hero-bg-3.jpg) no-repeat center;
+      background: url(../../images/hero-bg-3.jpg) no-repeat center;
       background-size: cover;
     }
   }
@@ -693,22 +693,22 @@ main {
 
   .products-page &,
   .bars-page & {
-    background: url(../images/header-products-bg.jpg) no-repeat center;
+    background: url(../../images/header-products-bg.jpg) no-repeat center;
     background-size: cover;
   }
 
   .about-page & {
-    background: url(../images/header-about-bg.jpg) no-repeat center;
+    background: url(../../images/header-about-bg.jpg) no-repeat center;
     background-size: cover;
   }
 
   .order-page & {
-    background: url(../images/header-order-bg-2.jpg) no-repeat center;
+    background: url(../../images/header-order-bg-2.jpg) no-repeat center;
     background-size: cover;
   }
 
   .contact-page & {
-    background: url(../images/header-contact-bg.jpg) no-repeat center;
+    background: url(../../images/header-contact-bg.jpg) no-repeat center;
     background-size: cover;
   }
 
@@ -775,7 +775,7 @@ main {
   }
 
   h2 {
-    background: url(../images/newsletter-bg.png) right no-repeat $lighter-grey;
+    background: url(../../images/newsletter-bg.png) right no-repeat $lighter-grey;
     background-size: contain;
     height: 150px;
     float: left;
