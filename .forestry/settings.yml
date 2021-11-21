@@ -5,12 +5,17 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: images
+  label: images
+  create: all
+  match: "**/*"
+- type: directory
   path: ''
   label: root
   create: all
   match: "**/*"
   exclude: images
-  new_doc_ext: ''
+  new_doc_ext: app
 - type: directory
   path: data
   label: data
