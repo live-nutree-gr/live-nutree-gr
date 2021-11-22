@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE>
 <html lang="el">
 <head>
@@ -18,7 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya|Didact+Gothic" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120398811-1"></script>
     <script>
@@ -79,12 +81,13 @@
     </section>
 
     <section class="shops-list content-medium">
-        <h2>ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ</h2>
+        <h2>{{ site.data.stores.online.title }}</h2>
         <ul>
-            <li><a target="_blank" href="https://www.agrolicious.gr/" rel="noopener noreferrer">https://www.agrolicious.gr/</a></li>
-            <li><a target="_blank" href="https://www.mygreektaste.com/" rel="noopener noreferrer">https://www.mygreektaste.com/</a></li>
-            <li><a target="_blank" href="https://drplus.gr/" rel="noopener noreferrer">https://drplus.gr/</a></li>
-            <li><a target="_blank" href="https://nomeefoods.gr/" rel="noopener noreferrer">https://nomeefoods.gr/</a></li>
+            {% for item in site.data.stores.online.stores %}
+            <li><a target="_blank"
+                   href="{{ item.link }}"
+                   rel="noopener noreferrer">{{ item.displayText }}</a></li>
+            {% endfor %}
         </ul>
 
         <h2>ΕΛΛΑΔΑ</h2>
