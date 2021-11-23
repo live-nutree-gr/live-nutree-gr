@@ -1,21 +1,21 @@
 {
     "title": "Store Locations",
-    "segment": [
+    "region": [
         {
             "title": "Greece",
             "title_gr": "ΕΛΛΑΔΑ",
             "title_en": "GREECE",
-            "showSegmentTitle_en": false,
-            "showSegmentTitle_el": true,
-            "showGroupTitle_en": false,
-            "showGroupTitle_el": true,
+            "show_region_title_en": false,
+            "show_region_title_el": true,
+            "show_group_title_en": false,
+            "show_group_title_el": true,
             "groups": [
                 {
                     "title": "Aθήνα - Κέντρο",
                     "stores": [
                         {
                             "title": "Nora's Deli",
-                            "additionalLines": [
+                            "additional_lines": [
                                 "Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73",
                                 "Αναπήρων Πολέμου 10, Κολωνάκι 106 76"
                             ]
