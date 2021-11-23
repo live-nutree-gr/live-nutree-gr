@@ -1,12 +1,12 @@
 {
     "title": "Store Locations",
-    "region": [
+    "section": [
         {
             "title": "Greece",
             "title_gr": "ΕΛΛΑΔΑ",
             "title_en": "GREECE",
-            "show_region_title_en": false,
-            "show_region_title_el": true,
+            "show_section_title_en": false,
+            "show_section_title_el": true,
             "show_group_title_en": false,
             "show_group_title_el": true,
             "groups": [
