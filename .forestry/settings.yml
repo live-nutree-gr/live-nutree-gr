@@ -12,7 +12,7 @@ sections:
   exclude: images
   new_doc_ext: app
 - type: directory
-  path: data
+  path: _data
   label: data
   create: all
   match: "**/*"
