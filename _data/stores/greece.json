@@ -1,26 +1,1000 @@
 {
-    "title": "Store Locations",
-    "section": [
+    "title": "Stores in Greece",
+    "title_el": "ΕΛΛΑΔΑ",
+    "groups": [
         {
-            "title": "Greece",
-            "title_gr": "ΕΛΛΑΔΑ",
-            "title_en": "GREECE",
-            "show_section_title_en": false,
-            "show_section_title_el": true,
-            "show_group_title_en": false,
-            "show_group_title_el": true,
-            "groups": [
+            "title": "Aθήνα - Κέντρο:",
+            "stores": [
                 {
-                    "title": "Aθήνα - Κέντρο",
-                    "stores": [
-                        {
-                            "title": "Nora's Deli",
-                            "additional_lines": [
-                                "Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73",
-                                "Αναπήρων Πολέμου 10, Κολωνάκι 106 76"
-                            ]
-                        }
+                    "title": "Nora's Deli",
+                    "link": null,
+                    "additional_lines": [
+                        "Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73",
+                        "Αναπήρων Πολέμου 10, Κολωνάκι 106 76"
                     ]
+                },
+                {
+                    "title": "Βιολογικό Χωριό",
+                    "link": null,
+                    "additional_lines": [
+                        "Αιόλου 104, Ομόνοια 10564",
+                        "Τσακάλωφ 18, Κολωνάκι 10673"
+                    ]
+                },
+                {
+                    "title": "Eλληνικά Καλούδια",
+                    "link": null,
+                    "additional_lines": [
+                        "Χατζηχρήστου 8, Ακρόπολη 117 42",
+                        "Καλλιδρομίου 51, Εξάρχεια 106 81"
+                    ]
+                },
+                {
+                    "title": "The Market, Αρχελάου 32, Παγκράτι 116 35",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Flaneur Supplies & Souvenirs, Φλέσσα 1, Αθήνα Ακρόπολη",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Pure Juice Bar, Σινά 21, Aθήνα Κολωνάκι",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Bamboo Vegan, Σόλωνος 102, Αθήνα 106 80",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Box Γευστικό Κουτί, Ευτυχίδου 18, Παγκράτι 116 35",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Kokkos, Σπύρου Μερκούρη 25, Αθήνα 11634",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "ΓΕΥΣΕΙΣ ΕΛΛΑΔΟΣ, Μάχης Αναλάτου 51, Νέος Κόσμος, Αθήνα 117 44",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "To Mποστάνι, Ιφικράτους 2, Αθήνα 112 57",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "H γωνιά των παραγωγών της Wise Greece, Φωκίονος Νέγρη 42, Δημοτική Αγορά Κυψέλης 113 61",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "A Future Perfect & Friends, Πραξιτέλους 23, Aθήνα 105 62",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "4 Seasons, Νίκης 30, Σύνταγμα Αθήνα 105 57",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "TOMS Flagship, Πλατεία Μητροπόλεως 8, Μοναστηράκι 105 56",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Local Green, Περικλέους 30-32, Αθήνα 105 62",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Mr Bean Coffee, Εμμανουήλ Μπενάκη 20, Αθήνα 106 78",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Martini Cosmobio, Σπηλιωτόπουλου Λοχαγού 12, Πλησίον Νοσοκομείου Παίδων, Ζωγράφος 15773",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Συνοικία το Όνειρο, Δεινοχάρους 8, Άνω Πετράλωνα 118 52",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Dickie Dee, Βουλής 23, Αθήνα 105 63",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Πορτοκαλί Καφέ, Λ. Συγγρού 50 Αθήνα 117 42",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Αθήνα - Βόρεια Προάστια:",
+            "stores": [
+                {
+                    "title": "Σούπερ Μάρκετ Θανόπουλος",
+                    "link": null,
+                    "additional_lines": [
+                        "Ελαιών 38, Ν.Κηφισιά 145 64",
+                        "Αδριανού & Δραγούμη 6, Κηφισιά 145 61",
+                        "Χαριλάου Τρικούπη 164, Ν.Ερυθραία 146 71"
+                    ]
+                },
+                {
+                    "title": "Βιολογικό Χωριό",
+                    "link": null,
+                    "additional_lines": [
+                        "Ύδρας 1 & Ολυμπιονικών, Ψυχικό 15451",
+                        "Λεωφ. Κηφισίας 76-78, Μαρούσι 15125",
+                        "Λεωφ. Μαραθώνος 10, Σταμάτα 14569",
+                        "Λεωφ. Πεντέλης 6, Βριλήσσια 15235",
+                        "Χαλανδρίου 22, Αγ. Παρασκευή 15343"
+                    ]
+                },
+                {
+                    "title": "CoffeeHouse",
+                    "link": null,
+                    "additional_lines": [
+                        "Λεωφ. Κηφισίας 44, Μαρούσι 151 25",
+                        "Λεωφ. Κηφισίας 41-47, Μαρούσι 151 25 (εντός Avenue Mall)"
+                    ]
+                },
+                {
+                    "title": "Brinner Athens, Λεωφόρος Κηφισιας 56 7 Δελφών 2, Mαρούσι 151 25",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Παν Αγαθον, Γυφτοπουλου 14, Χαλάνδρι 152 33",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Το μαγαζάκι της Ισιδώρας, Ύδρας 13, Χαλάνδρι",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "102 Cafe, Tατοϊου 102, Νέα Ερυθραία",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Φαρμακείο Ανανιάδη Ευάγγελου, Ευσταθίου Λάμψα 19, Αθήνα 115 24",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Βιολογικός Θησαυρός, Χρυσοστόμου Σμύρνης 21, Αγ. Παρασκευή 153 43",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Στο Τσουβάλι, Θράκης 3, Φιλοθέη 152 37",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Μανάβικο Κατσέλης, Λεωφ. Πεντέλης 106, Χαλάνδρι 152 34",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Αρισμαρί & Μέλι, Ελευθερίου Βενιζέλου 20, Μελίσσια 151 27",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Kαρυοθραύστης, Λεωφ. Μεσογείων 6, Αθήνα 115 27",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Το Μικρό Πευκοδάσος, Αλέκου Παναγούλη 25, Ζωγράφου 15773",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Πράσινο Biomarket, Λεωφ. Πεντέλης 97, Χαλάνδρι 152 34",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "ΑΛΟΗ, Παπαδιαμαντοπούλου 50, Ζωγράφου 173 41",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Buddha's Hand (Γιάννης Λουκάκος), Ανδρέα Παπανδρέου 22, Χαλάνδρι 152 32",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Ηippie Bowl, Αγίου Κωνσταντίνου 40, Μαρούσι 151 24",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Lucky 7, Ηπείρου 5-7, Αγία Παρασκευή 153 41",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Υγεία & Μακροζωία, Λ. Δεκελείας 99, Νέα Φιλαδέλφεια 143 41",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "So Nuts, Κηφισίας 103, Πανόρμου Αθήνα 115 23",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Δήμητρας Γαία, Λεωφ. Δεκελείας 56, Νέα Χαλκηδόνα 143 42",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Φαρμακείο Βαϊοπούλου, Ομήρου 20, Χαλάνδρι 152 32",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Pocket Espresso Bar, Ερυθρού Σταυρού 12, Πανόρνου 11526",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Γαλακτοπωλείο Λακαφώση, Λ. Δροσιάς Σταμάτας 47, Σταμάτα 145 75",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Γης Παράδοση, Σοφούλη 3 Πεύκη 151 21",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Streeto Cafe, Φειδιππίδου 8, Αμπελόκηποι 11526",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Αθήνα - Νότια Προάστια:",
+            "stores": [
+                {
+                    "title": "Βιολογικό Χωριό",
+                    "link": null,
+                    "additional_lines": [
+                        "Φαίδρας 6 & Παναγούλη, Γλυφάδα 16674",
+                        "Αγίου Ιωάννου 28, Βούλα 16673",
+                        "Γρηγορίου Λαμπράκη 83, Γλυφάδα 16675",
+                        "Πρωτόπαππα 12, Ηλιούπολη 16343",
+                        "Αγ. Φωτεινής 47, Νέα Σμύρνη 17121"
+                    ]
+                },
+                {
+                    "title": "Bufala Gelato",
+                    "link": null,
+                    "additional_lines": [
+                        "Aρτέμιδος 1, Γλυφάδα 166 74",
+                        "Ορφέως 2, Βουλιαγμένη 166 71",
+                        "Βασ. Παύλου 80, Βούλα 166 73",
+                        "2ας Μαϊου 22, Νέα Σμύρνη 171 21"
+                    ]
+                },
+                {
+                    "title": "Ξηροκαρπάδικο",
+                    "link": null,
+                    "additional_lines": [
+                        "Ελ. Βενιζέλου 152 Καλλιθέα 176 76",
+                        "Χαροκόπου 77 Καλλιθέα 176 71"
+                    ]
+                },
+                {
+                    "title": "Νέα Ζωή Βιολογικά Προϊόντα, Λεωφ. Πρωτόπαπα 38, Ηλιούπολη 163 43",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Sports Cafe Tennis Club, Έβερτ Αγγέλου 7, Ηλιούπολη 163 42",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "The Beanerds, Αλεξιουπόλεως 62, Αργυρούπολη 164 52",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Αmelie Sweet Shop, Κράτητος 63, Άνω Νέα Σμύρνη 117 44",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Italus, Ελ. Βενιζέλου 104, Καλλιθέα 176 76",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Farai Chcocolates, Λεωφ. Βουλιαγμένης 276, Άγ. Δημήτριος 173 43 (εντός Athens Metro Mall)",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Coffee Cup, Λεωφ. Ανδρέα Παπανδρέου 45, Ηλιούπολη 163 45",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Βio ΛΕΩΝ, Λεωφ. Βουλιαγμένης 43-47, Ελληνικό 167 77 (εντός ΑΒ Βασιλόπουλος)",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Μitgroup Roasters, Αλικαρνασσού 7, Νέα Σμύρνη 171 22",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Παντοπωλείο Αχχιλέως & Αφροδίτης, Αχχιλέως 38, Π. Φάληρο 175 62",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Αργώ, Αλκυόνης 24, Π. Φάληρο 175 61",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Drops Deli, Αγγέλου Μεταξά 38, Γλυφάδα 166 74",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Mushrooms & More, Αγίας Κυριακής 24Α, Παλαιό Φάληρο 17564 (Ν. Προάστια)",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "ΟΙΚΟΔΕΣΠΟΙΝΑ, Τρίτωνος 40, Π. Φάληρο 17561",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Το Φουρνάκι, Λεωφ. Αγίου Δημητρίου 77, Άγιος Δημήτριος 17343",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Αθήνα - Δυτικά Προάστια:",
+            "stores": [
+                {
+                    "title": "Βιολογικό Χωριό, Θηβών 71, Περιστέρι 12136",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "HWKS Specialty Coffee, 25ης Μαρτίου 140 Πετρούπολη 13231",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Gorilla Healthy Bar, Στρ. Λιόση 17, Άνω Λιόσια 13341",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Omsom, Κύπρου 14, Περιστέρι 12132",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Πειραιάς:",
+            "stores": [
+                {
+                    "title": "TRAGREECEIONAL Βιολογικά Προϊόντα, Αγίας Μαρίνης 38, Πειραιάς 185 39",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Το Εκλεκτόν, Μπουμπουλίνας 32, Πειραιάς 185 46",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Μπαξές, Κουταΐση 30 Νίκαια 18452",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Coucou Family Cafe, Αριστοτέλους 9, Πειραιάς 18535",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Σπάτα:",
+            "stores": [
+                {
+                    "title": "MOTTA, Αγίου Δημητρίου 4, Χριστούπολη Σπάτα 19004",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Παλλήνη:",
+            "stores": [
+                {
+                    "title": "Alpha Pi, Λεωφ. Μαραθώνος 56, Πικέρμι 19009",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Μαρκόπουλο:",
+            "stores": [
+                {
+                    "title": "Βιολογικός Θησαυρός, Γ. Παπαβασιλείου & Δραγωνέα 5, Μαρκόπουλο 190 03",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Πάτρα:",
+            "stores": [
+                {
+                    "title": "Mosaic Coffee Roasters, Κωνσταντινουπόλεως 63, Πάτρα 262 23",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Θεσσαλονίκη:",
+            "stores": [
+                {
+                    "title": "Urban Deli, Βασιλέως Ηρακλείου 7, Θεσσαλονίκη 546 25",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Ζωή & Υγεία, Τσιμισκή 118, Θεσσαλονίκη 546 21",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "To Παντοπωλείο της Θεσσαλονίκης, Κομνηνών 12, Θεσσαλονίκη 546 24",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Les Raquettes Tennis Club, Θέρμη 57001",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Bufala Gelato (One Salonica), ΓΙΑΝΝΙΤΣΩΝ 61 & ΚΩΛΕΤΤΗ, ΘΕΣΣΑΛΟΝΙΚΗ 546 27",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Φαρμακείο Καλογεράς Γεώργιος, Γυμνασιάρχου Μυστακίδη 33, Χαριλάου Θεσσαλονίκη 542 50",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Θόλος, Γιαννιτσών 244 (εντός ΚΤΕΛ), Θεσσαλονίκη 546 28",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "TOMS Flagship, Τσιμισκή 22, Θεσσαλονίκη 546 24",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Εκλεκτά της Γης, Κομνηνών 4, Πανόραμα Θεσσαλονίκη 552 36",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Επι της Γης, Εθνικής Αντιστάσεως 54, Κουφάλια Θεσσαλονίκης 571 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Δεκαεπτά Cafe, Αλ. Σβώλου 24, Θεσσαλονίκη 546 22",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Κομοτηνή:",
+            "stores": [
+                {
+                    "title": "Κυλικείον \"Το Μέγαρο\", Χαριλάου Τρικούπη 32, Κομοτηνή 69133",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Κόρινθος:",
+            "stores": [
+                {
+                    "title": "Βιοπαντοπωλείο, Φίλλυρα 1, Κιάτο Κορινθίας 202 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Κουμαρό, Κύπρου 38 Κόρινθος 201 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Χαλκίδα:",
+            "stores": [
+                {
+                    "title": "Παντοπωλείο Τσίμπου Αντώνη, Αντωνίου & Φίλωνος 12Α, Χαλκίδα 341 32",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Nαύπλιο:",
+            "stores": [
+                {
+                    "title": "Τ' Αναπλιώτικο Μπακάλικο, Πλαπούτα 29, Ναύπλιο",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Καλαμάτα:",
+            "stores": [
+                {
+                    "title": "Mummy's Market, Μητροπέτροβα 8, Καλαμάτα, 24133",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Pico Cafe, Χρυσάνθου Παγώνη 17, Καλαμάτα 24100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Τρίπολη:",
+            "stores": [
+                {
+                    "title": "Ιάματα, Πλ. Εθνάρχου Μακαρίου 6",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Μάνη:",
+            "stores": [
+                {
+                    "title": "Lola Frozen Yogurt, Επαρ. Οδός Καλαμάτας - Αρεόπολης, Kαρδαμύλη 240 22",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Kυπαρισσία:",
+            "stores": [
+                {
+                    "title": "Green & Blue, Μελίου 28, Κυπαρισσία 245 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Koρώνη:",
+            "stores": [
+                {
+                    "title": "Kiari Wine & Deli, Περικλή Ράλλη Κορώνη 240 04",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Φωκίδα:",
+            "stores": [
+                {
+                    "title": "Σούπερ Μάρκετ Βορριάς, Αγίου Ιωάννου και Σταμογιάνου, Κίρρα Φωκίδος 33200",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ιωάννινα:",
+            "stores": [
+                {
+                    "title": "Πράσινο Σπίτι, 28ης Οκτωβρίου 29Α, Ιωάννινα, 45333",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Πρέβεζα:",
+            "stores": [
+                {
+                    "title": "Γεύση & Άρωμα, Λεωφόρος Ειρήνης 41, Πρέβεζα 48100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ηγουμενίτσα:",
+            "stores": [
+                {
+                    "title": "Αφθονία Βιολογικά, 8ης Δεκεμβρίου, Ελ. Βενιζέλου, Ηγουμενίτσα 461 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Λάρισα:",
+            "stores": [
+                {
+                    "title": "Bufala Gelato (Fashion City Outlet), 4ο χιλ. Λεωφ. Κ. Καραμανλή, Λάρισα 41335",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Κλίμαξ, Ηφαίστου 2 & Βενιζέλου, Λάρισα 412 21",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Βόλος:",
+            "stores": [
+                {
+                    "title": "Φώτου Ξηροί Καρποί, Ελ. Βενιζέλου 11, Βόλος 383 33",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "All in Cafe - Λ. Δημοκρατίας 23, Αγριά",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Καβάλα:",
+            "stores": [
+                {
+                    "title": "Νησί Biomarket, Νέα Οδός 7 Ελευθερούπολη Καβάλας 641 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Κατερίνη:",
+            "stores": [
+                {
+                    "title": "Καφεκοπτείο Λουμίδη, Μεγ. Αλεξάνδου 22 Κατερίνη 601 33",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Κοζάνη:",
+            "stores": [
+                {
+                    "title": "Αυθεντικόν, Λιούφη 3, Κοζάνη 50100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Καστοριά:",
+            "stores": [
+                {
+                    "title": "Σουσάμι, Γράμμου 1, Καστοριά 52100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Χαλκιδική:",
+            "stores": [
+                {
+                    "title": "Day by Day Νικήτη Χαλκιδική",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Κρήτη:",
+            "stores": [
+                {
+                    "title": "The Greek Project, Σαουνάτσου 4, Ρέθυμνο 741 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Εσπρεσσάκι, Αρώνι Χανίων 731 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Super Market Triton, Κoκκίνη Χάνι Ηρακλείου 715 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Hacienda, Λεωφ. Ανδρέα Παπανδρέου 25, Ηράκλειο 713 05",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Titos Cafe, Πλατεία Γεωργιούπολη Αποκορώνου, Χανιά 730 07",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Biscuits & Berries, Τσουδερών 75, Παλιά πόλη Χανίων 731 32",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Manjar, Λ. Δημοκρατίας 16, Ηράκλειο 713 06",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "News Cafe Beach, Καρτερός 715 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Boho snack bar, Μάταλα 702 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Bankery, Δημητρακάκη 2, Ρέθυμνο 741 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Elephant street espresso, Δημοκρατίας 14, Ιεράπετρα 722 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Το Καφεδάκι, Καραμανλή 43, Αγ. Νικόλαος 721 00",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Route 29, Οροπέδιο Λασιθίου 713 07",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ρόδος:",
+            "stores": [
+                {
+                    "title": "Kori Lindos, Λίνδος",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Victoria Selected Delights, Πέρνου 4 Ρόδος 7542",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Άνδρος:",
+            "stores": [
+                {
+                    "title": "Gasparis Foods",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Ανδριακόν, Καραβοστάσι",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Μήλος:",
+            "stores": [
+                {
+                    "title": "Cava Bottiglia, Μήλος 848 01",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Σαντορίνη:",
+            "stores": [
+                {
+                    "title": "Σούπερ Μάρκετ Καρρά Μαρία, Οία Θηρά, 84702",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Πάρος:",
+            "stores": [
+                {
+                    "title": "Σέσουλα, Παροικιά Πάρου 84 400",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Χίος:",
+            "stores": [
+                {
+                    "title": "The Grind, Βαρβάκη 3, Χίος",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Μέσα Κει, Χωρέμη 8, Χίος 821 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Λήμνος:",
+            "stores": [
+                {
+                    "title": "Pezoula Cafe, Πλ. Ηρώων Μούδρος, Λήμνος",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Τήνος:",
+            "stores": [
+                {
+                    "title": "Prickly Bear, Γκύζη 3 Τήνος 84200",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Σύρος:",
+            "stores": [
+                {
+                    "title": "Τόπων Γεύσεις, Εθνικής Αντιστάσεως 18, Ερμούπολη Σύρος 84100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Μυτιλήνη:",
+            "stores": [
+                {
+                    "title": "Αμυγδαλάκι, Μητροπόλεως 15, Μυτιλήνη 81 100",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Alley Dog, Κομνηνάκη 7, Μυτιλήνη 81 100",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Σάμος:",
+            "stores": [
+                {
+                    "title": "Blue Roots, Αγίου Νικολάου, Σάμος 831 00",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ικαρία:",
+            "stores": [
+                {
+                    "title": "Mελία Φυσικά Προϊόντα, Ράχες",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ύδρα:",
+            "stores": [
+                {
+                    "title": "Το Μώλυ, Ύδρα 180 40",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Kέρκυρα:",
+            "stores": [
+                {
+                    "title": "NOMH Store, Νικηφόρου Θεοτόκη 57, Κέρκυρα",
+                    "link": null,
+                    "additional_lines": []
                 }
             ]
         }
