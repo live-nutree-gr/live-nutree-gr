@@ -3,6 +3,10 @@
   "title_el": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
   "stores": [
     {
+      "displayText": "www.foodwelove.gr",
+      "link": "www.foodwelove.gr"
+    },
+    {
       "displayText": "www.wellthy.gr",
       "link": "https://www.wellthy.gr/el/"
     },
