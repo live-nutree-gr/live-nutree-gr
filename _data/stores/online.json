@@ -3,28 +3,28 @@
   "title_el": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
   "stores": [
     {
-      "displayText": "www.themythicbox.com",
-      "link": "www.themythicbox.com"
-    },
-    {
-      "displayText": "www.foodwelove.gr",
-      "link": "www.foodwelove.gr"
+      "displayText": "https://www.mygreektaste.com/",
+      "link": "https://www.mygreektaste.com/"
     },
     {
       "displayText": "www.wellthy.gr",
       "link": "https://www.wellthy.gr/el/"
     },
     {
+      "displayText": "https://nomeefoods.gr/",
+      "link": "https://nomeefoods.gr/"
+    },
+    {
+      "displayText": "www.foodwelove.gr",
+      "link": "www.foodwelove.gr"
+    },
+    {
       "displayText": "https://www.agrolicious.gr/",
       "link": "https://www.agrolicious.gr/"
     },
     {
-      "displayText": "https://www.mygreektaste.com/",
-      "link": "https://www.mygreektaste.com/"
-    },
-    {
-      "displayText": "https://nomeefoods.gr/",
-      "link": "https://nomeefoods.gr/"
+      "displayText": "www.themythicbox.com",
+      "link": "www.themythicbox.com"
     }
   ]
 }
