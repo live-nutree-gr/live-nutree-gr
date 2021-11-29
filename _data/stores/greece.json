@@ -6,31 +6,6 @@
       "title": "Aθήνα - Κέντρο:",
       "stores": [
         {
-          "title": "Απηλιώτης, Αραχώβης 10, Εξάρχεια 106 80",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Bold Cafe, Λ. Πατησίων 156, Αθήνα 112 57",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Brinky's Organic Groceries, Τρώων 69 Πετράλωνα 118 52",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Kampos Biomarket, Φιλελλήνων 2, Αθήνα 105 57",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Peak A Bloom, Λέκκα 12, Αθήνα 105 62",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "4 Seasons, Νίκης 30, Σύνταγμα Αθήνα 105 57",
           "link": null,
           "additional_lines": [
@@ -45,12 +20,27 @@
           ]
         },
         {
+          "title": "Peak A Bloom, Λέκκα 12, Αθήνα 105 62",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
           "title": "Nora's Deli",
           "link": null,
           "additional_lines": [
             "Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73",
             "Αναπήρων Πολέμου 10, Κολωνάκι 106 76"
           ]
+        },
+        {
+          "title": "Brinky's Organic Groceries, Τρώων 69 Πετράλωνα 118 52",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Kampos Biomarket, Φιλελλήνων 2, Αθήνα 105 57",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Βιολογικό Χωριό",
@@ -90,14 +80,24 @@
           ]
         },
         {
-          "title": "Box Γευστικό Κουτί, Ευτυχίδου 18, Παγκράτι 116 35",
+          "title": "Dickie Dee, Βουλής 23, Αθήνα 105 63",
           "link": null,
           "additional_lines": [
 
           ]
         },
         {
-          "title": "Dickie Dee, Βουλής 23, Αθήνα 105 63",
+          "title": "Απηλιώτης, Αραχώβης 10, Εξάρχεια 106 80",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bold Cafe, Λ. Πατησίων 156, Αθήνα 112 57",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Box Γευστικό Κουτί, Ευτυχίδου 18, Παγκράτι 116 35",
           "link": null,
           "additional_lines": [
 
