@@ -6,12 +6,41 @@
       "title": "Aθήνα - Κέντρο:",
       "stores": [
         {
+          "title": "4 Seasons, Νίκης 30, Σύνταγμα Αθήνα 105 57",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Mr Bean Coffee, Εμμανουήλ Μπενάκη 20, Αθήνα 106 78",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Peak A Bloom, Λέκκα 12, Αθήνα 105 62",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
           "title": "Nora's Deli",
           "link": null,
           "additional_lines": [
             "Παναγιώτου Αναγνωστοπούλου 11, Koλωνάκι 106 73",
             "Αναπήρων Πολέμου 10, Κολωνάκι 106 76"
           ]
+        },
+        {
+          "title": "Brinky's Organic Groceries, Τρώων 69 Πετράλωνα 118 52",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Kampos Biomarket, Φιλελλήνων 2, Αθήνα 105 57",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Βιολογικό Χωριό",
@@ -51,35 +80,24 @@
           ]
         },
         {
-          "title": "Bamboo Vegan, Σόλωνος 102, Αθήνα 106 80",
+          "title": "Dickie Dee, Βουλής 23, Αθήνα 105 63",
           "link": null,
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Απηλιώτης, Αραχώβης 10, Εξάρχεια 106 80",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bold Cafe, Λ. Πατησίων 156, Αθήνα 112 57",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Box Γευστικό Κουτί, Ευτυχίδου 18, Παγκράτι 116 35",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Kokkos, Σπύρου Μερκούρη 25, Αθήνα 11634",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "ΓΕΥΣΕΙΣ ΕΛΛΑΔΟΣ, Μάχης Αναλάτου 51, Νέος Κόσμος, Αθήνα 117 44",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "To Mποστάνι, Ιφικράτους 2, Αθήνα 112 57",
           "link": null,
           "additional_lines": [
 
@@ -93,35 +111,14 @@
           ]
         },
         {
-          "title": "A Future Perfect & Friends, Πραξιτέλους 23, Aθήνα 105 62",
+          "title": "Bamboo Vegan, Σόλωνος 102, Αθήνα 106 80",
           "link": null,
           "additional_lines": [
 
           ]
         },
         {
-          "title": "4 Seasons, Νίκης 30, Σύνταγμα Αθήνα 105 57",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "TOMS Flagship, Πλατεία Μητροπόλεως 8, Μοναστηράκι 105 56",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Local Green, Περικλέους 30-32, Αθήνα 105 62",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Mr Bean Coffee, Εμμανουήλ Μπενάκη 20, Αθήνα 106 78",
+          "title": "Γεύσεις Ελλάδος, Μάχης Αναλάτου 51, Νέος Κόσμος, Αθήνα 117 44",
           "link": null,
           "additional_lines": [
 
@@ -142,14 +139,21 @@
           ]
         },
         {
-          "title": "Dickie Dee, Βουλής 23, Αθήνα 105 63",
+          "title": "Πορτοκαλί Καφέ, Λ. Συγγρού 50 Αθήνα 117 42",
           "link": null,
           "additional_lines": [
 
           ]
         },
         {
-          "title": "Πορτοκαλί Καφέ, Λ. Συγγρού 50 Αθήνα 117 42",
+          "title": "TOMS Flagship, Πλατεία Μητροπόλεως 8, Μοναστηράκι 105 56",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "To Mποστάνι, Ιφικράτους 2, Αθήνα 112 57",
           "link": null,
           "additional_lines": [
 
@@ -181,6 +185,28 @@
           ]
         },
         {
+          "title": "Πράσινο Biomarket, Λεωφ. Πεντέλης 97, Χαλάνδρι 152 34",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Πεντελικό",
+          "link": "",
+          "additional_lines": [
+            "Ερμού 2, Πεντέλη 152 36",
+            "Λ. Πεντέλης 144, Βριλήσσια 152 38"
+          ]
+        },
+        {
+          "title": "Ηippie Bowl, Αγίου Κωνσταντίνου 40, Μαρούσι 151 24",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
           "title": "CoffeeHouse",
           "link": null,
           "additional_lines": [
@@ -189,7 +215,37 @@
           ]
         },
         {
-          "title": "Brinner Athens, Λεωφόρος Κηφισιας 56 7 Δελφών 2, Mαρούσι 151 25",
+          "title": "Wild Beans, Βυζαντινών Αυτοκρατόρων, Νέα Ιωνία 142 32",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Wanted Coffee, Λ. Πλαπούτα 53, Νέο Ηράκλειο 141 22",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Huakanu, Λ. Μαραθώνος 3, Δροσιά 156 72",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Το Κέρατο, Λ. Δημοκρατίας 39, Μελίσσια 151 27",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Πανδαισία, Λ. Πηγής 69, Μελίσσια 151 27",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Madonna, Λ. Μαραθώνος 2, Δροσιά 145 72",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Kαρυοθραύστης, Λεωφ. Μεσογείων 6, Αθήνα 115 27",
           "link": null,
           "additional_lines": [
 
@@ -224,13 +280,6 @@
           ]
         },
         {
-          "title": "Βιολογικός Θησαυρός, Χρυσοστόμου Σμύρνης 21, Αγ. Παρασκευή 153 43",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Στο Τσουβάλι, Θράκης 3, Φιλοθέη 152 37",
           "link": null,
           "additional_lines": [
@@ -245,14 +294,7 @@
           ]
         },
         {
-          "title": "Αρισμαρί & Μέλι, Ελευθερίου Βενιζέλου 20, Μελίσσια 151 27",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Kαρυοθραύστης, Λεωφ. Μεσογείων 6, Αθήνα 115 27",
+          "title": "Αρισμαρί & Μέλι, Αριστείδου 1 & Λ. Πεντέλης 34, Χαλάνδρι 152 34",
           "link": null,
           "additional_lines": [
 
@@ -260,13 +302,6 @@
         },
         {
           "title": "Το Μικρό Πευκοδάσος, Αλέκου Παναγούλη 25, Ζωγράφου 15773",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Πράσινο Biomarket, Λεωφ. Πεντέλης 97, Χαλάνδρι 152 34",
           "link": null,
           "additional_lines": [
 
@@ -287,13 +322,6 @@
           ]
         },
         {
-          "title": "Ηippie Bowl, Αγίου Κωνσταντίνου 40, Μαρούσι 151 24",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Lucky 7, Ηπείρου 5-7, Αγία Παρασκευή 153 41",
           "link": null,
           "additional_lines": [
@@ -302,13 +330,6 @@
         },
         {
           "title": "Υγεία & Μακροζωία, Λ. Δεκελείας 99, Νέα Φιλαδέλφεια 143 41",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "So Nuts, Κηφισίας 103, Πανόρμου Αθήνα 115 23",
           "link": null,
           "additional_lines": [
 
