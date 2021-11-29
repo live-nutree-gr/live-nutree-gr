@@ -1,22 +1,22 @@
 {
-    "title": "Online Stores",
-    "title_el": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
-    "stores": [
-        {
-            "displayText": "https://www.agrolicious.gr/",
-            "link": "https://www.agrolicious.gr/"
-        },
-        {
-            "displayText": "https://www.mygreektaste.com/",
-            "link": "https://www.mygreektaste.com/"
-        },
-        {
-            "displayText": "https://drplus.gr/",
-            "link": "https://drplus.gr/"
-        },
-        {
-            "displayText": "https://nomeefoods.gr/",
-            "link": "https://nomeefoods.gr/"
-        }
-    ]
+  "title": "Online Stores",
+  "title_el": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
+  "stores": [
+    {
+      "displayText": "www.wellthy.gr",
+      "link": "www.wellthy.gr"
+    },
+    {
+      "displayText": "https://www.agrolicious.gr/",
+      "link": "https://www.agrolicious.gr/"
+    },
+    {
+      "displayText": "https://www.mygreektaste.com/",
+      "link": "https://www.mygreektaste.com/"
+    },
+    {
+      "displayText": "https://nomeefoods.gr/",
+      "link": "https://nomeefoods.gr/"
+    }
+  ]
 }
