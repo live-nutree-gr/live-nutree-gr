@@ -532,16 +532,23 @@
       "title": "Αθήνα - Δυτικά Προάστια:",
       "stores": [
         {
-          "title": "Grind Specialty Coffee, Αγίας Γλυκερίας 75, Πετρούπολη 132 31",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Βιολογικό Χωριό, Θηβών 71, Περιστέρι 12136",
+          "title": "Gorilla Healthy Bar, Στρ. Λιόση 17, Άνω Λιόσια 13341",
           "link": null,
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Omsom, Κύπρου 14, Περιστέρι 12132",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Grind Specialty Coffee, Αγίας Γλυκερίας 75, Πετρούπολη 132 31",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "HWKS Specialty Coffee, 25ης Μαρτίου 140 Πετρούπολη 13231",
@@ -551,14 +558,7 @@
           ]
         },
         {
-          "title": "Gorilla Healthy Bar, Στρ. Λιόση 17, Άνω Λιόσια 13341",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Omsom, Κύπρου 14, Περιστέρι 12132",
+          "title": "Βιολογικό Χωριό, Θηβών 71, Περιστέρι 12136",
           "link": null,
           "additional_lines": [
 
