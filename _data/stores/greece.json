@@ -659,11 +659,6 @@
           ]
         },
         {
-          "title": "Καφεκοπτείο Μιχάλης, Κασσάνδρεια Χαλκιδικης 630 77",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22",
           "link": null,
           "additional_lines": [
@@ -892,25 +887,6 @@
           "additional_lines": [
 
           ]
-        },
-        {
-          "title": "All in Cafe - Λ. Δημοκρατίας 23, Αγριά",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Καβάλα:",
-      "stores": [
-        {
-          "title": "Νησί Biomarket, Νέα Οδός 7 Ελευθερούπολη Καβάλας 641 00",
-          "link": null,
-          "additional_lines": [
-
-          ]
         }
       ]
     },
@@ -953,6 +929,11 @@
     {
       "title": "Χαλκιδική:",
       "stores": [
+        {
+          "title": "Καφεκοπτείο Μιχάλης, Κασσάνδρεια Χαλκιδικης 630 77",
+          "link": "",
+          "additional_lines": ""
+        },
         {
           "title": "Day by Day Νικήτη Χαλκιδική",
           "link": null,
