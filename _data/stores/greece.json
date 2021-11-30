@@ -3,6 +3,17 @@
   "title_el": "ΕΛΛΑΔΑ",
   "groups": [
     {
+      "title": "Γιαννιτσά",
+      "stores": [
+        {
+          "title": "Pura Vida, Κωνσταντινίδη 8, Γιαννιτσά 581 00",
+          "link": "",
+          "additional_lines": ""
+        }
+      ],
+      "title_en": ""
+    },
+    {
       "title": "Aθήνα - Κέντρο:",
       "stores": [
         {
