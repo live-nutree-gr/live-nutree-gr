@@ -1163,25 +1163,6 @@
       ]
     },
     {
-      "title": "Μυτιλήνη:",
-      "stores": [
-        {
-          "title": "Αμυγδαλάκι, Μητροπόλεως 15, Μυτιλήνη 81 100",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Alley Dog, Κομνηνάκη 7, Μυτιλήνη 81 100",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
       "title": "Σάμος:",
       "stores": [
         {
@@ -1197,11 +1178,9 @@
       "title": "Ικαρία:",
       "stores": [
         {
-          "title": "Mελία Φυσικά Προϊόντα, Ράχες",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Θρούμπι, Άγιος Κήρυκος, Ικαρία 833 00",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
