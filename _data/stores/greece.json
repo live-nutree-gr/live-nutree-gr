@@ -628,21 +628,6 @@
       "title": "Θεσσαλονίκη:",
       "stores": [
         {
-          "title": "Καφεκοπτείο Μιχάλης, Κασσάνδρεια Χαλκιδικης 630 77",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Bufala Gelato, Λ. Νίκης 7, Θεσσαλονίκη 546 23",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Θέγια, Θ. Σοφούλη 65, Καλαμαριά 551 31",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "Ζωή & Υγεία, Τσιμισκή 118, Θεσσαλονίκη 546 21",
           "link": null,
           "additional_lines": [
@@ -657,6 +642,28 @@
           ]
         },
         {
+          "title": "Θέγια, Θ. Σοφούλη 65, Καλαμαριά 551 31",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bufala Gelato, Λ. Νίκης 7, Θεσσαλονίκη 546 23",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Καφεκοπτείο Μιχάλης, Κασσάνδρεια Χαλκιδικης 630 77",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
           "title": "Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22",
           "link": null,
           "additional_lines": [
@@ -665,13 +672,6 @@
         },
         {
           "title": "Bufala Gelato (One Salonica), ΓΙΑΝΝΙΤΣΩΝ 61 & ΚΩΛΕΤΤΗ, ΘΕΣΣΑΛΟΝΙΚΗ 546 27",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01",
           "link": null,
           "additional_lines": [
 
