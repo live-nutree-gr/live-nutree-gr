@@ -570,16 +570,6 @@
       "title": "Πειραιάς:",
       "stores": [
         {
-          "title": "Μανδραγόρας, Γούναρη 14 & Τσαμαδού, Πειραιάς 185 31",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Franklin Coffee House, Γούναρη & Λυκούργου 2, Πειραιάς 18531",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "My Greek Taste, Ζωσιμάδων 20, Πειραιάς 185 31",
           "link": "",
           "additional_lines": ""
@@ -599,11 +589,14 @@
           ]
         },
         {
-          "title": "Coucou Family Cafe, Αριστοτέλους 9, Πειραιάς 18535",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Μανδραγόρας, Γούναρη 14 & Τσαμαδού, Πειραιάς 185 31",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Franklin Coffee House, Γούναρη & Λυκούργου 2, Πειραιάς 18531",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
