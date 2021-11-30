@@ -831,16 +831,16 @@
       "title": "Ιωάννινα:",
       "stores": [
         {
-          "title": "Juice 4 you, Μιχαήλ Άγγελου 5, Ιωάννινα 453 32",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "Πράσινο Σπίτι, 28ης Οκτωβρίου 29Α, Ιωάννινα, 45333",
           "link": null,
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Juice 4 you, Μιχαήλ Άγγελου 5, Ιωάννινα 453 32",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
@@ -872,18 +872,9 @@
       "title": "Λάρισα:",
       "stores": [
         {
-          "title": "Bufala Gelato (Fashion City Outlet), 4ο χιλ. Λεωφ. Κ. Καραμανλή, Λάρισα 41335",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Κλίμαξ, Ηφαίστου 2 & Βενιζέλου, Λάρισα 412 21",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Malva Coffee Nuts, Κούμα 45 Λάρισα 412 22",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
