@@ -378,36 +378,6 @@
       "title": "Αθήνα - Νότια Προάστια:",
       "stores": [
         {
-          "title": "Los Pampas, Πτεράρχου Γκιόκα 13, Κορωπί 194 00",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Mr & Mrs Vegan, Ρέας 2, Βουλιαγμένη 166 71",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Biohouse, Εθνάρχου Μακαρίου 100, Αργυρούπολη 164 52",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Κανέλα & Γαρύφαλλο, Θεομήτορος 26, Άλιμος 173 42",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Placebo Pharmacy, Λ. Βουλιαγμένης 85, Γλυφάδα 16674",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
-          "title": "Glam Pharmacy, Αγίου Γερασίμου 2, Άλιμος 174 55",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "Βιολογικό Χωριό",
           "link": null,
           "additional_lines": [
@@ -417,6 +387,23 @@
             "Πρωτόπαππα 12, Ηλιούπολη 16343",
             "Αγ. Φωτεινής 47, Νέα Σμύρνη 17121"
           ]
+        },
+        {
+          "title": "Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Glam Pharmacy, Αγίου Γερασίμου 2, Άλιμος 174 55",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Placebo Pharmacy, Λ. Βουλιαγμένης 85, Γλυφάδα 16674",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Bufala Gelato",
@@ -429,14 +416,27 @@
           ]
         },
         {
-          "title": "Νέα Ζωή Βιολογικά Προϊόντα, Λεωφ. Πρωτόπαπα 38, Ηλιούπολη 163 43",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Κανέλα & Γαρύφαλλο, Θεομήτορος 26, Άλιμος 173 42",
+          "link": "",
+          "additional_lines": ""
         },
         {
-          "title": "Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77",
+          "title": "Los Pampas, Πτεράρχου Γκιόκα 13, Κορωπί 194 00",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Biohouse, Εθνάρχου Μακαρίου 100, Αργυρούπολη 164 52",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Mr & Mrs Vegan, Ρέας 2, Βουλιαγμένη 166 71",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Νέα Ζωή Βιολογικά Προϊόντα, Λεωφ. Πρωτόπαπα 38, Ηλιούπολη 163 43",
           "link": null,
           "additional_lines": [
 
