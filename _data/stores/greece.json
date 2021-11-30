@@ -601,30 +601,6 @@
       ]
     },
     {
-      "title": "Σπάτα:",
-      "stores": [
-        {
-          "title": "MOTTA, Αγίου Δημητρίου 4, Χριστούπολη Σπάτα 19004",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Παλλήνη:",
-      "stores": [
-        {
-          "title": "Alpha Pi, Λεωφ. Μαραθώνος 56, Πικέρμι 19009",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
       "title": "Μαρκόπουλο:",
       "stores": [
         {
@@ -652,11 +628,9 @@
       "title": "Θεσσαλονίκη:",
       "stores": [
         {
-          "title": "Urban Deli, Βασιλέως Ηρακλείου 7, Θεσσαλονίκη 546 25",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Θέγια, Θ. Σοφούλη 65, Καλαμαριά 551 31",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Ζωή & Υγεία, Τσιμισκή 118, Θεσσαλονίκη 546 21",
@@ -680,13 +654,6 @@
           ]
         },
         {
-          "title": "Les Raquettes Tennis Club, Θέρμη 57001",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Bufala Gelato (One Salonica), ΓΙΑΝΝΙΤΣΩΝ 61 & ΚΩΛΕΤΤΗ, ΘΕΣΣΑΛΟΝΙΚΗ 546 27",
           "link": null,
           "additional_lines": [
@@ -701,20 +668,6 @@
           ]
         },
         {
-          "title": "Φαρμακείο Καλογεράς Γεώργιος, Γυμνασιάρχου Μυστακίδη 33, Χαριλάου Θεσσαλονίκη 542 50",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Θόλος, Γιαννιτσών 244 (εντός ΚΤΕΛ), Θεσσαλονίκη 546 28",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "TOMS Flagship, Τσιμισκή 22, Θεσσαλονίκη 546 24",
           "link": null,
           "additional_lines": [
@@ -722,21 +675,7 @@
           ]
         },
         {
-          "title": "Εκλεκτά της Γης, Κομνηνών 4, Πανόραμα Θεσσαλονίκη 552 36",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Επι της Γης, Εθνικής Αντιστάσεως 54, Κουφάλια Θεσσαλονίκης 571 00",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Δεκαεπτά Cafe, Αλ. Σβώλου 24, Θεσσαλονίκη 546 22",
           "link": null,
           "additional_lines": [
 
