@@ -1034,13 +1034,6 @@
           "additional_lines": ""
         },
         {
-          "title": "Kori Lindos, Λίνδος",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Victoria Selected Delights, Πέρνου 4 Ρόδος 7542",
           "link": null,
           "additional_lines": [
@@ -1052,6 +1045,11 @@
     {
       "title": "Άνδρος:",
       "stores": [
+        {
+          "title": "Fresco, Γεωργίου Εμπειρίκου 38, Χώρα Άνδρου 845 00",
+          "link": "",
+          "additional_lines": ""
+        },
         {
           "title": "Gasparis Foods",
           "link": null,
