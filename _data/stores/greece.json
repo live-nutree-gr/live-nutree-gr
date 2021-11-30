@@ -1046,16 +1046,16 @@
       "title": "Άνδρος:",
       "stores": [
         {
-          "title": "Fresco, Γεωργίου Εμπειρίκου 38, Χώρα Άνδρου 845 00",
-          "link": "",
-          "additional_lines": ""
-        },
-        {
           "title": "Gasparis Foods",
           "link": null,
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Fresco, Γεωργίου Εμπειρίκου 38, Χώρα Άνδρου 845 00",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Ανδριακόν, Καραβοστάσι",
@@ -1105,6 +1105,11 @@
     {
       "title": "Χίος:",
       "stores": [
+        {
+          "title": "Vinius Wines, Καλαμπόκα 2, Χίος 82100",
+          "link": "",
+          "additional_lines": ""
+        },
         {
           "title": "The Grind, Βαρβάκη 3, Χίος",
           "link": null,
