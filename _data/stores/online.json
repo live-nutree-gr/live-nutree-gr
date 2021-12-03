@@ -1,0 +1,30 @@
+{
+  "title": "Online Stores",
+  "title_el": "ΗΛΕΚΤΡΟΝΙΚΑ ΚΑΤΑΣΤΗΜΑΤΑ",
+  "stores": [
+    {
+      "displayText": "https://www.mygreektaste.com/",
+      "link": "https://www.mygreektaste.com/"
+    },
+    {
+      "displayText": "www.wellthy.gr",
+      "link": "https://www.wellthy.gr/el/"
+    },
+    {
+      "displayText": "https://nomeefoods.gr/",
+      "link": "https://nomeefoods.gr/"
+    },
+    {
+      "displayText": "https://foodwelove.gr/",
+      "link": "https://foodwelove.gr/"
+    },
+    {
+      "displayText": "https://www.agrolicious.gr/",
+      "link": "https://www.agrolicious.gr/"
+    },
+    {
+      "displayText": "https://themythicbox.com/",
+      "link": "https://themythicbox.com/"
+    }
+  ]
+}

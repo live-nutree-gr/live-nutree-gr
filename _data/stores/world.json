@@ -1,0 +1,131 @@
+{
+    "title": "Stores worldwide",
+    "title_el": "ΕΞΩΤΕΡΙΚΟ",
+    "groups": [
+        {
+            "title": "Κύπρος:",
+            "title_en": "Cyprus:",
+            "stores": [
+                {
+                    "title": "CoffeeHouse (σε όλα τα καταστήματα της Κύπρου)",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "ALL YOU CAN SURF - BEACH BAR, DEKELIAS ROAD, OROKLINI, LARNACA",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "MARCELLO'S BEACH BAR, KRYOU NEROU, AYIA NAPA, FAMAGUSTA",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "STATE CAFÉ",
+                    "link": null,
+                    "additional_lines": [
+                        "SANS SOUCI 2, 2023, NICOSIA",
+                        "ATHALASSAS AVENUE 200, STROVOLOS, NICOSIA"
+                    ]
+                },
+                {
+                    "title": "SECOND CUP",
+                    "link": null,
+                    "additional_lines": [
+                        "AY. NICOLAOU 59, 2408, ENGOMI, NICOSIA",
+                        "SALAMINOS 2, OROKLINI, 7041, LARNACA",
+                        "(NEW LIFE) - STADIOU 1, STROVOLOS, NICOSIA",
+                        "(PLATIA ELEFTHERIAS) - COSTAKI PANTELIDI, NICOSIA",
+                        "(PLATI) - KYRENIAS 101, AYLADJIA, NICOSIA",
+                        "(PARALIMNI) - 1ST APRIL 170, SHOP 1, PARALIMNI, FAMAGUSTA"
+                    ]
+                },
+                {
+                    "title": "THE HUB CAFÉ",
+                    "link": null,
+                    "additional_lines": [
+                        "ARCHEPISKOPOU MAKARIOUC 201 E, LIMASSOL, 3030",
+                        "MILTONOS 54 B, LIMASSOL",
+                        "ELEFTHERIAS AVENUE 26, PALODIA, LIMASSOL 4549",
+                        "AYIAS PARASKEVIS, GERMASOGIA, LIMASSOL",
+                        "28TH OCTOBER 52, ENGOMI, NICOSIA 2414"
+                    ]
+                },
+                {
+                    "title": "MUG N' HUG CAFÉ",
+                    "link": null,
+                    "additional_lines": [
+                        "GLASTONOS 66, LIMASSOL, 3041",
+                        "ARCH. MAKARIOU, MESA GITONIA, LIMASSOL",
+                        "GEORGIOU GRIVA DIGHENI 63 B, LIMASSOL 3101"
+                    ]
+                },
+                {
+                    "title": "Goodness House, Nicosia",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Get Fresh, Nicosia",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Honey & Spice, Engomi, Nicosia",
+                    "link": null,
+                    "additional_lines": []
+                },
+                {
+                    "title": "Bio Fysi Bio and Health Products, Larnaca",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ηνωμένο Βασίλιο:",
+            "title_en": "United Kingdom:",
+            "stores": [
+                {
+                    "title": "Vios Concept, 21 Brighton Square, Brighton BN1 1HD",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Ελβετία:",
+            "title_en": "Switzerland:",
+            "stores": [
+                {
+                    "title": "https://elliniko.ch/",
+                    "link": "https://elliniko.ch/",
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Γαλλία:",
+            "title_en": "France:",
+            "stores": [
+                {
+                    "title": "Exelia Saveurs Grecques, Savigneux, France",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        },
+        {
+            "title": "Bέλγιο:",
+            "title_en": "Belgium:",
+            "stores": [
+                {
+                    "title": "Greek Appetite, Chaussée de Wavre 331, 1040 Brussels, Belgium",
+                    "link": null,
+                    "additional_lines": []
+                }
+            ]
+        }
+    ]
+}

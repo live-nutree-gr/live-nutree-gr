@@ -1,0 +1,370 @@
+// ---------------------------------------
+// Initial imports (helpers, variables)
+// ---------------------------------------
+
+@import "helpers",
+        "variables";
+
+// ---------------------------------------
+// Products bars intro section styles
+// ---------------------------------------
+
+.section-products-bars-intro {
+  padding-bottom: 80px;
+}
+
+// ---------------------------------------
+// Products bars expanded section styles
+// ---------------------------------------
+
+.section-expanded-title {
+
+  span {
+    font-size: 50px;
+    color: $coral;
+  }
+}
+
+.section-product-expanded {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding: 120px 0;
+  min-height: 550px;
+
+  &.active {
+
+    .section-expanded-image {
+
+      &:before {
+        transition: box-shadow .5s ease;
+      }
+
+      &.right-content img {
+        animation: smooth-slide-in-right .5s ease forwards;
+      }
+
+      &.left-content img {
+        animation: smooth-slide-in-left .5s ease forwards;
+      }
+    }
+  }
+
+  h2 {
+    font-family: $font-hand;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-family: $font;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .btn {
+    margin-top: 30px;
+    float: left;
+    clear: both;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1;
+    // To tackle negative z-index of button
+    position: relative;
+    z-index: 1;
+  }
+
+  .left-content {
+    margin-right: 4%;
+  }
+
+  .nutritious-list-link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    color: $mid-black;
+    text-decoration: underline;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .mobile-nutritious-list {
+    display: none;
+  }
+
+  .section-expanded-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      position: relative;
+      width: 80%;
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    &:before {
+      content: '';
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -50%;
+      padding-bottom: 100%;
+    }
+
+    .nutritious-list {
+      display: none;
+
+      &.active {
+        position: absolute;
+        display: block;
+        background: rgba($white, .9);
+        padding: 40px 40px 30px;
+        border: 1px solid $even-lighter-grey;
+        border-radius: 30px;
+        z-index: 1;
+        box-shadow: 0 0 0 30px rgba($white, .5);
+      }
+
+      > li {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 10px;
+        width: 49%;
+
+        &.asterisk,
+        &:last-child {
+          width: 100%;
+          margin-top: 10px;
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+.section-product-expanded-grey {
+  background: $even-lighter-grey;
+
+  .section-expanded-image:before {
+    left: auto;
+    right: -50%;
+  }
+}
+
+// ---------------------------------------
+// Products bars explicit styles (colors)
+// ---------------------------------------
+
+.section-cookie-dough-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $cookie;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($cookie, .3),
+    0 0 0 100px rgba($cookie, .15);
+  }
+}
+
+.section-brownie-praline-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $brownie;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($brownie, .3),
+    0 0 0 100px rgba($brownie, .15);
+  }
+}
+
+.section-cinnamon-roll-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $cinnamon;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($cinnamon, .3),
+    0 0 0 100px rgba($cinnamon, .15);
+  }
+}
+
+.section-peanutbutter-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $green;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($green, .3),
+                0 0 0 100px rgba($green, .15);
+  }
+}
+
+.section-orange-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $orange;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($orange, .3),
+                0 0 0 100px rgba($orange, .15);
+  }
+}
+
+.section-apple-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) lighten($light-blue, 20);
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba(lighten($light-blue, 20), .3),
+                0 0 0 100px rgba(lighten($light-blue, 20), .15);
+  }
+}
+
+.section-banana-almond-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) lighten($banana-almond, 20);
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba(lighten($banana-almond, 20), .3),
+    0 0 0 100px rgba(lighten($banana-almond, 20), .15);
+  }
+}
+
+.section-matcha-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) lighten($matcha, 20);
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba(lighten($matcha, 20), .3),
+                0 0 0 100px rgba(lighten($matcha, 20), .15);
+  }
+}
+
+.section-strawberry-bar {
+
+  .section-expanded-image:before {
+    background: url(../../images/shapes-bg.png) $strawberry;
+  }
+
+  &.active .section-expanded-image:before {
+    box-shadow: 0 0 0 50px rgba($strawberry, .3),
+                0 0 0 100px rgba($strawberry, .15);
+  }
+}
+
+// ---------------------------------------
+// Products page styles
+// ---------------------------------------
+
+.section-products-intro {
+  padding-bottom: 0;
+
+  p {
+    text-align: justify;
+  }
+}
+
+// ---------------------------------------
+// Products categories separate styles
+// ---------------------------------------
+
+.products-preview-list {
+  clear: both;
+  padding: 60px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  li {
+    flex-basis: 16.8%;
+    width: 16.8%;
+    margin-right: 4%;
+    text-align: center;
+
+    &:nth-child(6n),
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a,
+    p {
+      background: $light-grey;
+      border-radius: 50%;
+      width: 100%;
+      padding-bottom: 100%;
+      display: inline-block;
+      position: relative;
+      box-shadow: 0 0 0 0 $red;
+      transition: box-shadow .15s linear;
+      margin-bottom: 80px;
+
+      &:hover {
+        box-shadow: 0 0 0 10px $red;
+
+        img {
+          height: 110%;
+        }
+      }
+    }
+
+    img {
+      @include center(horizontal);
+      transition: height .15s linear;
+      height: 100%;
+      bottom: 0;
+    }
+
+    .product-title {
+      @include center(horizontal);
+      bottom: -40px;
+      font-size: 22px;
+      font-family: $font-hand;
+      color: #707070;
+      white-space: nowrap;
+    }
+  }
+}
+
+// .section-products-balls {
+//   background: lighten($lighter-grey, 1);
+//
+//   .section-title {
+//     float: right;
+//     margin: 0 0 70px 50px;
+//   }
+//
+//   p {
+//     padding: 0 240px 0 0;
+//   }
+// }
+
+.products-faq {
+
+  .text + .section-subtitle-bold {
+    margin-top: 40px;
+  }
+}

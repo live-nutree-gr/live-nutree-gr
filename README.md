@@ -1,25 +1,20 @@
-Nutree important informations
+## Stack
+- Jekyll for HTML templating and SCSS compiling
+- slapform.com for the `contact us` page
+- Shopify for the `eshop` page (using only the Javascript API)
+- Hosted by Github Pages
 
-## Versions
+## Local Development
+```shell
+host$ ./docker/run.sh
+container# jekyll build # or
+container# jekyll serve
+```
 
-- Sass 3.4.13 (Selective Steve)
-- Node version 4.9.0 - nvm use 4.9
-- Google fonts (Alegreya, Didact Gothic)
-- Jquery v1.11.0
-- Hosted: at tophost
-
-## To compile scss into scss
-
-- Run `gulp` or `gulp sass`
-
-- Remember to run minify separately
-
-- Check if .min.css is called
-
-## Emails
-
-- We need composer to set up phpmailer
-
-## Styles informations
-
-- Main bundle is `main.scss`
+## Useful Links
+- demo.nutree.gr -> https://github.com/demo-nutree-gr/demo-nutree-gr.github.io
+- nutree.gr -> https://github.com/live-nutree-gr/live-nutree-gr.github.io
+- https://shopify.github.io/liquid/
+- https://jekyllrb.com/docs/configuration/options/
+- https://forestry.io/docs/settings/collaborators/#site-access-levels
+- https://forestry.io/docs/editing/front-matter/
