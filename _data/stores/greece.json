@@ -22,7 +22,9 @@
         {
           "title": "Peak A Bloom, Λέκκα 12, Αθήνα 105 62",
           "link": "",
-          "additional_lines": ""
+          "additional_lines": [
+
+          ]
         },
         {
           "title": "Nora's Deli",
@@ -322,13 +324,6 @@
           ]
         },
         {
-          "title": "Lucky 7, Ηπείρου 5-7, Αγία Παρασκευή 153 41",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Υγεία & Μακροζωία, Λ. Δεκελείας 99, Νέα Φιλαδέλφεια 143 41",
           "link": null,
           "additional_lines": [
@@ -394,6 +389,23 @@
           ]
         },
         {
+          "title": "Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Glam Pharmacy, Αγίου Γερασίμου 2, Άλιμος 174 55",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Placebo Pharmacy, Λ. Βουλιαγμένης 85, Γλυφάδα 16674",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
           "title": "Bufala Gelato",
           "link": null,
           "additional_lines": [
@@ -404,22 +416,27 @@
           ]
         },
         {
-          "title": "Ξηροκαρπάδικο",
-          "link": null,
-          "additional_lines": [
-            "Ελ. Βενιζέλου 152 Καλλιθέα 176 76",
-            "Χαροκόπου 77 Καλλιθέα 176 71"
-          ]
+          "title": "Κανέλα & Γαρύφαλλο, Θεομήτορος 26, Άλιμος 173 42",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Los Pampas, Πτεράρχου Γκιόκα 13, Κορωπί 194 00",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Biohouse, Εθνάρχου Μακαρίου 100, Αργυρούπολη 164 52",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Mr & Mrs Vegan, Ρέας 2, Βουλιαγμένη 166 71",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Νέα Ζωή Βιολογικά Προϊόντα, Λεωφ. Πρωτόπαπα 38, Ηλιούπολη 163 43",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Μυλωνάς Φρουτεμπορική, Δημ. Γούναρη 22, Γλυφάδα 167 77",
           "link": null,
           "additional_lines": [
 
@@ -482,21 +499,7 @@
           ]
         },
         {
-          "title": "Παντοπωλείο Αχχιλέως & Αφροδίτης, Αχχιλέως 38, Π. Φάληρο 175 62",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Αργώ, Αλκυόνης 24, Π. Φάληρο 175 61",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Drops Deli, Αγγέλου Μεταξά 38, Γλυφάδα 166 74",
           "link": null,
           "additional_lines": [
 
@@ -529,20 +532,6 @@
       "title": "Αθήνα - Δυτικά Προάστια:",
       "stores": [
         {
-          "title": "Βιολογικό Χωριό, Θηβών 71, Περιστέρι 12136",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "HWKS Specialty Coffee, 25ης Μαρτίου 140 Πετρούπολη 13231",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Gorilla Healthy Bar, Στρ. Λιόση 17, Άνω Λιόσια 13341",
           "link": null,
           "additional_lines": [
@@ -555,12 +544,36 @@
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Grind Specialty Coffee, Αγίας Γλυκερίας 75, Πετρούπολη 132 31",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "HWKS Specialty Coffee, 25ης Μαρτίου 140 Πετρούπολη 13231",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        },
+        {
+          "title": "Βιολογικό Χωριό, Θηβών 71, Περιστέρι 12136",
+          "link": null,
+          "additional_lines": [
+
+          ]
         }
       ]
     },
     {
       "title": "Πειραιάς:",
       "stores": [
+        {
+          "title": "My Greek Taste, Ζωσιμάδων 20, Πειραιάς 185 31",
+          "link": "",
+          "additional_lines": ""
+        },
         {
           "title": "TRAGREECEIONAL Βιολογικά Προϊόντα, Αγίας Μαρίνης 38, Πειραιάς 185 39",
           "link": null,
@@ -576,35 +589,14 @@
           ]
         },
         {
-          "title": "Coucou Family Cafe, Αριστοτέλους 9, Πειραιάς 18535",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Σπάτα:",
-      "stores": [
+          "title": "Μανδραγόρας, Γούναρη 14 & Τσαμαδού, Πειραιάς 185 31",
+          "link": "",
+          "additional_lines": ""
+        },
         {
-          "title": "MOTTA, Αγίου Δημητρίου 4, Χριστούπολη Σπάτα 19004",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Παλλήνη:",
-      "stores": [
-        {
-          "title": "Alpha Pi, Λεωφ. Μαραθώνος 56, Πικέρμι 19009",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Franklin Coffee House, Γούναρη & Λυκούργου 2, Πειραιάς 18531",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
@@ -636,13 +628,6 @@
       "title": "Θεσσαλονίκη:",
       "stores": [
         {
-          "title": "Urban Deli, Βασιλέως Ηρακλείου 7, Θεσσαλονίκη 546 25",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Ζωή & Υγεία, Τσιμισκή 118, Θεσσαλονίκη 546 21",
           "link": null,
           "additional_lines": [
@@ -657,14 +642,24 @@
           ]
         },
         {
-          "title": "Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22",
+          "title": "Θέγια, Θ. Σοφούλη 65, Καλαμαριά 551 31",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bufala Gelato, Λ. Νίκης 7, Θεσσαλονίκη 546 23",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
+          "title": "Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01",
           "link": null,
           "additional_lines": [
 
           ]
         },
         {
-          "title": "Les Raquettes Tennis Club, Θέρμη 57001",
+          "title": "Φαρμακείο Καλοβέρου Μαρία - Καλλιρρόη, Παύλου Μελά 33, Θεσσαλονίκη 546 22",
           "link": null,
           "additional_lines": [
 
@@ -678,35 +673,7 @@
           ]
         },
         {
-          "title": "Bufala Gelato Θέρμης, Πλ. Παραμάνας 4, ΘΕΣΣΑΛΟΝΙΚΗ 570 01",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Φαρμακείο Καλογεράς Γεώργιος, Γυμνασιάρχου Μυστακίδη 33, Χαριλάου Θεσσαλονίκη 542 50",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Θόλος, Γιαννιτσών 244 (εντός ΚΤΕΛ), Θεσσαλονίκη 546 28",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "TOMS Flagship, Τσιμισκή 22, Θεσσαλονίκη 546 24",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Εκλεκτά της Γης, Κομνηνών 4, Πανόραμα Θεσσαλονίκη 552 36",
           "link": null,
           "additional_lines": [
 
@@ -718,15 +685,19 @@
           "additional_lines": [
 
           ]
-        },
-        {
-          "title": "Δεκαεπτά Cafe, Αλ. Σβώλου 24, Θεσσαλονίκη 546 22",
-          "link": null,
-          "additional_lines": [
-
-          ]
         }
       ]
+    },
+    {
+      "title": "Γιαννιτσά",
+      "stores": [
+        {
+          "title": "Pura Vida, Κωνσταντινίδη 8, Γιαννιτσά 581 00",
+          "link": "",
+          "additional_lines": ""
+        }
+      ],
+      "title_en": ""
     },
     {
       "title": "Κομοτηνή:",
@@ -863,6 +834,18 @@
       ]
     },
     {
+      "title": "Βόλος:",
+      "stores": [
+        {
+          "title": "Φώτου Ξηροί Καρποί, Ελ. Βενιζέλου 11, Βόλος 383 33",
+          "link": null,
+          "additional_lines": [
+
+          ]
+        }
+      ]
+    },
+    {
       "title": "Ιωάννινα:",
       "stores": [
         {
@@ -871,6 +854,11 @@
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Juice 4 you, Μιχαήλ Άγγελου 5, Ιωάννινα 453 32",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
@@ -902,49 +890,14 @@
       "title": "Λάρισα:",
       "stores": [
         {
-          "title": "Bufala Gelato (Fashion City Outlet), 4ο χιλ. Λεωφ. Κ. Καραμανλή, Λάρισα 41335",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Malva Coffee Nuts, Κούμα 45 Λάρισα 412 22",
+          "link": "",
+          "additional_lines": ""
         },
         {
-          "title": "Κλίμαξ, Ηφαίστου 2 & Βενιζέλου, Λάρισα 412 21",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Βόλος:",
-      "stores": [
-        {
-          "title": "Φώτου Ξηροί Καρποί, Ελ. Βενιζέλου 11, Βόλος 383 33",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "All in Cafe - Λ. Δημοκρατίας 23, Αγριά",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Καβάλα:",
-      "stores": [
-        {
-          "title": "Νησί Biomarket, Νέα Οδός 7 Ελευθερούπολη Καβάλας 641 00",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Farai Chocolates, Αθ. Διάκου 5, Λάρισα 412 22",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
@@ -959,6 +912,17 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Ελασσόνα",
+      "stores": [
+        {
+          "title": "Πλάστιγγα, Αναπαύσεως 32, Ελασσόνα 400 05 ",
+          "link": "",
+          "additional_lines": ""
+        }
+      ],
+      "title_en": ""
     },
     {
       "title": "Κοζάνη:",
@@ -988,6 +952,11 @@
       "title": "Χαλκιδική:",
       "stores": [
         {
+          "title": "Καφεκοπτείο Μιχάλης, Κασσάνδρεια Χαλκιδικης 630 77",
+          "link": "",
+          "additional_lines": ""
+        },
+        {
           "title": "Day by Day Νικήτη Χαλκιδική",
           "link": null,
           "additional_lines": [
@@ -1000,14 +969,14 @@
       "title": "Κρήτη:",
       "stores": [
         {
-          "title": "The Greek Project, Σαουνάτσου 4, Ρέθυμνο 741 00",
+          "title": "Hacienda, Λεωφ. Ανδρέα Παπανδρέου 25, Ηράκλειο 713 05",
           "link": null,
           "additional_lines": [
 
           ]
         },
         {
-          "title": "Εσπρεσσάκι, Αρώνι Χανίων 731 00",
+          "title": "Biscuits & Berries, Τσουδερών 75, Παλιά πόλη Χανίων 731 32",
           "link": null,
           "additional_lines": [
 
@@ -1021,21 +990,7 @@
           ]
         },
         {
-          "title": "Hacienda, Λεωφ. Ανδρέα Παπανδρέου 25, Ηράκλειο 713 05",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
           "title": "Titos Cafe, Πλατεία Γεωργιούπολη Αποκορώνου, Χανιά 730 07",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Biscuits & Berries, Τσουδερών 75, Παλιά πόλη Χανίων 731 32",
           "link": null,
           "additional_lines": [
 
@@ -1096,11 +1051,9 @@
       "title": "Ρόδος:",
       "stores": [
         {
-          "title": "Kori Lindos, Λίνδος",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Πλέρια Deli, 5ο χλμ Ρόδου Λίνδου",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Victoria Selected Delights, Πέρνου 4 Ρόδος 7542",
@@ -1120,6 +1073,11 @@
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Fresco, Γεωργίου Εμπειρίκου 38, Χώρα Άνδρου 845 00",
+          "link": "",
+          "additional_lines": ""
         },
         {
           "title": "Ανδριακόν, Καραβοστάσι",
@@ -1182,6 +1140,11 @@
           "additional_lines": [
 
           ]
+        },
+        {
+          "title": "Vinius Wines, Καλαμπόκα 2, Χίος 82100",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
@@ -1222,25 +1185,6 @@
       ]
     },
     {
-      "title": "Μυτιλήνη:",
-      "stores": [
-        {
-          "title": "Αμυγδαλάκι, Μητροπόλεως 15, Μυτιλήνη 81 100",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        },
-        {
-          "title": "Alley Dog, Κομνηνάκη 7, Μυτιλήνη 81 100",
-          "link": null,
-          "additional_lines": [
-
-          ]
-        }
-      ]
-    },
-    {
       "title": "Σάμος:",
       "stores": [
         {
@@ -1256,11 +1200,9 @@
       "title": "Ικαρία:",
       "stores": [
         {
-          "title": "Mελία Φυσικά Προϊόντα, Ράχες",
-          "link": null,
-          "additional_lines": [
-
-          ]
+          "title": "Θρούμπι, Άγιος Κήρυκος, Ικαρία 833 00",
+          "link": "",
+          "additional_lines": ""
         }
       ]
     },
