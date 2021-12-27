@@ -19,6 +19,13 @@ Because the website is hosted by Github pages, this comes with some "invisible" 
 
 ### Stack
 - Jekyll for HTML templating and SCSS compiling
+  - Jekyll was introduced recently, and only specific parts of the website have been refactored to it.
+  - The introduction/refactoring is seamless, since an existing file can be changed as-is
+    to a Jekyll file just by adding these 2 lines at the top of the file (e.g. look at `en/stores.html`)
+    ```
+    ---
+    ---
+    ```
 - slapform.com for the `contact us` page
 - Shopify for the `eshop` page (using only the Javascript API)
 - Hosted by Github Pages
