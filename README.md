@@ -66,6 +66,16 @@ To avoid accidental mistakes, it's recommended to:
 
 Setup:
 ```
+$ mkdir nutree-repo && cd nutree-repo
+$ git init --initial-branch=temp
+
+$ git remote add demo git@github.com:demo-nutree-gr/demo-nutree-gr.github.io.git
+$ git remote add live git@github.com:live-nutree-gr/live-nutree-gr.github.io.git
+$ git fetch --all
+
+$ git checkout -b live-master live/master
+$ git checkout -b master demo/master
+
 $ git remote -v
 demo    git@github-demo.nutree.gr:demo-nutree-gr/demo-nutree-gr.github.io.git (fetch)
 demo    git@github-demo.nutree.gr:demo-nutree-gr/demo-nutree-gr.github.io.git (push)
